@@ -1,0 +1,144 @@
+{
+  "protocol": "mgca_final_unbounded_widegrid_2773_case_v1_occlusion",
+  "created_at_utc": "2026-09-12T08:52:22.808908+00:00",
+  "training_dataset": "2773",
+  "target_uniprot": "P27487|Q53TN1",
+  "sequence_length": 766,
+  "compound_count": 15,
+  "case_csv": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/four_target.csv",
+  "case_csv_sha256": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3",
+  "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+  "epochs": 33,
+  "checkpoint_training_data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "depth_windows": [
+    [
+      1,
+      2
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      35,
+      36
+    ]
+  ],
+  "selected_esm_layers": [
+    1,
+    2,
+    12,
+    13,
+    24,
+    25,
+    35,
+    36
+  ],
+  "esm_token_cache": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/cache/factor_xa_272729ea12e0__layers_1-2-12-13-24-25-35-36.pt",
+  "protein_occlusion": {
+    "level": "post-ESM pre-pooling token representation",
+    "configurations": [
+      {
+        "config_key": "w16_s4_sequence_mean",
+        "window_size": 16,
+        "stride": 4,
+        "baseline": "sequence_mean",
+        "primary": true
+      },
+      {
+        "config_key": "w8_s4_sequence_mean",
+        "window_size": 8,
+        "stride": 4,
+        "baseline": "sequence_mean",
+        "primary": false
+      },
+      {
+        "config_key": "w32_s4_sequence_mean",
+        "window_size": 32,
+        "stride": 4,
+        "baseline": "sequence_mean",
+        "primary": false
+      },
+      {
+        "config_key": "w16_s4_zero",
+        "window_size": 16,
+        "stride": 4,
+        "baseline": "zero",
+        "primary": false
+      }
+    ],
+    "special_tokens_preserved": true,
+    "pooling_denominator_fixed": true
+  },
+  "ligand_occlusion": {
+    "feature_identity": "(Morgan maximum-radius channel, hashed bit ID)",
+    "operation": "one active channel-specific bit changed from 1 to 0",
+    "bit_occurrences_retained": true
+  },
+  "dual_interaction_definition": "I=yp+yl-y0-ypl",
+  "interpretation_boundary": "Post-ESM feature occlusion sensitivity under v10; not native residue-atom attention, a sample-wise final router, or physical interaction energy.",
+  "stage1_no_occlusion_prediction_audit": {
+    "reference_path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/unique_compound_five_seed_predictions.csv",
+    "reference_sha256": "447d2a5e4675293a085f8e0cd77aabcead4cf4de0676b8e29e113406ad55254f",
+    "target_uniprot": "P27487|Q53TN1",
+    "matched_predictions": 75,
+    "maximum_absolute_difference": 9.5367431640625e-07,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  "checkpoints": [
+    {
+      "seed": 42,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_42/mgca_final_full2773_seed_42_epoch33.pt",
+      "sha256": "fd63aa48c21ada4faba6977bc08f6b765c5964fd2a133a01c1d27b42327ac8de"
+    },
+    {
+      "seed": 142,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_142/mgca_final_full2773_seed_142_epoch33.pt",
+      "sha256": "b07b1f2a2663b1f43e2f640981daca2e974fa076974601341733f8efb8eba26e"
+    },
+    {
+      "seed": 242,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_242/mgca_final_full2773_seed_242_epoch33.pt",
+      "sha256": "ae9fe000d481b81bbb5ef98718aaa550784ff67131a466d21993e95b41f14e9f"
+    },
+    {
+      "seed": 342,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_342/mgca_final_full2773_seed_342_epoch33.pt",
+      "sha256": "0794921c796ddbc878db48496780363fbc3a6e21eb11639b6ba5e5e4ceaa121b"
+    },
+    {
+      "seed": 442,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_442/mgca_final_full2773_seed_442_epoch33.pt",
+      "sha256": "631ef93608905533d365fb97ed0ecc379a60c0993e0d15ad8dd8c4d29a42bd65"
+    }
+  ],
+  "outputs": {
+    "compound_catalog": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/factor_xa_compound_catalog.csv",
+    "original_predictions": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/original_predictions_five_seeds.csv",
+    "protein_per_seed": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/protein_window_importance_per_seed.csv",
+    "protein_summary": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/protein_window_importance_summary.csv",
+    "protein_stability": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/protein_window_seed_stability.csv",
+    "ligand_per_seed": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/ligand_bit_importance_per_seed.csv",
+    "ligand_summary": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/ligand_bit_importance_summary.csv",
+    "ligand_stability": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/ligand_bit_seed_stability.csv",
+    "dual_per_seed": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/dual_occlusion_interactions_per_seed.csv",
+    "dual_summary": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/dual_occlusion_interactions_summary.csv",
+    "selection": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/dual_occlusion_selection.json"
+  },
+  "legacy_core_protocol": "factor_xa_stage2_posthoc_occlusion_v1",
+  "analysis_label": "dpp4",
+  "model_variant": "mgca_v10_unbounded_softplus_jointtune_v1",
+  "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1"
+}

@@ -1,0 +1,60 @@
+{
+  "protocol": "2773_full_refit_from_warm_run1_union_four_case_targets_excluded",
+  "dataset": "2773",
+  "generated_at_utc": "2026-09-12T07:31:54.219410+00:00",
+  "source_row_count": 2773,
+  "row_count": 2773,
+  "excluded_case_target_row_count": 0,
+  "excluded_case_target_rows_by_source": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "unique_exact_rows": 2773,
+  "unique_target_ligand_pairs_exact_smiles": 2773,
+  "source_files": [
+    {
+      "role": "train",
+      "path": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/train_run1.csv",
+      "rows": 1941,
+      "sha256": "93ad4effe36ecd5980da260252452a614d5a36279bca6803b63cdb5efdb503e9"
+    },
+    {
+      "role": "validation",
+      "path": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/val_run1.csv",
+      "rows": 277,
+      "sha256": "a33c8ca6a31127108055e5b0aca845bf719469a55bcd547219c2458355808b41"
+    },
+    {
+      "role": "test",
+      "path": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/test_run1.csv",
+      "rows": 555,
+      "sha256": "0a732bd3012d065a405674dac7528c82b50d0ac1edd8daeaabde7ffd28382c05"
+    }
+  ],
+  "reference_file": {
+    "path": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/koff.csv",
+    "rows": 2773,
+    "sha256": "615d4f648e88bbb929c67e0a0434cc972b892caaa30c874154fc4f2222789072",
+    "split_union_multiset_match": true
+  },
+  "case_file": {
+    "path": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/four_target.csv",
+    "sha256": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3",
+    "unique_fasta_sequences": 4
+  },
+  "case_exact_fasta_overlap_before_exclusion_count": 0,
+  "case_exact_pair_overlap_before_exclusion_count": 0,
+  "case_exact_fasta_overlap_count": 0,
+  "case_exact_pair_overlap_count": 0,
+  "case_exact_fasta_overlap_before_exclusion_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "case_exact_pair_overlap_before_exclusion_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "case_exact_fasta_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "case_exact_pair_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_csv": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/cohort/training.csv",
+  "output_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+  "exclusions_csv": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/cohort/exclusions.csv",
+  "exclusions_sha256": "3cfb99400b387e9e87d7f2424f30f8917721c815db0d5021530056d1dbf0281f",
+  "deduplication_applied": false,
+  "case_target_exclusion_applied": true
+}

@@ -1,0 +1,10 @@
+study,split,runs,test_mse_mean,test_mse_std,all_finite,manual_action
+bicoa_kinetx_default,warm,5,0.4319594154468052,0.045561694526720126,True,compare this rerun mean against the corresponding formal-result table before publication
+bicoa_kinetx_default,drug_cold,5,0.5747747196461735,0.06116217988290252,True,compare this rerun mean against the corresponding formal-result table before publication
+bicoa_kinetx_default,protein_cold,5,1.0411845451520076,0.0684685912379882,True,compare this rerun mean against the corresponding formal-result table before publication
+bicoa_2773_tuned,warm,5,0.2906912970341442,0.036734808307219306,True,compare this rerun mean against the corresponding formal-result table before publication
+bicoa_2773_tuned,drug_cold,5,0.3915233954648389,0.057280016777809174,True,compare this rerun mean against the corresponding formal-result table before publication
+bicoa_2773_tuned,protein_cold,5,1.8972886137911325,0.30035180101421793,True,compare this rerun mean against the corresponding formal-result table before publication
+moe_kinetx_tuned,warm,5,0.5320642255965868,0.0927083290501756,True,compare this rerun mean against the corresponding formal-result table before publication
+moe_kinetx_tuned,drug_cold,5,0.8153292425308738,0.3341392480376022,True,compare this rerun mean against the corresponding formal-result table before publication
+moe_kinetx_tuned,protein_cold,5,1.4253505623406852,0.08394167261636737,True,compare this rerun mean against the corresponding formal-result table before publication

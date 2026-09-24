@@ -1,0 +1,36 @@
+{
+  "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+  "dataset": "KinetX",
+  "selection": {
+    "trial": 13,
+    "config_id": "fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134",
+    "params": {
+      "lr": 2.432667795899065e-05,
+      "weight_decay": 0.001,
+      "batch_size": 16,
+      "dropout": 0.1,
+      "window_size": 8,
+      "drug_gate_init": 0.4,
+      "joint_gate_init": 0.05
+    },
+    "val_mse_mean": 0.35757296085357665,
+    "val_mse_sd": 0.06812525655383729,
+    "run_values": [
+      0.2727300822734833,
+      0.3406502902507782,
+      0.4354281425476074,
+      0.32088541984558105,
+      0.41817086935043335
+    ],
+    "task_ids": [
+      "038cde2898fa0be5926959c6ffa0d21d34635ab227d7a309a74daab0219a3296",
+      "abcc6c54ee80dc82a4490ff8b9856660a30de6ccd5f40e7d0352b7a8eac22ada",
+      "1dc45b35966b3de14730cba868ae56dccb8ce3e31ae581a597c8f133a505c189",
+      "3255149aff835e4fafbdb61170799c7d0cf1567c5eae306afe6d659c7ff90760",
+      "46d339ddf68c6e2ee570a72d0212bc40cc3e9ffa0c59c7e2d6962108bf827026"
+    ]
+  },
+  "test_accessed": false,
+  "criterion": "warm_run1_validation_mse_then_topk_five_split_mean",
+  "config_id": "13a3320573c9b6a28aa63398b12a1139f093f440c0e20b13b5f3ef959947b368"
+}

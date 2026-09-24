@@ -1,0 +1,39 @@
+{
+  "run_identity": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+    "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+    "seed": 42,
+    "epochs": 33,
+    "data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+    "data_manifest_sha256": "f9b59a74dab608eb2d68a8c153a0b7329958f2f967ee2c51e27627a990b9bad2",
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "trainer_sha256": "a02e5124be44e779b1903c3eabceecb973b5430786c28c2566f0dd02248ef232",
+    "config_sha256": "a12b98c53984d9c66ae6cbf5d0862b274bc569fed8ca1473d6944a7658113b1f",
+    "common_sha256": "6725ba9f8d96f16d020d1f964be080e25af56210779059956989bc18662a0336",
+    "lock_sha256": "101bc9c325c1d259a37ba34bfea354a1850411f047a50bee499159361ad517bc",
+    "package_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "row_count": 2773,
+    "case_exact_fasta_overlap_count": 0
+  },
+  "checkpoint": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_42/mgca_final_full2773_seed_42_epoch33.pt",
+  "checkpoint_sha256": "fd63aa48c21ada4faba6977bc08f6b765c5964fd2a133a01c1d27b42327ac8de",
+  "final_full_training_metrics": {
+    "n": 2773,
+    "mse": 0.041404246278493866,
+    "rmse": 0.20348033388633377,
+    "mae": 0.1490215748283855,
+    "r2": 0.9562926594054776,
+    "pearson": 0.9823066938631884,
+    "spearman": 0.9767246127203888,
+    "kendall_tau": 0.8785066540500833,
+    "c_index": 0.9396859876492195
+  },
+  "reload_max_abs_difference": 0.0,
+  "files": {
+    "mgca_final_full2773_seed_42_epoch33.pt": "fd63aa48c21ada4faba6977bc08f6b765c5964fd2a133a01c1d27b42327ac8de",
+    "training_history.csv": "da2822b35f70958b63bcc585532dd2b3e80b54d10f9db468bce5318f53c8cf73",
+    "training_predictions.csv": "ee0fb42041cff51345710d0dbe52b8ad1ec06fa9c660a480bf4feb376d6a11ea",
+    "training_diagnostics.npz": "ae1e7b0ff7f9e1b2acdb917bf932b0c872dae83bc4ef389ad588e02005e75a56"
+  },
+  "completed_at_utc": "2026-09-12T07:36:56.448579+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "run_identity": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+    "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+    "seed": 142,
+    "epochs": 33,
+    "data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+    "data_manifest_sha256": "f9b59a74dab608eb2d68a8c153a0b7329958f2f967ee2c51e27627a990b9bad2",
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "trainer_sha256": "a02e5124be44e779b1903c3eabceecb973b5430786c28c2566f0dd02248ef232",
+    "config_sha256": "a12b98c53984d9c66ae6cbf5d0862b274bc569fed8ca1473d6944a7658113b1f",
+    "common_sha256": "6725ba9f8d96f16d020d1f964be080e25af56210779059956989bc18662a0336",
+    "lock_sha256": "101bc9c325c1d259a37ba34bfea354a1850411f047a50bee499159361ad517bc",
+    "package_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "row_count": 2773,
+    "case_exact_fasta_overlap_count": 0
+  },
+  "checkpoint": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_142/mgca_final_full2773_seed_142_epoch33.pt",
+  "checkpoint_sha256": "b07b1f2a2663b1f43e2f640981daca2e974fa076974601341733f8efb8eba26e",
+  "final_full_training_metrics": {
+    "n": 2773,
+    "mse": 0.033843234036503474,
+    "rmse": 0.18396530661106586,
+    "mae": 0.12724260711190055,
+    "r2": 0.9642742498703106,
+    "pearson": 0.9820174561168856,
+    "spearman": 0.9749894162484959,
+    "kendall_tau": 0.8773090163183968,
+    "c_index": 0.9390867503243859
+  },
+  "reload_max_abs_difference": 0.0,
+  "files": {
+    "mgca_final_full2773_seed_142_epoch33.pt": "b07b1f2a2663b1f43e2f640981daca2e974fa076974601341733f8efb8eba26e",
+    "training_history.csv": "aff10f9721413543f8a89c1c18165a5d8526cfa75d14c97213cfa7d6ba24dc71",
+    "training_predictions.csv": "1705450f681d788bc40bc58865c06369dad517ac35641b85e6811ac4803e070c",
+    "training_diagnostics.npz": "5f03bedd6d148ad806ba30e309e5b5d77c9d997fee0fa1a4ead7eeeaf62a5052"
+  },
+  "completed_at_utc": "2026-09-12T07:36:55.566899+00:00"
+}

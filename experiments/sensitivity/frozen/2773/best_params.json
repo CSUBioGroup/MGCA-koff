@@ -1,0 +1,59 @@
+{
+  "model": "MGCA-CGRS-v10",
+  "fingerprint": "morgan",
+  "dataset": "2773",
+  "selection_protocol": "warm_only_two_stage_validation_mse",
+  "test_accessed_during_selection": false,
+  "source_trial_number": 2,
+  "params": {
+    "lr": 2.2827299533576897e-05,
+    "weight_decay": 0.0001,
+    "batch_size": 16,
+    "dropout": 0.15,
+    "window_size": 6,
+    "window_layout": "legacy_anchors_v1"
+  },
+  "esm2_window_layout": "legacy_anchors_v1",
+  "validation": {
+    "mean_mse": 0.2511341780424118,
+    "std_mse": 0.025321633332853175
+  },
+  "training": {
+    "epochs": 100,
+    "patience": 15,
+    "seed": 42
+  },
+  "architecture": {
+    "hidden_dim": 512,
+    "protein_experts": 4,
+    "drug_experts": 4,
+    "fusion": "protein_anchor_plus_conservative_global_residual_shrinkage",
+    "joint_rank": 128,
+    "protein_aux_weight": 0.1,
+    "drug_utility_weight": 0.02,
+    "joint_utility_weight": 0.02,
+    "gate_prior_weight": 0.001,
+    "branch_margin": 0.01,
+    "drug_gate_init": 0.1,
+    "drug_gate_cap": 0.3,
+    "joint_gate_init": 0.03,
+    "joint_gate_cap": 0.12,
+    "joint_branch_dropout": 0.15,
+    "prediction_heads": "single deterministic shared head",
+    "shrinkage": "two bounded global learned scalars; no sample-wise router",
+    "drug_dropout": 0.0,
+    "protein_perturbation": 0.0,
+    "protein_warmup_epochs": 5,
+    "fixed_shrinkage_epochs": 5,
+    "gradient_clip_norm": 5.0,
+    "numerical_stability_revision": "cgrs_global_shrinkage_v1"
+  },
+  "model_sha256": "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+  "source_v4_sha256": "ca199b8c8ffe88633bcda053c7c0d344f63c23ee58e99da821b039bb663a686c",
+  "source_v5_sha256": "54d12d7a2f9a411e2c90e4118415b7afbc7956105fa1cecf350629d0954562e2",
+  "source_v6_sha256": "0433c9822a5f99f7e9b2de96adc2129fa3e2f5959d35603329bc3a2ee1438399",
+  "source_v7_sha256": "f2c5c66a3d30deec4b13ee335a9970fc368fd95803ad633174eac775a7d0b09d",
+  "source_v8_sha256": "2082f2142c960d7ed940cac37bbd7d0440efa3606e63b6975553070887962104",
+  "source_v9_sha256": "f208bcc413496952a95ee689ef64041141d9d1b3339ab5a99b26cd076967ff30",
+  "config_id": "195465b9571b"
+}

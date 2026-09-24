@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+  "checkpoint_count": 5,
+  "epochs": 33,
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+  "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+  "benchmark_plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+  "benchmark_ablations": "Frozen existing five runs; no extra training",
+  "panels": [
+    {
+      "panel": "four_target",
+      "manifest_sha256": "c4d3fdbe30a83b51afae80e2fc134f8d2b7def0e77bb736308436ce37e6cdf5d",
+      "target_ids": [
+        "P25103",
+        "P27487|Q53TN1",
+        "P30518",
+        "Q96PN6"
+      ]
+    },
+    {
+      "panel": "k4dd",
+      "manifest_sha256": "38050c6c0404f975671995d7335995c4c92dd823c1005f9af80e63e4ff999f64",
+      "target_ids": [
+        "O14965",
+        "P00742",
+        "P07900",
+        "P08069",
+        "P29274",
+        "P30542"
+      ]
+    }
+  ],
+  "occlusions": [
+    {
+      "target": "factor_xa",
+      "manifest_sha256": "52f52de7d56887e76530093f5f9b2eab4cc19c548c4d34744d82b6711a620b9a",
+      "baseline_max_difference": 7.152557373046875e-07,
+      "compound_count": 7
+    },
+    {
+      "target": "dpp4",
+      "manifest_sha256": "086e8f636d471e7c49ec468f86991c6fd05202fb2fe9d75075b204d254b33e4a",
+      "baseline_max_difference": 9.5367431640625e-07,
+      "compound_count": 15
+    }
+  ],
+  "structure": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+    "current_occlusion_manifest_sha256": "b4567e062eda3addfa009da8cc7370c47ec4c12d4b8f77b54aa863ec12299e17",
+    "geometry_origin": "Pinned historical docking/redocking, independent of MGCA parameters. Docking not rerun.",
+    "old_model_occlusion_reused": false,
+    "contact_and_residue_scoring_recomputed": true,
+    "renderer": "matplotlib_Calpha_fallback",
+    "interpretation": "Perturbation sensitivity mapped onto reused geometry, not physical interaction proof",
+    "files": {
+      "1NFU_RRP_experimental_contacts_4A.csv": "0b774c34443ceeffbf9b89d5619a7663d65123e04d0a3c99be0530f42131ac24",
+      "1NFU_receptor_occlusion_2773.pdb": "db0915305c61433f3d46abe271f87e45f7a1e665567cc38017f451376e252dfb",
+      "factor_xa_structure_2773.pml": "dd0e1c9074e761fb7388bab2d0a2a9a58391a62fa8a56061fb1059fbcf54032e",
+      "factor_xa_pocket_zoom_2773.pml": "71678e70e9dab79edbc0840fe4c176237bdf15b9355a878d727f3031f775610b",
+      "factor_xa_sequence_occlusion_2773.png": "e62d37af75f5cc4ca0ed24384d277e027225abdd4fab6653bbb52d5b2ed23b33",
+      "stage4_visualization_manifest.json": "be54e58a3bdff938e80fa431d8ac9bd35e9eae5cdbf900894ce5a9ef7252be00",
+      "factor_xa_fallback_composite.png": "6a088584c588c9de55c2fba756dcf3f94b4c98a384f8a2d04e6a1d33a825af90",
+      "factor_xa_fallback_composite.svg": "7c3d155dd51828689c715fb5c8091ee0e7186e843b18624dddd286f8bd7750cf",
+      "factor_xa_residue_occlusion_2773.csv": "3a73f83b6dd5c0d5819288c5503f7c43ebec480f309384554f53d2189b5f53d4",
+      "factor_xa_reference_structure_2773.pml": "85cd631b9c685a9cf579b3a22dd5c68cb62fe066aada9727f827ad4cb65d7fdb",
+      "factor_xa_structure_fallback.png": "159794775a1c1b420e8d2d259e28e856b8d280f2e0437ad3cb1176aa887520d6",
+      "factor_xa_structure_fallback.svg": "f4176a9b2063c63e8b6586565a43534015179307ffbf7c6d9b75f60954bf1bd2",
+      "factor_xa_fallback_composite.pdf": "0ef117234b4446e1d8bfd8dae649a43e6a6969b791442bfff57dd2ad0f267955"
+    }
+  },
+  "checkpoint_selection_using_case_labels": false,
+  "performance_gate": false,
+  "illustrative_compounds": {
+    "factor_xa": "factor_xa_05",
+    "dpp4": "dpp4_12"
+  },
+  "dpp4_illustration_origin": "Historically selected highest observed pKoff; fixed before this new run, not used to select checkpoints.",
+  "boundaries": [
+    "Retrospective ranking, not prospective external validation.",
+    "All five full-data refits reported; no checkpoint selected by case scores.",
+    "Mean/SD over training seeds is not calibrated predictive uncertainty.",
+    "Exact-sequence and k-mer exposure checks are not proof of no homologs.",
+    "Docking geometry reused; new model-dependent occlusion/contact analysis recomputed."
+  ],
+  "case_input_compatibility": {
+    "patch_id": "k4dd_bracket_hydrogen_charge_order_v1",
+    "audit_path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/compat_smiles_v1/audit.json",
+    "audit_sha256": "e8ccfbf243cb4440b7ae01335721611b9512a6cfefb1d537dd2e1212368854b6",
+    "modified_rows": 18,
+    "rows_retained": 487,
+    "retrained_checkpoints": 0,
+    "original_frozen_model_and_training_unchanged": true,
+    "excluded_rows": 16
+  },
+  "case_panel_filter": {
+    "criterion": "predeclared inclusion criteria",
+    "retained_rows": 487,
+    "retained_compounds": 426,
+    "retained_targets": 6
+  }
+}

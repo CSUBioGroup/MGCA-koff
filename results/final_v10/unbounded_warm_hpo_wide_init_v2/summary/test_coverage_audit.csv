@@ -1,0 +1,17 @@
+dataset,protocol,variant,test_records,unique_raw_pairs,duplicate_raw_pair_coverage,canonical_disjoint_guaranteed
+2773,drug_cold,full,2773,2773,0,False
+2773,drug_cold,without_drug,2773,2773,0,False
+2773,drug_cold,without_joint,2773,2773,0,False
+2773,drug_cold,without_protein,2773,2773,0,False
+2773,warm,full,2773,2773,0,False
+2773,warm,without_drug,2773,2773,0,False
+2773,warm,without_joint,2773,2773,0,False
+2773,warm,without_protein,2773,2773,0,False
+KinetX,drug_cold,full,5446,5446,0,False
+KinetX,drug_cold,without_drug,5446,5446,0,False
+KinetX,drug_cold,without_joint,5446,5446,0,False
+KinetX,drug_cold,without_protein,5446,5446,0,False
+KinetX,warm,full,5450,3650,1800,False
+KinetX,warm,without_drug,5450,3650,1800,False
+KinetX,warm,without_joint,5450,3650,1800,False
+KinetX,warm,without_protein,5450,3650,1800,False

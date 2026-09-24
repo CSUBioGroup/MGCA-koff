@@ -1,0 +1,879 @@
+{
+  "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+  "frozen_sha256": {
+    "2773": "9be3c1a3c2c1ae71266aa8f454080494ded3ef33660271546ce199f2b1cd4fc6",
+    "KinetX": "39fcf80c9d13c207e2a6f584da9d61b50e14c1bdd620ca51f83273ea06d57b8f"
+  },
+  "tasks": [
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "warm",
+      "run": 1,
+      "fold": 1,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run1.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run1.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run1.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run1.csv": "93ad4effe36ecd5980da260252452a614d5a36279bca6803b63cdb5efdb503e9",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run1.csv": "a33c8ca6a31127108055e5b0aca845bf719469a55bcd547219c2458355808b41",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run1.csv": "0a732bd3012d065a405674dac7528c82b50d0ac1edd8daeaabde7ffd28382c05"
+      },
+      "task_id": "654fe5274fcf1121b528e2621eb4823ca53860e81e780e4622b8917fd352e131",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/warm/full/run1"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "warm",
+      "run": 2,
+      "fold": 2,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run2.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run2.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run2.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run2.csv": "da126c286e895361e3f9133e0ea6eaf0aace393c93c3e3078c37a3f0a01ed29a",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run2.csv": "1be7cc306c42c254ad302e07bd250a47a6b34d045c021b3cbca73be96401dbc0",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run2.csv": "df66ac1198ea2d1de5bdf2e15f5f2638025fb7fe38cd33e74ab9e2ebb3c73af3"
+      },
+      "task_id": "a9fd4ce2483dd14388fc181fa9cd38416ba448ecde72bcfb4f3dd005edf4238c",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/warm/full/run2"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "warm",
+      "run": 3,
+      "fold": 3,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run3.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run3.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run3.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run3.csv": "c377105264e31a3416202ef164fd7f05fa9ccc1a9329cd4f96e8e6cad564b7e0",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run3.csv": "10dadf986fc94f0f4c831a16df0981d2ce30a3d551e566299ca177d19968dc15",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run3.csv": "2664a3917c6573ce936fe270ea5647e9b9961648fd8060641a88a9801f2972c1"
+      },
+      "task_id": "05a83dec628892d39ea374a0601d470b71dc281211a35faa206d030e2a5b93b6",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/warm/full/run3"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "warm",
+      "run": 4,
+      "fold": 4,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run4.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run4.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run4.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run4.csv": "b556f46b79a41833210210a95521d40ac955a3a729823603c7f482895a20bb71",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run4.csv": "799fc2c56313931aa3a36aa97c3ce303b4b1ff653af6110643aa8207287f0584",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run4.csv": "23336ac75c6fe1113da688d31d5ae9a4b6aadc8369eda9c0b4f5a7de80e05a48"
+      },
+      "task_id": "500413107fd43b3bdbd7a804d10d8d4c8273301f13d9fbb9a642b7b0afe4995a",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/warm/full/run4"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "warm",
+      "run": 5,
+      "fold": 5,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run5.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run5.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run5.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run5.csv": "33577e1e8697be26f3633592439f3d527392578180a97a5bdd6ba66fcfe0512d",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run5.csv": "cdbb32ba13d11fc8ca9281441db115d87989b4d74ad9e0cd950e7aa0845913bf",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/warm/test_run5.csv": "981c6cf8192aacafe3e8cc239d0ec2e02b2b5672a30f72170d0f593a982bebea"
+      },
+      "task_id": "fd0e248bda6411d2ec94f9f69aead21b7d83552075bd4dc71f261b06e9a579de",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/warm/full/run5"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "drug_cold",
+      "run": 1,
+      "fold": 1,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run1.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run1.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run1.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run1.csv": "24c9b4eb080376d2c29285fe7bf2539a5bb22938b62005e30191a4b44720294b",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run1.csv": "08280109363bebeef2386c086fee9c6a30753b6cc9e1c1cdfcfb2392e0199cd3",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run1.csv": "b838e8dd10666b5a873f75fad4651834de7bfd4d8229e9119625a3404fcd0380"
+      },
+      "task_id": "6b98f2e4fcaf288e15d05ce52675664bacda1b467aaa4b1a5d30ba649ccd504f",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/drug_cold/full/run1"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "drug_cold",
+      "run": 2,
+      "fold": 2,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run2.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run2.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run2.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run2.csv": "b75ff4e17e27c16229ff9ebcaf7a3a91924c23f83b8b925b415d32ae818c213e",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run2.csv": "2eae710f5c4fde003cc828ade77f139ad696cb1a9b51b85aff8fba8be101d6ab",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run2.csv": "1e9aa82453f762e12e985447ad430213641f22704c8a48ecb7bedfa2a4a0be06"
+      },
+      "task_id": "977425c8e5a5bce752c065a605ac02a5d466ed2428a3408bc5b4967f55f7dce3",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/drug_cold/full/run2"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "drug_cold",
+      "run": 3,
+      "fold": 3,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run3.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run3.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run3.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run3.csv": "b8f85b80652af830f2d90034c7124faaacdb9e0c96c84e042c67c886f018de17",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run3.csv": "4514f9974f91d5ef936f5e4b8f89b2dc0b163eda747fc504624bd11506f04555",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run3.csv": "74b76a38f15a86421a52aa70d2b98ee5cc399001ad30a289e9016d6108a70356"
+      },
+      "task_id": "17edd51e175fefb0528a3b638de9cf1f681c9d619b909604d2799f6a4d940540",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/drug_cold/full/run3"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "drug_cold",
+      "run": 4,
+      "fold": 4,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run4.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run4.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run4.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run4.csv": "dd2d654ecd232060d818564dc9609496e3bfbb48fb2594d88389a28c7a17b7a9",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run4.csv": "78ae705b84151ff426db8b2b13be0facdf05ecabb241a531f6636f9fc8feaa61",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run4.csv": "7dd90e4b018f9e2a566fbc23b2532fadcdc8fab3dbb686b9dc7ee25900d702e8"
+      },
+      "task_id": "d22a225dc40777526c7f636429a47208d69365514c809892a44183e7fa382ca6",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/drug_cold/full/run4"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "drug_cold",
+      "run": 5,
+      "fold": 5,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run5.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run5.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run5.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run5.csv": "a55b8babc5627485dcc2c5e9c281a7600ece337d6b7b4e4b9be6e8237894ff28",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run5.csv": "6947b9ec5255ea776dc6372a48255faeb734b9d3870f1e2f6b311bf654bd38ea",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run5.csv": "ed98c1485ebda95fe03f12e59e457675bfcd1d48af47de6a912277b45afe18b2"
+      },
+      "task_id": "9502cf13e2e54f68708e28359ece4ff2accbafb7fe476cfd912ae6aa0f280181",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/drug_cold/full/run5"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "protein_cold",
+      "run": 1,
+      "fold": 1,
+      "seed": 42,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv": "9c7896a130966c42161db9655a42c719015e0e775fa00403d3647db8cb02ca9a",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv": "2f432b7181cd6c49820ad72f659b2fa1b193ec9a1fec84cbdae81d70d6f60448",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv": "f5751ffaf87a98dc1bc328543b9cd23a44a4ef34caa7b9218a685af43c2ebc89"
+      },
+      "task_id": "b5b6e7ce9cfed8d57285b8412dd13763a471d5c57218469236c1a6ee394be485",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/protein_cold/full/run1"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "protein_cold",
+      "run": 2,
+      "fold": 1,
+      "seed": 142,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv": "9c7896a130966c42161db9655a42c719015e0e775fa00403d3647db8cb02ca9a",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv": "2f432b7181cd6c49820ad72f659b2fa1b193ec9a1fec84cbdae81d70d6f60448",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv": "f5751ffaf87a98dc1bc328543b9cd23a44a4ef34caa7b9218a685af43c2ebc89"
+      },
+      "task_id": "a9e27abd42eae0ca20c7948c73e8e1d9f785ea68d66ce38b4d055d8605c623b5",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/protein_cold/full/run2"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "protein_cold",
+      "run": 3,
+      "fold": 1,
+      "seed": 242,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv": "9c7896a130966c42161db9655a42c719015e0e775fa00403d3647db8cb02ca9a",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv": "2f432b7181cd6c49820ad72f659b2fa1b193ec9a1fec84cbdae81d70d6f60448",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv": "f5751ffaf87a98dc1bc328543b9cd23a44a4ef34caa7b9218a685af43c2ebc89"
+      },
+      "task_id": "3a359714c2b5feaab2c48041f737d2a70d87e6b9e10b26b806da46d42e4deb80",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/protein_cold/full/run3"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "protein_cold",
+      "run": 4,
+      "fold": 1,
+      "seed": 342,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv": "9c7896a130966c42161db9655a42c719015e0e775fa00403d3647db8cb02ca9a",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv": "2f432b7181cd6c49820ad72f659b2fa1b193ec9a1fec84cbdae81d70d6f60448",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv": "f5751ffaf87a98dc1bc328543b9cd23a44a4ef34caa7b9218a685af43c2ebc89"
+      },
+      "task_id": "82453c47200026459b4486fd6ad377d3c34f58b78af5ade87f9b769241aa792f",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/protein_cold/full/run4"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "protocol": "protein_cold",
+      "run": 5,
+      "fold": 1,
+      "seed": 442,
+      "params": {
+        "lr": 5.9260857797183374e-05,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "dropout": 0.15,
+        "window_size": 2,
+        "drug_gate_init": 0.3,
+        "joint_gate_init": 0.3
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/train.csv": "9c7896a130966c42161db9655a42c719015e0e775fa00403d3647db8cb02ca9a",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/val.csv": "2f432b7181cd6c49820ad72f659b2fa1b193ec9a1fec84cbdae81d70d6f60448",
+        "<BIO_PROJECT_ROOT>/2773/new_folds/target-cold/test.csv": "f5751ffaf87a98dc1bc328543b9cd23a44a4ef34caa7b9218a685af43c2ebc89"
+      },
+      "task_id": "0a9ec4cbd8a413df9fa9b71d6afab6e0f84e73f1802902b00b76d21d02aeffd2",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/2773/protein_cold/full/run5"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "warm",
+      "run": 1,
+      "fold": 1,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run1.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run1.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run1.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run1.csv": "f432dd78411cb04aae305adb99258f977461a7186bcdbef0cce7aa9b86fccf75",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run1.csv": "f7b36a687c95ffb99e2f8e459c7e58bd7dd2e975e2d99c24923a6a7fc8fa99bd",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run1.csv": "752a618f028b8e7f669c8add621517449212d234bceecc766a021806c48f2a0f"
+      },
+      "task_id": "fe95f7b083a54f7157e2b6fec7ce2d9f354c724a001e42ecfe76e47ac94f1c06",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/warm/full/run1"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "warm",
+      "run": 2,
+      "fold": 2,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run2.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run2.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run2.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run2.csv": "36d263e941fd0533b8234fef94217fb45cd6aec700b44249ff926d6ee08aa046",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run2.csv": "4aed53583a2a4f7ae91e77aa107781246dcb09a1d1c2b0b3db4f776659ea09f1",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run2.csv": "05f8ad4612a0068ee2634c3f3bfb2190cc2ef50a826f56b7610e45efb70f93c3"
+      },
+      "task_id": "df9b1576104ed94878a559a32c1e73ca1ade5f0bec4eb4c8d2ceece8e66aff1a",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/warm/full/run2"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "warm",
+      "run": 3,
+      "fold": 3,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run3.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run3.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run3.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run3.csv": "14ec72ea883532373f8a019260758faab590570fba5aef6646d451963c4c3bff",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run3.csv": "8745567c0fa982807ffb094c211e3652be9a75073e91f0379297b006afe469a1",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run3.csv": "1bc41aa2f714c67804eab710cb032fca4fe35ba0af6e66889f9f8071a224b20a"
+      },
+      "task_id": "967c3c4d467b86d390a5a8f6603149d8c69855a648844121a8bb75444c6dc42a",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/warm/full/run3"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "warm",
+      "run": 4,
+      "fold": 4,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run4.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run4.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run4.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run4.csv": "6c4eeb73b0b861420c48b3b936b825983e949e77d15cf5ee7d1d2ab0d160f09a",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run4.csv": "c3df2f21251435f9267b15e9225a21c145980330989e37874e06a3a34cfdb2fe",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run4.csv": "a241b8a335b44b562496917bdc9827037161b355a2bf1d9074b811188885e6c3"
+      },
+      "task_id": "c227d7f8b35b275a1c19fb4354a0f0c838b5cd563c39ad305841c463efe306af",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/warm/full/run4"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "warm",
+      "run": 5,
+      "fold": 5,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run5.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run5.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run5.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run5.csv": "bc2cf9036c0f1376fe0af2d26385b241508f7c1316c2acaf5de9d575bb3e3d7c",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run5.csv": "9ff880565700abb356a7a996ed542d295a51a877e2d8a725a37b913e4b63e5e9",
+        "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run5.csv": "5720fe79ea45588dc1c47633c51a664ac6485632a410ba01efac9aee57336d68"
+      },
+      "task_id": "40af47b75a858b31ba9c666f8067236ecc1776c85333283ca5d2b9a438c0fc51",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/warm/full/run5"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "drug_cold",
+      "run": 1,
+      "fold": 1,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/train.csv": "17200b7c22d56a87a40c12bee6bdb9202db581090fcac9df56f88449e47cb63c",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/val.csv": "7b9e85e5aba04251a1b3c1c231912ff176891782e0610dc560ac187b4ca7f22a",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/test.csv": "d913db7ef3d762e64a759db20c2551feb0b83861bdb028c1267608e42c643a05"
+      },
+      "task_id": "d0be75710e01aa7a7f503e1ebaa532a96083933d9fde7913e6dfe7accc5e6b79",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/drug_cold/full/run1"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "drug_cold",
+      "run": 2,
+      "fold": 2,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/train.csv": "1c44e25c76dbdb7a1d41e780355f677aee287cb2d80c2bc07fb4794d626dee09",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/val.csv": "1ce99b86e236b05b5aa7aee794d17755d080896b6d735a966cbd5710a0a1a685",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/test.csv": "99596be03c5f97ff91773529993793151d2f2662abeaaa24ecff22772e598f22"
+      },
+      "task_id": "5be4b6de366409f22abb498e3c940124348bff6bbbf9ac96955acba9feb2cb1a",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/drug_cold/full/run2"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "drug_cold",
+      "run": 3,
+      "fold": 3,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/train.csv": "b20519329fc1b142f81b0a15bb719437b058c582bb063cbbb699c078b51124b6",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/val.csv": "688e47ceede897543117603acafad73381f8efe3d5dca2377bc86fa67584412a",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/test.csv": "ef84b579ce05ef584bda68267170f5f47e8e221c60241b9078e7dc1a326829d1"
+      },
+      "task_id": "d774f8f0db6939266c8cbab3ca431efae23a56da143d304804d385d4889b144c",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/drug_cold/full/run3"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "drug_cold",
+      "run": 4,
+      "fold": 4,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/train.csv": "8a2d471465ce24a9d7a30099a52bd8ecface6e56e187edd7f760a7a93701e8e0",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/val.csv": "94f86084358b3cadf8fdf46db48269c0d6910aa7bbfd7052390f983bfcb811eb",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/test.csv": "dfd4c27c41522368192540377110360bbaa78c9773e88946903ff1b940be3e32"
+      },
+      "task_id": "6b7f62c0ebbd3db1d2440ca859e2d3cfd773f1171d7beda883039b273e228674",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/drug_cold/full/run4"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "drug_cold",
+      "run": 5,
+      "fold": 5,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/train.csv": "c9767e617855edceb656340ec6a3ce4f4f29bc24f67c2402989297ca3941aec7",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/val.csv": "460a48f041453259c86982b50e5e6a56fe3976dc3ff7616c70a009aaebc1041f",
+        "<BIO_PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/test.csv": "782a11ee9151c65cc83c329e173ad8c8b97aa2e7aaf62eeae04623bd6185c168"
+      },
+      "task_id": "ec10724a111e85f3d092da2048d48ab0288df9be52a9d66dc069a7776e79af26",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/drug_cold/full/run5"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "protein_cold",
+      "run": 1,
+      "fold": 1,
+      "seed": 42,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv": "fb9d626642b195caea1fd52a5199160902b66a139312bc0ec7432cd527b27aad",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv": "7b0a4fe84f9849f548c1948fc6d5e8e88851231b8dd002aee661f4804db7bf71",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv": "53e53932c24e96ae70895cac1b49cec4c554cdb0a0157e340abeb79e96dd9039"
+      },
+      "task_id": "7d43c6cb867036df02a1172a2f191f198e69dbbc1f09436b0f89229685a3199f",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/protein_cold/full/run1"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "protein_cold",
+      "run": 2,
+      "fold": 1,
+      "seed": 142,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv": "fb9d626642b195caea1fd52a5199160902b66a139312bc0ec7432cd527b27aad",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv": "7b0a4fe84f9849f548c1948fc6d5e8e88851231b8dd002aee661f4804db7bf71",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv": "53e53932c24e96ae70895cac1b49cec4c554cdb0a0157e340abeb79e96dd9039"
+      },
+      "task_id": "dd36da8045c3e854d684f916804d53a9ae78ad267bd5ea2b0e1e2ec77136822f",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/protein_cold/full/run2"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "protein_cold",
+      "run": 3,
+      "fold": 1,
+      "seed": 242,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv": "fb9d626642b195caea1fd52a5199160902b66a139312bc0ec7432cd527b27aad",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv": "7b0a4fe84f9849f548c1948fc6d5e8e88851231b8dd002aee661f4804db7bf71",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv": "53e53932c24e96ae70895cac1b49cec4c554cdb0a0157e340abeb79e96dd9039"
+      },
+      "task_id": "f24097bc1175ca28ab0e5e136a45442632c37a25fc7112c9c5588bd4f87b4299",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/protein_cold/full/run3"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "protein_cold",
+      "run": 4,
+      "fold": 1,
+      "seed": 342,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv": "fb9d626642b195caea1fd52a5199160902b66a139312bc0ec7432cd527b27aad",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv": "7b0a4fe84f9849f548c1948fc6d5e8e88851231b8dd002aee661f4804db7bf71",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv": "53e53932c24e96ae70895cac1b49cec4c554cdb0a0157e340abeb79e96dd9039"
+      },
+      "task_id": "32ea3e526b91a8049ce79e296e510e5544745b95b59283ee63c96c3d83a44ad1",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/protein_cold/full/run4"
+    },
+    {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "protocol": "protein_cold",
+      "run": 5,
+      "fold": 1,
+      "seed": 442,
+      "params": {
+        "lr": 2.432667795899065e-05,
+        "weight_decay": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "window_size": 8,
+        "drug_gate_init": 0.4,
+        "joint_gate_init": 0.05
+      },
+      "variant": "full",
+      "selection_only": false,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv",
+      "test_csv": "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv",
+      "input_sha256": {
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/train.csv": "fb9d626642b195caea1fd52a5199160902b66a139312bc0ec7432cd527b27aad",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/val.csv": "7b0a4fe84f9849f548c1948fc6d5e8e88851231b8dd002aee661f4804db7bf71",
+        "<BIO_PROJECT_ROOT>/KinetX/cold_start/test.csv": "53e53932c24e96ae70895cac1b49cec4c554cdb0a0157e340abeb79e96dd9039"
+      },
+      "task_id": "350be79dce1378d13d08b03fd91fa01dc6b74172c20f05c565e098c7e35adc3a",
+      "output_dir": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/formal/KinetX/protein_cold/full/run5"
+    }
+  ]
+}

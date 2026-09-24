@@ -1,0 +1,20 @@
+{
+  "rendering": "matplotlib Agg; ligand feature bar chart fallback",
+  "rdkit_draw_unavailable_reason": "No module named 'rdkit'",
+  "label": "factor_xa",
+  "source_manifest_sha256": "b4567e062eda3addfa009da8cc7370c47ec4c12d4b8f77b54aa863ec12299e17",
+  "outputs": [
+    {
+      "path": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/figures/factor_xa/protein_window_importance.png",
+      "sha256": "6c24426f236451e52ba28eb51a3d25bbbe1ef31b2cb0bafdf51f43e610c97a8c"
+    },
+    {
+      "path": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/figures/factor_xa/ligand_feature_importance_bar.png",
+      "sha256": "5dd43466691fe91dc4bd7901b01646a63b52da9dae03d7bd0b6419439c27b58e"
+    },
+    {
+      "path": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/figures/factor_xa/dual_occlusion_interaction_heatmap.png",
+      "sha256": "a0b91aa9a8d557886bd85057f753f4b3dcf0dd58cab86f9fc9077bda2c5a347e"
+    }
+  ]
+}

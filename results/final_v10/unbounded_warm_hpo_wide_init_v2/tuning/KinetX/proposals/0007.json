@@ -1,0 +1,13 @@
+{
+  "number": 7,
+  "params": {
+    "lr": 3.656082725525343e-05,
+    "weight_decay": 0.0001,
+    "batch_size": 16,
+    "dropout": 0.1,
+    "window_size": 2,
+    "drug_gate_init": 0.5,
+    "joint_gate_init": 0.4
+  },
+  "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602"
+}

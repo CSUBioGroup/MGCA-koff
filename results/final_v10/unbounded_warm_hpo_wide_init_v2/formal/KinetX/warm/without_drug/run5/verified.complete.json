@@ -1,0 +1,16 @@
+{
+  "task_id": "d0aefe429a335fc69e3d9b7c6efcb966029bcf05307adba2c5aff460de7cfef0",
+  "verified_unix": 1789128550.850175,
+  "files": {
+    "metrics.json": "336148d3f558071dc3bf0d03238c931d598dd909297a87d587cbca66c5ab15b2",
+    "identity.json": "fb4d919908d5c07afa0f2535cb60367a734326c69bc4c939ce797fc65a8c7cd1",
+    "environment.json": "ce91dcff8ec3ebfbc16caa97a823dec99ebd372e2d91c14e72a26617228f09c2",
+    "history.csv": "98c226e9923c3ff9ad7dc221e7b9109c7d0eaca74df38243a07c0439525c2d16",
+    "best_model.pt": "cc5e38da55bdff0856d8cd659943805bfcadc666f245d301b9b44359b451a807",
+    ".complete": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+    "train_predictions.csv": "11db5d7044a99e7c44c0d2e8dc7b078cace26a193502f387e2285f717c9c6cb0",
+    "validation_predictions.csv": "eea7169899a1a8bfc47e939030dda34f97350ccba613104e43c0972f88e80a07",
+    "test_predictions.csv": "253291928a89c7f666febafe3ca170135afdad3adead697e838db09dff948410",
+    "cgrs_outputs.npz": "49c740ba5f92fda25243970035ede918491447ec3ff0edec6cc0188c6e7f4f7c"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "MGCA-koff: reproducibility release",
+  "upload_type": "software",
+  "description": "Code, data splits, frozen configurations, hyperparameter-search evidence, benchmark and ablation results, baseline implementations, and final case-study materials for MGCA-koff.",
+  "creators": [
+    {"name": "Cao, Ziying"},
+    {"name": "Lu, Zhangli"},
+    {"name": "Luo, Gang"},
+    {"name": "Wen, Long"},
+    {"name": "Li, Min"}
+  ],
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "access_right": "open",
+  "keywords": [
+    "protein-ligand dissociation kinetics",
+    "koff prediction",
+    "mixture of experts",
+    "cross-attention",
+    "ESM2",
+    "Morgan fingerprint"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/CSUBioGroup/MGCA-koff",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+  "expected": 120,
+  "verified": 120,
+  "complete": true,
+  "failures": [],
+  "test_used_for_hpo": false,
+  "caveats": [
+    "Historical test feedback makes this a retrospective development experiment.",
+    "Five-run exact two-sided signflip minimum p=0.0625; no significance is not equivalence.",
+    "Warm canonical-equivalent overlaps retained. Pooling does not prove strict canonical OOF.",
+    "Global softplus weights are not sample-wise uncertainty routing.",
+    "A branch ablation removes its fusion contribution, not that modality inside the retained joint module."
+  ]
+}

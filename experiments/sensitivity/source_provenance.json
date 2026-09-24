@@ -1,0 +1,59 @@
+{
+  "files": {
+    "local/ESM_Morgan_Hybrid_Fusion.py": {
+      "snapshot_sha256": "850f80a54359c1e74121853cc7800f383e385f9722cbf6f25b595a60eb97ae4d",
+      "original_sha256": "728fec57e1bd08595e3878b8325c8ef33f77a1e399b7f8f77ec3d47d4576b81f",
+      "changed_in_supplement": true
+    },
+    "mgca_hyperparameter_tuning/ESM_Morgan_Hybrid_Fusion_nonredundant.py": {
+      "snapshot_sha256": "ca199b8c8ffe88633bcda053c7c0d344f63c23ee58e99da821b039bb663a686c",
+      "original_sha256": "ca199b8c8ffe88633bcda053c7c0d344f63c23ee58e99da821b039bb663a686c",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v10_cgrs/ESM_Morgan_Hybrid_Fusion_cgrs_v10.py": {
+      "snapshot_sha256": "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+      "original_sha256": "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v10_cgrs/train_v10_cgrs.py": {
+      "snapshot_sha256": "cc60bb3a4178c62a7e9be908255a984803e48a53ef6dbbe06e6ac454fcbb6ecf",
+      "original_sha256": "743fa1db439454984468128be23a34be21ed93abc12dae6a4a78b9258be2f8c5",
+      "changed_in_supplement": true
+    },
+    "mgca_hyperparameter_tuning/v10_cgrs/utils.py": {
+      "snapshot_sha256": "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6",
+      "original_sha256": "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v5_uar/ESM_Morgan_Hybrid_Fusion_uar_v5.py": {
+      "snapshot_sha256": "54d12d7a2f9a411e2c90e4118415b7afbc7956105fa1cecf350629d0954562e2",
+      "original_sha256": "54d12d7a2f9a411e2c90e4118415b7afbc7956105fa1cecf350629d0954562e2",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v6_crrf/ESM_Morgan_Hybrid_Fusion_crrf_v6.py": {
+      "snapshot_sha256": "0433c9822a5f99f7e9b2de96adc2129fa3e2f5959d35603329bc3a2ee1438399",
+      "original_sha256": "0433c9822a5f99f7e9b2de96adc2129fa3e2f5959d35603329bc3a2ee1438399",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v7_padg/ESM_Morgan_Hybrid_Fusion_padg_v7.py": {
+      "snapshot_sha256": "f2c5c66a3d30deec4b13ee335a9970fc368fd95803ad633174eac775a7d0b09d",
+      "original_sha256": "f2c5c66a3d30deec4b13ee335a9970fc368fd95803ad633174eac775a7d0b09d",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v8_pajg/ESM_Morgan_Hybrid_Fusion_pajg_v8.py": {
+      "snapshot_sha256": "2082f2142c960d7ed940cac37bbd7d0440efa3606e63b6975553070887962104",
+      "original_sha256": "2082f2142c960d7ed940cac37bbd7d0440efa3606e63b6975553070887962104",
+      "changed_in_supplement": false
+    },
+    "mgca_hyperparameter_tuning/v9_scrg/ESM_Morgan_Hybrid_Fusion_scrg_v9.py": {
+      "snapshot_sha256": "f208bcc413496952a95ee689ef64041141d9d1b3339ab5a99b26cd076967ff30",
+      "original_sha256": "f208bcc413496952a95ee689ef64041141d9d1b3339ab5a99b26cd076967ff30",
+      "changed_in_supplement": false
+    }
+  },
+  "modifications": [
+    "trainer: CPU RNG restoration; respect completed early stop on resume; null undefined correlations; cumulative epoch timing",
+    "legacy feature utility: atomic ESM cache rename only"
+  ],
+  "original_model_and_results_untouched": true
+}

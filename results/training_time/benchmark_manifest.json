@@ -1,0 +1,440 @@
+{
+  "protocol": "missing_formal_training_times_serial_v1",
+  "concurrency": 1,
+  "total_runs": 45,
+  "studies": [
+    {
+      "study": "bicoa_kinetx_default",
+      "model": "bicoa",
+      "dataset": "KinetX",
+      "configuration": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/configs/bicoa_kinetx_published_default.json",
+      "warm_design": "five_aligned_split_runs",
+      "runs": 15
+    },
+    {
+      "study": "bicoa_2773_tuned",
+      "model": "bicoa",
+      "dataset": "2773",
+      "configuration": "<PROJECT_ROOT>/cross_dataset_bayesian_tuning/hyperparameter_tuning/bicoa/2773/best_params.json",
+      "warm_design": "five_aligned_split_runs",
+      "runs": 15
+    },
+    {
+      "study": "moe_kinetx_tuned",
+      "model": "moe",
+      "dataset": "KinetX",
+      "configuration": "<PROJECT_ROOT>/cross_dataset_bayesian_tuning/hyperparameter_tuning/moe/KinetX/best_params.json",
+      "warm_design": "five_aligned_split_runs",
+      "runs": 15
+    }
+  ],
+  "timing_primary_endpoint": "metrics.timing.training_duration_sec",
+  "feature_precomputation_included": false,
+  "task_order": [
+    {
+      "ordinal": 1,
+      "study": "bicoa_kinetx_default",
+      "split": "warm",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/warm/run1"
+    },
+    {
+      "ordinal": 2,
+      "study": "bicoa_kinetx_default",
+      "split": "warm",
+      "run": 2,
+      "seed": 42,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/warm/run2"
+    },
+    {
+      "ordinal": 3,
+      "study": "bicoa_kinetx_default",
+      "split": "warm",
+      "run": 3,
+      "seed": 42,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/warm/run3"
+    },
+    {
+      "ordinal": 4,
+      "study": "bicoa_kinetx_default",
+      "split": "warm",
+      "run": 4,
+      "seed": 42,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/warm/run4"
+    },
+    {
+      "ordinal": 5,
+      "study": "bicoa_kinetx_default",
+      "split": "warm",
+      "run": 5,
+      "seed": 42,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/warm/run5"
+    },
+    {
+      "ordinal": 6,
+      "study": "bicoa_kinetx_default",
+      "split": "drug_cold",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/drug_cold/run1"
+    },
+    {
+      "ordinal": 7,
+      "study": "bicoa_kinetx_default",
+      "split": "drug_cold",
+      "run": 2,
+      "seed": 42,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/drug_cold/run2"
+    },
+    {
+      "ordinal": 8,
+      "study": "bicoa_kinetx_default",
+      "split": "drug_cold",
+      "run": 3,
+      "seed": 42,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/drug_cold/run3"
+    },
+    {
+      "ordinal": 9,
+      "study": "bicoa_kinetx_default",
+      "split": "drug_cold",
+      "run": 4,
+      "seed": 42,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/drug_cold/run4"
+    },
+    {
+      "ordinal": 10,
+      "study": "bicoa_kinetx_default",
+      "split": "drug_cold",
+      "run": 5,
+      "seed": 42,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/drug_cold/run5"
+    },
+    {
+      "ordinal": 11,
+      "study": "bicoa_kinetx_default",
+      "split": "protein_cold",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/protein_cold/run1"
+    },
+    {
+      "ordinal": 12,
+      "study": "bicoa_kinetx_default",
+      "split": "protein_cold",
+      "run": 2,
+      "seed": 142,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/protein_cold/run2"
+    },
+    {
+      "ordinal": 13,
+      "study": "bicoa_kinetx_default",
+      "split": "protein_cold",
+      "run": 3,
+      "seed": 242,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/protein_cold/run3"
+    },
+    {
+      "ordinal": 14,
+      "study": "bicoa_kinetx_default",
+      "split": "protein_cold",
+      "run": 4,
+      "seed": 342,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/protein_cold/run4"
+    },
+    {
+      "ordinal": 15,
+      "study": "bicoa_kinetx_default",
+      "split": "protein_cold",
+      "run": 5,
+      "seed": 442,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_kinetx_default/protein_cold/run5"
+    },
+    {
+      "ordinal": 16,
+      "study": "bicoa_2773_tuned",
+      "split": "warm",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/warm/run1"
+    },
+    {
+      "ordinal": 17,
+      "study": "bicoa_2773_tuned",
+      "split": "warm",
+      "run": 2,
+      "seed": 42,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/warm/run2"
+    },
+    {
+      "ordinal": 18,
+      "study": "bicoa_2773_tuned",
+      "split": "warm",
+      "run": 3,
+      "seed": 42,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/warm/run3"
+    },
+    {
+      "ordinal": 19,
+      "study": "bicoa_2773_tuned",
+      "split": "warm",
+      "run": 4,
+      "seed": 42,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/warm/run4"
+    },
+    {
+      "ordinal": 20,
+      "study": "bicoa_2773_tuned",
+      "split": "warm",
+      "run": 5,
+      "seed": 42,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/warm/run5"
+    },
+    {
+      "ordinal": 21,
+      "study": "bicoa_2773_tuned",
+      "split": "drug_cold",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/drug_cold/run1"
+    },
+    {
+      "ordinal": 22,
+      "study": "bicoa_2773_tuned",
+      "split": "drug_cold",
+      "run": 2,
+      "seed": 42,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/drug_cold/run2"
+    },
+    {
+      "ordinal": 23,
+      "study": "bicoa_2773_tuned",
+      "split": "drug_cold",
+      "run": 3,
+      "seed": 42,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/drug_cold/run3"
+    },
+    {
+      "ordinal": 24,
+      "study": "bicoa_2773_tuned",
+      "split": "drug_cold",
+      "run": 4,
+      "seed": 42,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/drug_cold/run4"
+    },
+    {
+      "ordinal": 25,
+      "study": "bicoa_2773_tuned",
+      "split": "drug_cold",
+      "run": 5,
+      "seed": 42,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/drug_cold/run5"
+    },
+    {
+      "ordinal": 26,
+      "study": "bicoa_2773_tuned",
+      "split": "protein_cold",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/protein_cold/run1"
+    },
+    {
+      "ordinal": 27,
+      "study": "bicoa_2773_tuned",
+      "split": "protein_cold",
+      "run": 2,
+      "seed": 142,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/protein_cold/run2"
+    },
+    {
+      "ordinal": 28,
+      "study": "bicoa_2773_tuned",
+      "split": "protein_cold",
+      "run": 3,
+      "seed": 242,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/protein_cold/run3"
+    },
+    {
+      "ordinal": 29,
+      "study": "bicoa_2773_tuned",
+      "split": "protein_cold",
+      "run": 4,
+      "seed": 342,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/protein_cold/run4"
+    },
+    {
+      "ordinal": 30,
+      "study": "bicoa_2773_tuned",
+      "split": "protein_cold",
+      "run": 5,
+      "seed": 442,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/bicoa_2773_tuned/protein_cold/run5"
+    },
+    {
+      "ordinal": 31,
+      "study": "moe_kinetx_tuned",
+      "split": "warm",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/warm/run1"
+    },
+    {
+      "ordinal": 32,
+      "study": "moe_kinetx_tuned",
+      "split": "warm",
+      "run": 2,
+      "seed": 42,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/warm/run2"
+    },
+    {
+      "ordinal": 33,
+      "study": "moe_kinetx_tuned",
+      "split": "warm",
+      "run": 3,
+      "seed": 42,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/warm/run3"
+    },
+    {
+      "ordinal": 34,
+      "study": "moe_kinetx_tuned",
+      "split": "warm",
+      "run": 4,
+      "seed": 42,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/warm/run4"
+    },
+    {
+      "ordinal": 35,
+      "study": "moe_kinetx_tuned",
+      "split": "warm",
+      "run": 5,
+      "seed": 42,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/warm/run5"
+    },
+    {
+      "ordinal": 36,
+      "study": "moe_kinetx_tuned",
+      "split": "drug_cold",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/drug_cold/run1"
+    },
+    {
+      "ordinal": 37,
+      "study": "moe_kinetx_tuned",
+      "split": "drug_cold",
+      "run": 2,
+      "seed": 42,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/drug_cold/run2"
+    },
+    {
+      "ordinal": 38,
+      "study": "moe_kinetx_tuned",
+      "split": "drug_cold",
+      "run": 3,
+      "seed": 42,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/drug_cold/run3"
+    },
+    {
+      "ordinal": 39,
+      "study": "moe_kinetx_tuned",
+      "split": "drug_cold",
+      "run": 4,
+      "seed": 42,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/drug_cold/run4"
+    },
+    {
+      "ordinal": 40,
+      "study": "moe_kinetx_tuned",
+      "split": "drug_cold",
+      "run": 5,
+      "seed": 42,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/drug_cold/run5"
+    },
+    {
+      "ordinal": 41,
+      "study": "moe_kinetx_tuned",
+      "split": "protein_cold",
+      "run": 1,
+      "seed": 42,
+      "file_run": 1,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/protein_cold/run1"
+    },
+    {
+      "ordinal": 42,
+      "study": "moe_kinetx_tuned",
+      "split": "protein_cold",
+      "run": 2,
+      "seed": 142,
+      "file_run": 2,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/protein_cold/run2"
+    },
+    {
+      "ordinal": 43,
+      "study": "moe_kinetx_tuned",
+      "split": "protein_cold",
+      "run": 3,
+      "seed": 242,
+      "file_run": 3,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/protein_cold/run3"
+    },
+    {
+      "ordinal": 44,
+      "study": "moe_kinetx_tuned",
+      "split": "protein_cold",
+      "run": 4,
+      "seed": 342,
+      "file_run": 4,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/protein_cold/run4"
+    },
+    {
+      "ordinal": 45,
+      "study": "moe_kinetx_tuned",
+      "split": "protein_cold",
+      "run": 5,
+      "seed": 442,
+      "file_run": 5,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/moe_kinetx_tuned/protein_cold/run5"
+    }
+  ]
+}

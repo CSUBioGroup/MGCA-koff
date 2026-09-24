@@ -1,0 +1,65 @@
+{
+  "protocol": "factor_xa_stage4_hyperattention_style_posthoc_occlusion_v2",
+  "created_at_utc": "2026-09-19T07:12:28.204192+00:00",
+  "model": "2773",
+  "compound_id": "factor_xa_05",
+  "uniprot": "P00742",
+  "sequence_length": 488,
+  "display_range_uniprot": [
+    235,
+    488
+  ],
+  "occlusion_config": "w16_s4_sequence_mean",
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "contact_cutoff_A": 4.0,
+  "colour_scale": {
+    "quantity": "mean delta pKoff (original minus masked)",
+    "normalization": "diverging, centred at zero",
+    "symmetric_limit": 0.02013517618179321,
+    "limit_rule": "95th percentile of absolute resolved-residue scores in displayed range"
+  },
+  "reference_style_normalization": {
+    "quantity": "five-checkpoint mean delta pKoff",
+    "method": "clip((score - q05) / (q95 - q05), 0, 1)",
+    "q05": -0.0033714288473129265,
+    "q95": 0.02013517618179321,
+    "structure_highlight_rule": "top 10% of resolved displayed residues",
+    "n_highlighted_uniprot_positions": 24
+  },
+  "interpretation_boundary": "Post-hoc occlusion sensitivity; not model-native attention or residue-atom co-attention.",
+  "contacts": {
+    "experimental": "1NFU-RRP heavy-atom distance <= cutoff",
+    "candidate": "selected factor_xa_05 docked-pose heavy-atom distance <= cutoff",
+    "n_experimental_residues": 17,
+    "n_candidate_residues": 19
+  },
+  "inputs": {
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/occlusion/factor_xa/protein_window_importance_summary.csv": "1430523d79ec02db23a28203e9191cc38e99245f485d54902fab5388f77a2fd4",
+    "/mnt/e/Desktop/Bio大修/case_study_mgca_final/geometry/inputs/1NFU.cif": "2dac7b2877b1b34b4417198a1d08ca1ca2456d8ea7a47540c8453521d5186891",
+    "/mnt/e/Desktop/Bio大修/case_study_mgca_final/geometry/prepared/1NFU_receptor_clean.pdb": "8771617e5dbc44986fbd739f0dd5bce339cb3a09a06b2ebad24e5c3dca58bcc9",
+    "/mnt/e/Desktop/Bio大修/case_study_mgca_final/geometry/prepared/1NFU_RRP_experimental.pdb": "9167726416ce4441ab03265f256e6129c9ba910eb30e9c9944351848e7244d6c",
+    "/mnt/e/Desktop/Bio大修/case_study_mgca_final/geometry/analysis/selected_pose_protein_contacts.csv": "5245d58fed0773d745a70c9e98f8360d493bebede0310a06e8e5bdd2bedee09c",
+    "/mnt/e/Desktop/Bio大修/case_study_mgca_final/geometry/analysis/selected_factor_xa_05_pose.sdf": "93272fee4b5f74f12749212a4d3b4b4ec8ac9798b6abefad8f62caf4f28ab7fd"
+  },
+  "outputs": {
+    "residue_scores": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_residue_occlusion_2773.csv",
+    "experimental_contacts": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/1NFU_RRP_experimental_contacts_4A.csv",
+    "scored_receptor": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/1NFU_receptor_occlusion_2773.pdb",
+    "overview_pymol_script": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_structure_2773.pml",
+    "pocket_pymol_script": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_pocket_zoom_2773.pml",
+    "reference_style_pymol_script": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_reference_structure_2773.pml",
+    "sequence_panel": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_sequence_occlusion_2773.png",
+    "overview_structure_panel": null,
+    "pocket_structure_panel": null,
+    "reference_style_structure_panel": null,
+    "overview_composite": [],
+    "main_pocket_composite": [],
+    "reference_style_composite": []
+  }
+}

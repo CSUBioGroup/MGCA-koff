@@ -1,0 +1,11 @@
+numpy
+pandas
+torch
+optuna
+rdkit
+transformers
+scipy
+scikit-learn
+tqdm
+gensim
+fair-esm

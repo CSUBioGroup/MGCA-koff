@@ -1,0 +1,22 @@
+Dataset Split Summary
+============================================================
+
+Input: dataall_clean.csv
+Similarity threshold: 30% sequence identity
+Coverage threshold: 80%
+
+Total samples: 5446
+Total unique proteins: 275
+Number of clusters: 184
+
+Split distribution:
+  Train: 3750 samples, 193 proteins
+  Val:   738 samples, 38 proteins
+  Test:  958 samples, 44 proteins
+
+Protein overlap verification:
+  Train-Test: 0 proteins
+  Train-Val:  0 proteins
+  Val-Test:   0 proteins
+
+✓ No data leakage - train and test are protein-disjoint!

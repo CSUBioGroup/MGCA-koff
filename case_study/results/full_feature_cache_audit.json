@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-09-12T07:35:59.418526+00:00",
+  "data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+  "row_count": 2773,
+  "protein_shape": [
+    2773,
+    4,
+    2560
+  ],
+  "ligand_shape": [
+    2773,
+    4,
+    2048
+  ],
+  "esm_cache": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/cohort/training__sha256_dce903592a19__ws2.pt",
+  "esm_cache_sha256": "1d8f5de5b92027516fdc80a7fc79adbf6eb7c037d4ac6702f93738dfbca76ef1",
+  "window_size": 2,
+  "window_layout": "legacy_anchors_v1"
+}

@@ -1,0 +1,26 @@
+{
+  "protocol": "final_mgca_factor_xa_render_only_v1",
+  "created_at_utc": "2026-09-19T07:14:07.204338+00:00",
+  "scientific_note": "Render-only operation using frozen five-checkpoint final-MGCA occlusion outputs; no training or inference was performed.",
+  "pymol": "reused-existing-structure-panel",
+  "inputs": {
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_pocket_zoom_2773.pml": "0e3b6986be5a5347d8acc0e0599638aef8048af002a7785d1f61492794f1d3f1",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/1NFU_receptor_occlusion_2773.pdb": "db0915305c61433f3d46abe271f87e45f7a1e665567cc38017f451376e252dfb",
+    "/mnt/e/Desktop/Bio大修/case_study_mgca_final/geometry/analysis/selected_factor_xa_05_pose.sdf": "93272fee4b5f74f12749212a4d3b4b4ec8ac9798b6abefad8f62caf4f28ab7fd",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/factor_xa_sequence_occlusion_2773.png": "40d62379f8931baf9a35c65fa8d37d98a54b44d4344a84718642e086851f8566"
+  },
+  "generated_pml": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_pocket_zoom_final_local.pml",
+  "structure_panel": "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_pocket_zoom_final.png",
+  "composites": [
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_occlusion_pocket_final_mgca.png",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_occlusion_pocket_final_mgca.pdf",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_occlusion_pocket_final_mgca.svg"
+  ],
+  "outputs_sha256": {
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_pocket_zoom_final_local.pml": "0cf0d1f213a371f5bf9dde3a61898133a1193ca02916f375deb35331b8e5867c",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_pocket_zoom_final.png": "40ddfd5369c686da2908dd6cbc1855d7f7226f30a44912c9e82665a0686d3537",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_occlusion_pocket_final_mgca.png": "85f082dd77016daa862c1d357503471969eddf2ae92091942f563a248473871a",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_occlusion_pocket_final_mgca.pdf": "59454c6703cc5f75acc12c9116a8db6de27b39dc6418e4d2d9fd1c1be9e1b9a8",
+    "/mnt/e/Desktop/Bio大修/mgca_hyperparameter_tuning/mgca_final_unbounded_2773_v1/structure/rerendered_final/factor_xa_occlusion_pocket_final_mgca.svg": "dc1725013e2ac3f235075c0fb7aeeeef9d9f7806f8990c0de652a5a7ab7aced4"
+  }
+}

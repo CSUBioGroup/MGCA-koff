@@ -1,0 +1,123 @@
+{
+  "model": "attentiondta",
+  "dataset": "KinetX",
+  "selection_protocol": "warm_only_two_stage",
+  "protocol_version": "warm_only_tpe_top5_v1",
+  "test_accessed_during_selection": false,
+  "stage1": {
+    "target_completed_trials": 30,
+    "actual_completed_trials": 30,
+    "failed_trials": 0,
+    "total_recorded_trials": 30,
+    "split": "warm_run1",
+    "objective": "validation_mse",
+    "sampler": "Optuna TPESampler",
+    "sampler_seed": 2026,
+    "selected_trial_val_mse": 0.3790690306275285
+  },
+  "stage2": {
+    "top_k": 5,
+    "validation_runs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "selection_metric": "mean_validation_mse"
+  },
+  "source_trial_number": 28,
+  "search_space": {
+    "lr": {
+      "type": "log_uniform",
+      "range": [
+        1e-05,
+        0.002
+      ]
+    },
+    "weight_decay": {
+      "type": "categorical",
+      "values": [
+        0.0,
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01
+      ]
+    },
+    "batch_size": {
+      "type": "categorical",
+      "values": [
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    "dropout": {
+      "type": "categorical",
+      "values": [
+        0.0,
+        0.1,
+        0.2,
+        0.3
+      ]
+    }
+  },
+  "params": {
+    "lr": 2.3522425545963694e-05,
+    "weight_decay": 0.01,
+    "batch_size": 16,
+    "dropout": 0.3
+  },
+  "training": {
+    "epochs": 300,
+    "patience": 30,
+    "seed": 42,
+    "optimizer": "AdamW"
+  },
+  "validation": {
+    "mean_mse": 0.4364764424618823,
+    "std_mse": 0.04322432200011621
+  },
+  "warm_data_manifest": [
+    {
+      "run": 1,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run1.csv",
+      "train_sha256": "f432dd78411cb04aae305adb99258f977461a7186bcdbef0cce7aa9b86fccf75",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run1.csv",
+      "val_sha256": "f7b36a687c95ffb99e2f8e459c7e58bd7dd2e975e2d99c24923a6a7fc8fa99bd"
+    },
+    {
+      "run": 2,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run2.csv",
+      "train_sha256": "36d263e941fd0533b8234fef94217fb45cd6aec700b44249ff926d6ee08aa046",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run2.csv",
+      "val_sha256": "4aed53583a2a4f7ae91e77aa107781246dcb09a1d1c2b0b3db4f776659ea09f1"
+    },
+    {
+      "run": 3,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run3.csv",
+      "train_sha256": "14ec72ea883532373f8a019260758faab590570fba5aef6646d451963c4c3bff",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run3.csv",
+      "val_sha256": "8745567c0fa982807ffb094c211e3652be9a75073e91f0379297b006afe469a1"
+    },
+    {
+      "run": 4,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run4.csv",
+      "train_sha256": "6c4eeb73b0b861420c48b3b936b825983e949e77d15cf5ee7d1d2ab0d160f09a",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run4.csv",
+      "val_sha256": "c3df2f21251435f9267b15e9225a21c145980330989e37874e06a3a34cfdb2fe"
+    },
+    {
+      "run": 5,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run5.csv",
+      "train_sha256": "bc2cf9036c0f1376fe0af2d26385b241508f7c1316c2acaf5de9d575bb3e3d7c",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run5.csv",
+      "val_sha256": "9ff880565700abb356a7a996ed542d295a51a877e2d8a725a37b913e4b63e5e9"
+    }
+  ],
+  "generated_at_unix": 1784969210.2423692,
+  "config_id": "5aca8da8ab4b"
+}

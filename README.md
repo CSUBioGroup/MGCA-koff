@@ -1,152 +1,109 @@
-# KOFF Prediction
+# MGCA-koff
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+Official reproducibility repository for **Multi-Granularity Cross-Attention
+Mixture-of-Experts for Protein--Ligand Dissociation Kinetics Prediction**.
 
-This repository provides the public-release implementation of the ESM2 and Morgan fingerprint model for KOFF prediction. The layout follows the common style of classic DTA codebases such as DeepDTA, GraphDTA, and AttentionDTA: data files are kept under `data/`, neural network definitions under `models/`, shared helpers under `utils/`, and root-level scripts run the main workflows.
+This version contains the final MGCA implementation, frozen configurations,
+data splits, hyperparameter-search evidence, benchmark and ablation results,
+baseline implementations, and case-study materials used in the revised
+manuscript.
 
-## Model Architecture
+## Repository contents
 
-![MGCA-KOFF model architecture](assets/MGCA-koff.png)
-
-## Repository Layout
-
-```text
-online/
-  assets/
-    MGCA-koff.png                # Model architecture figure
-  training.py                    # Main training and evaluation entry point
-  create_data.py                 # Export pkl folds to train/test CSV files
-  data/
-    koff.csv                     # FASTA, SMILES, pkoff supervised dataset
-    example.csv                  # Minimal example row
-    raw/                         # Raw and auxiliary pretraining files
-    folds/
-      drug/unified_folds.pkl     # Drug cold-start folds
-      target/unified_folds.pkl   # Target/protein cold-start folds
-      pair/unified_folds.pkl     # Drug-protein pair cold-start folds
-  models/
-    layers.py                    # Expert fusion, cross attention, and MoE blocks
-    esm2_morgan_moe.py           # FullRegressionTransformer
-  utils/
-    cold_start.py                # Cold-start split strategies
-    dataset.py                   # PyTorch dataset wrapper
-    features.py                  # ESM2 and Morgan feature extraction
-    fold_io.py                   # Fold pickle I/O
-    metrics.py                   # Regression metrics
-    seed.py                      # Reproducibility helper
-    trainer.py                   # Cross-validation training loop
-    visualization.py             # Expert and attention visualizations
-```
+- `data/`: KinetX and Zhao dataset files used by the released workflows. The
+  Zhao dataset contains 2,773 records; subsequent references use the short name
+  "Zhao dataset".
+- `data_preparation/`: data-conversion and audit utilities.
+- `model/`: final MGCA implementation and supporting modules.
+- `experiments/final_v10/`: training, tuning, ablation, and timing entry points.
+- `results/final_v10/`: frozen search records and formal benchmark/ablation
+  outputs. Transient logs, diagnostic arrays, training predictions, and locks
+  are intentionally excluded.
+- `results/sensitivity/`: compact analyses supporting the final fusion
+  initialization search space.
+- `baselines/` and `results/baseline_tuning_evidence/`: baseline code and
+  retained tuning evidence.
+- `case_study/code/`: final case-study workflow and inputs.
+- `case_study/results/`: final five-refit outputs and checkpoint provenance;
+  checkpoint binaries are not distributed.
+- `inference_service/`: checkpoint-compatible FastAPI service.
+- `figures/`: final architecture figure.
 
 ## Installation
 
-Use Python 3.10 or newer, then install dependencies from this directory:
+Create an environment compatible with the local CUDA installation and install
+the Python dependencies:
 
 ```bash
+git clone https://github.com/CSUBioGroup/MGCA-koff.git
+cd MGCA-koff
 pip install -r requirements.txt
 ```
 
-## Dataset
+The ESM2 `esm2_t36_3B_UR50D` weights are not redistributed. Set `ESM2_PATH` to
+the local model directory before running workflows that extract protein
+features.
 
-The default supervised dataset is `data/koff.csv`. It contains:
+## Running the released workflows
 
-```csv
-FASTA,SMILES,pkoff
-MSEQUENCE...,CCO,1.23
-```
-
-Precomputed fold files are stored as:
-
-```text
-data/folds/drug/unified_folds.pkl
-data/folds/target/unified_folds.pkl
-data/folds/pair/unified_folds.pkl
-```
-
-To export a fold file into per-fold CSV files:
+Formal experiment entry points are under `experiments/final_v10/`. The final
+case-study entry point is:
 
 ```bash
-python create_data.py \
-  --data_csv data/koff.csv \
-  --folds_pkl data/folds/drug/unified_folds.pkl \
-  --output_dir data/folds/drug_csv
+cd case_study/code
+ESM2_PATH=/absolute/path/to/esm2_t36 bash run_all_case_study.sh
 ```
 
-## ESM2 Backbone
+The inference service requires a separately supplied trained checkpoint and
+ESM2 asset. See `inference_service/README.md` for placement and launch details.
 
-The model uses ESM2 protein representations extracted with Hugging Face `transformers`. The paper configuration uses the ESM2 t36 3B checkpoint, whose hidden size is `2560`.
+## Release identity and integrity
 
-Use a local checkpoint directory:
-
-```bash
-python training.py \
-  --dataset_csv data/koff.csv \
-  --esm2_path ../pretrained_model/esm2_t36 \
-  --cold_start_mode drug
-```
-
-Or pass the Hugging Face model id directly:
-
-```bash
-python training.py \
-  --dataset_csv data/koff.csv \
-  --esm2_path facebook/esm2_t36_3B_UR50D \
-  --cold_start_mode drug
-```
-
-For offline or reproducible runs, download the checkpoint first:
-
-```bash
-huggingface-cli download facebook/esm2_t36_3B_UR50D \
-  --local-dir ../pretrained_model/esm2_t36 \
-  --local-dir-use-symlinks False
-```
-
-The first run caches extracted ESM2 features to `esm2_feats_update_avg2.pt`. Later runs reuse this cache unless the file is removed or `--esm_cache` is changed.
-
-## Training
-
-Run drug cold-start training:
-
-```bash
-python training.py \
-  --dataset_csv data/koff.csv \
-  --esm2_path ../pretrained_model/esm2_t36 \
-  --cold_start_mode drug
-```
-
-Supported cold-start modes are:
+The authoritative final case-study configuration ID is:
 
 ```text
-drug
-target
-pair
+3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30
 ```
 
-By default, `training.py` loads folds from:
+It uses five independent full-cohort Zhao dataset refits (seeds 42, 142, 242,
+342, and 442), each trained for 33 fixed epochs. Their manifests, histories,
+predictions, analyses, and figures are retained, but their checkpoint binaries
+are not included.
 
-```text
-data/folds/{cold_start_mode}/unified_folds.pkl
+Verify the repository from its root:
+
+```bash
+python verify_release.py
 ```
 
-If a fold file is unavailable, the script falls back to shuffled KFold for debugging, matching the original development behavior.
+The verifier checks required content, complete SHA256 coverage, release
+metadata, the absence of excluded artifacts, final case-study identity,
+superseded output IDs, inventory totals, and leaked private absolute paths. The
+same check runs automatically through GitHub Actions.
 
-## Outputs
+## Reproducibility notes
 
-By default, outputs are written to:
+- Benchmark outputs include per-run metrics, validation/test predictions,
+  histories, frozen configurations, Optuna databases, and aggregate reports.
+- Hyperparameter trials do not contain test predictions; final test evaluation
+  is retained only for formal runs.
+- Case-study provenance manifests retain seed, epoch, configuration ID,
+  original checkpoint hash, and training history even though checkpoint
+  binaries are omitted.
+- The executable final model uses the `even_span_v2` ESM2 window layout. Four
+  legal window starts are distributed as evenly as integer layer indices
+  permit. With ESM2-t36, `k=2` gives `1-2, 12-13, 24-25, 35-36`, while `k=8`
+  gives `1-8, 10-17, 20-27, 29-36`.
+- `legacy_anchors_v1` remains available only to audit archived result
+  manifests. Legacy KinetX checkpoints or feature caches must not be reused
+  with `even_span_v2`; new feature caches carry the explicit
+  `__wleven_span_v2` suffix.
 
-```text
-results/esm2_morgan_gated_crossatt_moe/{cold_start_mode}/
-```
+## License, data, and citation
 
-Each fold checkpoint is saved as:
+Original MGCA-koff software is licensed under the Apache License 2.0; see
+`LICENSE` and `NOTICE`. Dataset and third-party asset terms are documented in
+`DATA_LICENSES.md` and are not replaced by the software license.
 
-```text
-model_{cold_start_mode}_fold{fold_id}.pt
-```
-
-The checkpoint contains `model_state_dict`, model reconstruction config, and fold test metrics.
-
-## Notes
-
-- Pretrained ESM2 weights are not included.
+If you use this repository, cite the accompanying paper and the software record
+described in `CITATION.cff`.

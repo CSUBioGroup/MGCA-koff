@@ -1,0 +1,8 @@
+compound_id,canonical_smiles,representative_smiles,observed_pkoff,observed_pkoff_sd,n_measurements,source
+factor_xa_01,COC(=O)N1CC(C(=O)Nc2ccc(Cl)cn2)C(C(=O)Nc2ccc(-n3ccccc3=O)cc2F)C1,Clc1cnc(NC(=O)C2C(C(=O)Nc3c(F)cc(N4C(=O)C=CC=C4)cc3)CN(C(=O)OC)C2)cc1,1.408935393,0.0,1,10.1021/acsomega.2c02156
+factor_xa_02,O=C(Nc1ccc(Cl)cn1)C1C[NH+](CC(F)F)CC1C(=O)Nc1ccc(-n2ccccc2=O)cc1F,Clc1cnc(NC(=O)C2C(C(=O)Nc3c(F)cc(N4C(=O)C=CC=C4)cc3)C[NH+](CC(F)F)C2)cc1,0.886056648,0.0,1,10.1021/acsomega.2c02156
+factor_xa_03,N=C(N)NCCCC(NC(=O)CN1CCN(S(=O)(=O)c2ccc3ccccc3c2)CC1=O)C(=O)c1nccs1,NC(=N)NCCCC(NC(=O)CN1CCN(CC1=O)S(=O)(=O)c1ccc2ccccc2c1)C(=O)c1nccs1,0.879426069,0.0,1,10.1093/nar/gkv1072
+factor_xa_04,N=C(N)NCCCC(NC(=O)CN1CCN(S(=O)(=O)c2cccc3cccnc23)CC1=O)C(=O)c1nccs1,NC(=N)NCCCC(NC(=O)CN1CCN(CC1=O)S(=O)(=O)c1cccc2cccnc12)C(=O)c1nccs1,0.970616222,0.0,1,10.1093/nar/gkv1072
+factor_xa_05,N=C(N)NCCC[C@@H](NC(=O)CN1CCN(S(=O)(=O)Cc2ccccc2)CC1=O)C(=O)c1nccs1,NC(=N)NCCC[C@@H](NC(=O)CN1CCN(CC1=O)S(=O)(=O)Cc1ccccc1)C(=O)c1nccs1,1.886056648,0.0,1,10.1093/nar/gkv1072
+factor_xa_06,N=C(N)NCCC[C@@H](NC(=O)CN1CCN(S(=O)(=O)c2ccc(Cl)cc2)CC1=O)C(=O)c1nccs1,NC(=N)NCCC[C@@H](NC(=O)CN1CCN(CC1=O)S(=O)(=O)c1ccc(Cl)cc1)C(=O)c1nccs1,0.721246399,0.0,1,10.1093/nar/gkv1072
+factor_xa_07,N=C(N)NCCC[C@@H](NS(=O)(=O)Cc1ccccc1)C(=O)NCC(=O)N[C@H](CCCNC(=N)N)C(=O)c1nccs1,NC(=N)NCCC[C@@H](NS(=O)(=O)Cc1ccccc1)C(=O)NCC(=O)N[C@H](CCCNC(N)=N)C(=O)c1nccs1,-0.491361694,0.0,1,10.1093/nar/gkv1072

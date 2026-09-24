@@ -1,0 +1,474 @@
+{
+  "timing_protocol": "wall_clock_feature_precomputation_v1",
+  "cache_root": "<PROJECT_ROOT>/bicoa_cross_tuning_cache",
+  "device": "cuda:0",
+  "unique_csv_count": 66,
+  "cache_hits": 33,
+  "cache_misses": 33,
+  "total_precompute_duration_sec": 3025.519292630255,
+  "included_in_training_duration": false,
+  "rows": [
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run1.csv",
+      "cache_key": "f432dd78411cb04aae30",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.9797322191298
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run1.csv",
+      "cache_key": "f7b36a687c95ffb99e2f",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.224303741008043
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run1.csv",
+      "cache_key": "752a618f028b8e7f669c",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 54.009184435009956
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run2.csv",
+      "cache_key": "36d263e941fd0533b823",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.04062828049064
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run2.csv",
+      "cache_key": "4aed53583a2a4f7ae91e",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.77843263372779
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run2.csv",
+      "cache_key": "05f8ad4612a0068ee263",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 53.980177976191044
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run3.csv",
+      "cache_key": "14ec72ea883532373f8a",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.30875943601131
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run3.csv",
+      "cache_key": "8745567c0fa982807ffb",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.10205313935876
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run3.csv",
+      "cache_key": "1bc41aa2f714c67804ea",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 54.56627441570163
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run4.csv",
+      "cache_key": "6c4eeb73b0b861420c48",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.89295327290893
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run4.csv",
+      "cache_key": "c3df2f21251435f9267b",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.512953460216522
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run4.csv",
+      "cache_key": "a241b8a335b44b562496",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 53.6861759647727
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run5.csv",
+      "cache_key": "bc2cf9036c0f1376fe0a",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.31886491179466
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run5.csv",
+      "cache_key": "9ff880565700abb356a7",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.349209405481815
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/random_split_mgca_input/test_run5.csv",
+      "cache_key": "5720fe79ea45588dc1c4",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 54.11457050219178
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/train.csv",
+      "cache_key": "17200b7c22d56a87a40c",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.3048042282462
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/val.csv",
+      "cache_key": "7b9e85e5aba04251a1b3",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.338579423725605
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold1/test.csv",
+      "cache_key": "d913db7ef3d762e64a75",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 53.89286280423403
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/train.csv",
+      "cache_key": "1c44e25c76dbdb7a1d41",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 189.7265743277967
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/val.csv",
+      "cache_key": "1ce99b86e236b05b5aa7",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.405919332057238
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold2/test.csv",
+      "cache_key": "99596be03c5f97ff9177",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 54.675422213971615
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/train.csv",
+      "cache_key": "b20519329fc1b142f81b",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 190.64857848733664
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/val.csv",
+      "cache_key": "688e47ceede897543117",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 27.21834634244442
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold3/test.csv",
+      "cache_key": "ef84b579ce05ef584bda",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 54.165967125445604
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/train.csv",
+      "cache_key": "8a2d471465ce24a9d7a3",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 191.80405782163143
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/val.csv",
+      "cache_key": "94f86084358b3cadf8fd",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 26.60218631103635
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold4/test.csv",
+      "cache_key": "dfd4c27c415223681925",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 53.719552397727966
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/train.csv",
+      "cache_key": "c9767e617855edceb656",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 189.8656451292336
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/val.csv",
+      "cache_key": "460a48f041453259c869",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 26.737900592386723
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/drug_cold_start_canonical_5fold/fold5/test.csv",
+      "cache_key": "782a11ee9151c65cc83c",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 55.102506432682276
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/cold_start/train.csv",
+      "cache_key": "fb9d626642b195caea1f",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 183.38395466282964
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/cold_start/val.csv",
+      "cache_key": "7b0a4fe84f9849f548c1",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 40.8582459948957
+    },
+    {
+      "dataset": "KinetX",
+      "csv": "<PROJECT_ROOT>/KinetX/cold_start/test.csv",
+      "cache_key": "53e53932c24e96ae7089",
+      "cache_hit_before_run": false,
+      "precompute_duration_sec": 43.9733390212059
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/train_run1.csv",
+      "cache_key": "93ad4effe36ecd5980da",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 4.172325134277344e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/val_run1.csv",
+      "cache_key": "a33c8ca6a31127108055",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 5.327165126800537e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/test_run1.csv",
+      "cache_key": "0a732bd3012d065a4056",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 3.390014171600342e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/train_run2.csv",
+      "cache_key": "da126c286e895361e3f9",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 1.9371509552001953e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/val_run2.csv",
+      "cache_key": "1be7cc306c42c254ad30",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 6.332993507385254e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/test_run2.csv",
+      "cache_key": "df66ac1198ea2d1de5bd",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 3.5390257835388184e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/train_run3.csv",
+      "cache_key": "c377105264e31a341620",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 1.2665987014770508e-06
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/val_run3.csv",
+      "cache_key": "10dadf986fc94f0f4c83",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 3.91155481338501e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/test_run3.csv",
+      "cache_key": "2664a3917c6573ce936f",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 2.905726432800293e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/train_run4.csv",
+      "cache_key": "b556f46b79a418332102",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 6.48200511932373e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/val_run4.csv",
+      "cache_key": "799fc2c56313931aa3a3",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 9.015202522277832e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/test_run4.csv",
+      "cache_key": "23336ac75c6fe1113da6",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 9.424984455108643e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/train_run5.csv",
+      "cache_key": "33577e1e8697be26f363",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 2.086162567138672e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/val_run5.csv",
+      "cache_key": "cdbb32ba13d11fc8ca92",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 5.662441253662109e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/warm/test_run5.csv",
+      "cache_key": "981c6cf8192aacafe3e8",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 1.3560056686401367e-06
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/train_run1.csv",
+      "cache_key": "24c9b4eb080376d2c292",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 9.5367431640625e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/val_run1.csv",
+      "cache_key": "08280109363bebeef238",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 4.917383193969727e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/test_run1.csv",
+      "cache_key": "b838e8dd10666b5a873f",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 6.92903995513916e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/train_run2.csv",
+      "cache_key": "b75ff4e17e27c16229ff",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 6.109476089477539e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/val_run2.csv",
+      "cache_key": "2eae710f5c4fde003cc8",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 5.550682544708252e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/test_run2.csv",
+      "cache_key": "1e9aa82453f762e12e98",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 1.1138617992401123e-06
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/train_run3.csv",
+      "cache_key": "b8f85b80652af830f2d9",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 9.909272193908691e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/val_run3.csv",
+      "cache_key": "4514f9974f91d5ef936f",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 7.450580596923828e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/test_run3.csv",
+      "cache_key": "74b76a38f15a86421a52",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 1.3299286365509033e-06
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/train_run4.csv",
+      "cache_key": "dd2d654ecd232060d818",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 8.977949619293213e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/val_run4.csv",
+      "cache_key": "78ae705b84151ff426db",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 5.662441253662109e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/test_run4.csv",
+      "cache_key": "7dd90e4b018f9e2a566f",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 4.991888999938965e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/train_run5.csv",
+      "cache_key": "a55b8babc5627485dcc2",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 8.381903171539307e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/val_run5.csv",
+      "cache_key": "6947b9ec5255ea776dc6",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 5.476176738739014e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/drug-cold/test_run5.csv",
+      "cache_key": "ed98c1485ebda95fe03f",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 9.052455425262451e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/target-cold/train.csv",
+      "cache_key": "9c7896a130966c42161d",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 9.126961231231689e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/target-cold/val.csv",
+      "cache_key": "2f432b7181cd6c49820a",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 4.507601261138916e-07
+    },
+    {
+      "dataset": "2773",
+      "csv": "<PROJECT_ROOT>/2773/new_folds/target-cold/test.csv",
+      "cache_key": "f5751ffaf87a98dc1bc3",
+      "cache_hit_before_run": true,
+      "precompute_duration_sec": 5.438923835754395e-07
+    }
+  ]
+}

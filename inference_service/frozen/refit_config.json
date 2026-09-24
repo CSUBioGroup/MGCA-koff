@@ -1,0 +1,47 @@
+{
+  "config_id": "13a3320573c9b6a28aa63398b12a1139f093f440c0e20b13b5f3ef959947b368",
+  "dataset": "KinetX_clean_5446",
+  "fingerprint": "morgan",
+  "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+  "params": {
+    "lr": 0.00002432667795899065,
+    "weight_decay": 0.001,
+    "batch_size": 16,
+    "dropout": 0.1,
+    "window_size": 8,
+    "drug_gate_init": 0.4,
+    "joint_gate_init": 0.05,
+    "window_layout": "even_span_v2"
+  },
+  "architecture": {
+    "protein_coefficient": 1,
+    "positive_gate": "softplus",
+    "gate_prior": null,
+    "scalar_weight_decay": 0,
+    "hidden_dim": 512,
+    "joint_rank": 128,
+    "protein_aux_weight": 0.1,
+    "drug_utility_weight": 0.02,
+    "joint_utility_weight": 0.02,
+    "branch_margin": 0.01,
+    "joint_branch_dropout": 0.15,
+    "gradient_clip": 5,
+    "protein_experts": 4,
+    "protein_warmup_epochs": 5,
+    "fixed_shrinkage_epochs": 5
+  },
+  "refit_epochs": 55,
+  "validation_selected_epochs": [
+    88,
+    56,
+    45,
+    55,
+    46
+  ],
+  "epoch_rule": "median of five validation-selected best epochs of frozen winning KinetX candidate; no new tuning or test criterion",
+  "seeds": [
+    43
+  ],
+  "amp": false,
+  "model_variant": "mgca_v10_unbounded_softplus_jointtune_v1"
+}

@@ -1,0 +1,39 @@
+{
+  "run_identity": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+    "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+    "seed": 242,
+    "epochs": 33,
+    "data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+    "data_manifest_sha256": "f9b59a74dab608eb2d68a8c153a0b7329958f2f967ee2c51e27627a990b9bad2",
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "trainer_sha256": "a02e5124be44e779b1903c3eabceecb973b5430786c28c2566f0dd02248ef232",
+    "config_sha256": "a12b98c53984d9c66ae6cbf5d0862b274bc569fed8ca1473d6944a7658113b1f",
+    "common_sha256": "6725ba9f8d96f16d020d1f964be080e25af56210779059956989bc18662a0336",
+    "lock_sha256": "101bc9c325c1d259a37ba34bfea354a1850411f047a50bee499159361ad517bc",
+    "package_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "row_count": 2773,
+    "case_exact_fasta_overlap_count": 0
+  },
+  "checkpoint": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_242/mgca_final_full2773_seed_242_epoch33.pt",
+  "checkpoint_sha256": "ae9fe000d481b81bbb5ef98718aaa550784ff67131a466d21993e95b41f14e9f",
+  "final_full_training_metrics": {
+    "n": 2773,
+    "mse": 0.03531091633044789,
+    "rmse": 0.1879119909171522,
+    "mae": 0.13601409767012476,
+    "r2": 0.9627249283472354,
+    "pearson": 0.9812742059391336,
+    "spearman": 0.974084722581508,
+    "kendall_tau": 0.8715672989543095,
+    "c_index": 0.9362128357495316
+  },
+  "reload_max_abs_difference": 0.0,
+  "files": {
+    "mgca_final_full2773_seed_242_epoch33.pt": "ae9fe000d481b81bbb5ef98718aaa550784ff67131a466d21993e95b41f14e9f",
+    "training_history.csv": "0759e2f7c3733b0012f11b93880a6e158ab7730a05edeb3ba5284dc5deec6cb9",
+    "training_predictions.csv": "306b01a0c0e9d9be2206a1b2b49db30ef51957402b47ba4fb53d7c1ecdc30dd7",
+    "training_diagnostics.npz": "efc54a8c00abd32cb5f33d941c4f6109985d6eac55e4a720b1f968f9b168d841"
+  },
+  "completed_at_utc": "2026-09-12T07:36:57.711067+00:00"
+}

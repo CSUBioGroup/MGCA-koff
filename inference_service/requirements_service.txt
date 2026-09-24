@@ -1,0 +1,9 @@
+# Add to the existing successful model environment; does not replace PyTorch/CUDA.
+fastapi==0.115.6
+uvicorn==0.30.6
+pydantic==2.10.6
+starlette==0.41.3
+anyio==4.5.2
+click==8.1.8
+h11==0.14.0
+typing-extensions==4.12.2

@@ -1,0 +1,186 @@
+{
+  "runtime/local/ESM_Morgan_Hybrid_Fusion.py": {
+    "source": "mgca_hyperparameter_tuning\\v10_unbounded_jointtune\\runtime\\local\\ESM_Morgan_Hybrid_Fusion.py",
+    "source_sha256": "10facab41d5646ab0308a0f8877b696a08262c6e8712f8f75fc7a395ed087b05"
+  },
+  "runtime/mgca_hyperparameter_tuning/v10_unbounded/model.py": {
+    "source": "mgca_hyperparameter_tuning\\v10_unbounded_jointtune\\runtime\\mgca_hyperparameter_tuning\\v10_unbounded\\model.py",
+    "source_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1"
+  },
+  "runtime/mgca_hyperparameter_tuning/v10_unbounded/trainer.py": {
+    "source": "mgca_hyperparameter_tuning\\v10_unbounded_jointtune\\runtime\\mgca_hyperparameter_tuning\\v10_unbounded\\trainer.py",
+    "source_sha256": "6206bcdff93bb066ebe166a3f7d0395668cdaffb0d1060b0ca069494741a64f8"
+  },
+  "runtime/mgca_hyperparameter_tuning/v10_unbounded/utils.py": {
+    "source": "mgca_hyperparameter_tuning\\v10_unbounded_jointtune\\runtime\\mgca_hyperparameter_tuning\\v10_unbounded\\utils.py",
+    "source_sha256": "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6"
+  },
+  "sources/original_v10_model.py": {
+    "source": "mgca_hyperparameter_tuning\\v10_unbounded_jointtune\\sources\\original_v10_model.py",
+    "source_sha256": "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b"
+  },
+  "common_v10.py": {
+    "source": "case_study_v10_2773\\common_v10.py",
+    "source_sha256": "6e3d6054269d99455736936a763691de23a6d6529ffa41e8bddc3d640c791e61"
+  },
+  "infer_case_panel_v10.py": {
+    "source": "case_study_v10_2773\\infer_case_panel_v10.py",
+    "source_sha256": "c5b7ec31b517dc3a32d81ae5632db0ee84db506656c9c6d3275020de57b4ec33"
+  },
+  "plot_occlusion_headless.py": {
+    "source": "case_study_v10_2773\\plot_occlusion_headless.py",
+    "source_sha256": "03be8a891fa834699254cf78092336d80c724ac9ec31f0b478b9d425170aea9a"
+  },
+  "precompute_full_features_v10.py": {
+    "source": "case_study_v10_2773\\precompute_full_features_v10.py",
+    "source_sha256": "dab9f0b539d3ded6700ad0880e28c6774e9e8b637d71263815dd037750cea468"
+  },
+  "preflight_case_study_v10.py": {
+    "source": "case_study_v10_2773\\preflight_case_study_v10.py",
+    "source_sha256": "fb511e9912b5dad4124fe5b4cd1669b9bf0b60f9f4e9a0cce69d925cd238eba3"
+  },
+  "run_occlusion_v10.py": {
+    "source": "case_study_v10_2773\\run_occlusion_v10.py",
+    "source_sha256": "4ab6f0d8ab1b0248bd292938a3f00cca54e53bfe8cef905c55d07882d09eca25"
+  },
+  "summarize_case_study_v10.py": {
+    "source": "case_study_v10_2773\\summarize_case_study_v10.py",
+    "source_sha256": "1c2cd6ab58ca2ad323c34ec89365356daabea4ce744f64484a9caaf7590a4a6c"
+  },
+  "train_full_refit_v10.py": {
+    "source": "case_study_v10_2773\\train_full_refit_v10.py",
+    "source_sha256": "7c6e7da1cf3f79b2a38942748f1294cf883c2e367d92a8debb1a262765d6dd80"
+  },
+  "case_study/factor_xa_stage2_occlusion.py": {
+    "source": "case_study\\factor_xa_stage2_occlusion.py",
+    "source_sha256": "7f3958c818ea3d552792eb245ed65c88fd32176355d935dd1d97fdbc7e6a56d6"
+  },
+  "case_study/factor_xa_stage2_plot.py": {
+    "source": "case_study\\factor_xa_stage2_plot.py",
+    "source_sha256": "1ff279430028c25af7eb5b49a5c05924e2c3dc3c270497a3bd58bb3e932fb836"
+  },
+  "case_study/infer_mgca_case_ensemble.py": {
+    "source": "case_study\\infer_mgca_case_ensemble.py",
+    "source_sha256": "dccf907a34be9ff9283b0efa24ed5d7f54c2678ebae445224d1d9e83f20bc5f4"
+  },
+  "case_study/infer_mgca_case_ensemble_2773.py": {
+    "source": "case_study\\infer_mgca_case_ensemble_2773.py",
+    "source_sha256": "4edb3e7ed25bf57a6589640f72764762645dce86eee2eab2175d93314231c787"
+  },
+  "case_study/prepare_full_training_2773.py": {
+    "source": "case_study\\prepare_full_training_2773.py",
+    "source_sha256": "05cb7ad62d943b9bb538d0ad3b25b4a048120f1a02fdefe68dcb54a2bcdd644b"
+  },
+  "case_study/prepare_kinetx_full_training.py": {
+    "source": "case_study\\prepare_kinetx_full_training.py",
+    "source_sha256": "85168415b298a25e3ddf86e3c6c093d72fb81232ceaa009dca159c74e5f3bac7"
+  },
+  "case_study/plot_factor_xa_stage4.py": {
+    "source": "vina\\plot_factor_xa_stage4.py",
+    "source_sha256": "7557e1ab277c2d6e9c7f9dc15aa6466729af5ad98f5d280f8ade049829440bd7"
+  },
+  "inputs/train_run1.csv": {
+    "source": "2773\\new_folds\\warm\\train_run1.csv",
+    "source_sha256": "93ad4effe36ecd5980da260252452a614d5a36279bca6803b63cdb5efdb503e9"
+  },
+  "inputs/val_run1.csv": {
+    "source": "2773\\new_folds\\warm\\val_run1.csv",
+    "source_sha256": "a33c8ca6a31127108055e5b0aca845bf719469a55bcd547219c2458355808b41"
+  },
+  "inputs/test_run1.csv": {
+    "source": "2773\\new_folds\\warm\\test_run1.csv",
+    "source_sha256": "0a732bd3012d065a405674dac7528c82b50d0ac1edd8daeaabde7ffd28382c05"
+  },
+  "inputs/koff.csv": {
+    "source": "2773\\koff.csv",
+    "source_sha256": "615d4f648e88bbb929c67e0a0434cc972b892caaa30c874154fc4f2222789072"
+  },
+  "inputs/four_target.csv": {
+    "source": "KinetX\\casestudy.csv",
+    "source_sha256": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3"
+  },
+  "inputs/k4dd.csv": {
+    "source": "case_study_inputs\\k4dd_table9\\k4dd_seven_targets.csv",
+    "source_sha256": "0c38c55bab6690a2344875f0063e93ba4b42119f40a44767715d12c6bbba40e4"
+  },
+  "geometry/stage3_manifest.json": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\stage3_manifest.json",
+    "source_sha256": "cec32ed20c474ce8ae518350329a5c4df409125bc216758d1b8124064d090f50"
+  },
+  "geometry/redocking/redocking_gate.json": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\redocking\\redocking_gate.json",
+    "source_sha256": "da1711c1f8f085e1ca1e4a1c1b39d3cd5cddc90c585d785a940853b467b871f4"
+  },
+  "geometry/prepared/preparation_manifest.json": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\prepared\\preparation_manifest.json",
+    "source_sha256": "3eb58ecec3b6f2c2e5aa760811ffd64f61b275aa2da0e395dd2455a1c449c36d"
+  },
+  "geometry/inputs/1NFU.cif": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\inputs\\1NFU.cif",
+    "source_sha256": "2dac7b2877b1b34b4417198a1d08ca1ca2456d8ea7a47540c8453521d5186891"
+  },
+  "geometry/prepared/1NFU_receptor_clean.pdb": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\prepared\\1NFU_receptor_clean.pdb",
+    "source_sha256": "8771617e5dbc44986fbd739f0dd5bce339cb3a09a06b2ebad24e5c3dca58bcc9"
+  },
+  "geometry/prepared/1NFU_RRP_experimental.pdb": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\prepared\\1NFU_RRP_experimental.pdb",
+    "source_sha256": "9167726416ce4441ab03265f256e6129c9ba910eb30e9c9944351848e7244d6c"
+  },
+  "geometry/analysis/selected_pose_protein_contacts.csv": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\analysis\\selected_pose_protein_contacts.csv",
+    "source_sha256": "5245d58fed0773d745a70c9e98f8360d493bebede0310a06e8e5bdd2bedee09c"
+  },
+  "geometry/analysis/selected_factor_xa_05_pose.sdf": {
+    "source": "case_study_outputs\\factor_xa_stage3_docking\\analysis\\selected_factor_xa_05_pose.sdf",
+    "source_sha256": "93272fee4b5f74f12749212a4d3b4b4ec8ac9798b6abefad8f62caf4f28ab7fd"
+  },
+  "frozen/2773_best_params.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\frozen\\2773\\best_params.json",
+    "source_sha256": "9be3c1a3c2c1ae71266aa8f454080494ded3ef33660271546ce199f2b1cd4fc6"
+  },
+  "frozen/KinetX_best_params.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\frozen\\KinetX\\best_params.json",
+    "source_sha256": "39fcf80c9d13c207e2a6f584da9d61b50e14c1bdd620ca51f83273ea06d57b8f"
+  },
+  "frozen/benchmark_5run/test_mean_sd.csv": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\summary\\test_mean_sd.csv",
+    "source_sha256": "b6324454bc347ea96bd438e67faa52039f0392a5910c6425a6a5b194b6699424"
+  },
+  "frozen/benchmark_5run/test_per_run.csv": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\summary\\test_per_run.csv",
+    "source_sha256": "f18b72f0d6cd2f70efda50174c7182630c49db6db1dddf7d226826ec642e4d59"
+  },
+  "frozen/benchmark_5run/paired_statistics.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\summary\\paired_statistics.json",
+    "source_sha256": "93af74d864bfed1d678b3bac5f001cd74ac45cfafeff3edb71c1013411373b05"
+  },
+  "frozen/benchmark_5run/audit.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\summary\\audit.json",
+    "source_sha256": "51371a4edf98a33e4b812ffd3766996b115a5ee8c523c6e9f62f14f924a98096"
+  },
+  "frozen/benchmark_5run/test_coverage_audit.csv": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\summary\\test_coverage_audit.csv",
+    "source_sha256": "c618beb0caea43ed29aa7dd81e628a9706c2867ec127e11bfb7573d3e40e1da5"
+  },
+  "frozen/epoch_selection/run1_metrics.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\tuning\\2773\\runs\\d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7\\run1\\metrics.json",
+    "source_sha256": "6c96193fc91879c3c495437cf42cbda29dbcf731a26e9d93eb64554a3f1566d7"
+  },
+  "frozen/epoch_selection/run2_metrics.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\tuning\\2773\\runs\\d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7\\run2\\metrics.json",
+    "source_sha256": "07d5c53de8e78c34eb2f5982dded15f9fdb74c8b4106d2c99c8645aac89ade7c"
+  },
+  "frozen/epoch_selection/run3_metrics.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\tuning\\2773\\runs\\d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7\\run3\\metrics.json",
+    "source_sha256": "932986d6581b43f2fc5c4a4454d43f96a20ac13fd26c7c19bba6ed5fddc10519"
+  },
+  "frozen/epoch_selection/run4_metrics.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\tuning\\2773\\runs\\d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7\\run4\\metrics.json",
+    "source_sha256": "a8281b513609d4bab66203e1b7de7e5fce81d654b2a3e345e4daeb748e8d93ec"
+  },
+  "frozen/epoch_selection/run5_metrics.json": {
+    "source": "mgca_hyperparameter_tuning\\outputs\\unbounded_warm_hpo_wide_init_v2\\tuning\\2773\\runs\\d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7\\run5\\metrics.json",
+    "source_sha256": "31917c9f45235f6923f1e22b686ffaec59199a3c8febacfacebfcf4820a74cfa"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "run_identity": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+    "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+    "seed": 442,
+    "epochs": 33,
+    "data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+    "data_manifest_sha256": "f9b59a74dab608eb2d68a8c153a0b7329958f2f967ee2c51e27627a990b9bad2",
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "trainer_sha256": "a02e5124be44e779b1903c3eabceecb973b5430786c28c2566f0dd02248ef232",
+    "config_sha256": "a12b98c53984d9c66ae6cbf5d0862b274bc569fed8ca1473d6944a7658113b1f",
+    "common_sha256": "6725ba9f8d96f16d020d1f964be080e25af56210779059956989bc18662a0336",
+    "lock_sha256": "101bc9c325c1d259a37ba34bfea354a1850411f047a50bee499159361ad517bc",
+    "package_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "row_count": 2773,
+    "case_exact_fasta_overlap_count": 0
+  },
+  "checkpoint": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_442/mgca_final_full2773_seed_442_epoch33.pt",
+  "checkpoint_sha256": "631ef93608905533d365fb97ed0ecc379a60c0993e0d15ad8dd8c4d29a42bd65",
+  "final_full_training_metrics": {
+    "n": 2773,
+    "mse": 0.04382563759222859,
+    "rmse": 0.20934573698126407,
+    "mae": 0.1500806013781146,
+    "r2": 0.9537365791872755,
+    "pearson": 0.9785298751365576,
+    "spearman": 0.970521632422026,
+    "kendall_tau": 0.86453458793501,
+    "c_index": 0.932693017118869
+  },
+  "reload_max_abs_difference": 0.0,
+  "files": {
+    "mgca_final_full2773_seed_442_epoch33.pt": "631ef93608905533d365fb97ed0ecc379a60c0993e0d15ad8dd8c4d29a42bd65",
+    "training_history.csv": "84e4ce0dbca265aa3f0bdfc502790209761010c54707b5f058dc87bd4583185a",
+    "training_predictions.csv": "e055479b7b714f85744d00fdd2a164560ed007c5b3407165dd657626aa8a5f2f",
+    "training_diagnostics.npz": "ed618eb1a14cc92deef0248118e597a2df3a6ab3c1ade0d35e170599392411c6"
+  },
+  "completed_at_utc": "2026-09-12T07:36:58.609947+00:00"
+}

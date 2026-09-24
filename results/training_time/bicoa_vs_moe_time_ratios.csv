@@ -1,0 +1,5 @@
+scope,bicoa_kinetx_mean_sec,moe_kinetx_mean_sec,bicoa_over_moe_time_ratio,interpretation
+warm,5673.86332571879,746.5150470077991,7.600467463396639,descriptive; model configurations have different batch sizes and stopping schedules
+drug_cold,4685.916652544588,479.2294312261045,9.778023525299165,descriptive; model configurations have different batch sizes and stopping schedules
+protein_cold,5209.9046626091,282.5115179717541,18.441388514042796,descriptive; model configurations have different batch sizes and stopping schedules
+all_15_runs,5189.894880290826,502.7519987352192,10.322972147991699,descriptive; averages three evaluation protocols

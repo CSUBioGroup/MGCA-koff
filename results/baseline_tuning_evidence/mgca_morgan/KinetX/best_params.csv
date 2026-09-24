@@ -1,0 +1,2 @@
+config_id,lr,weight_decay,batch_size,dropout,window_size,window_layout,epochs,patience,seed,optimizer,mean_val_mse,std_val_mse
+69590ecd8276,3.207243352197332e-05,0.01,64,0.05,1,legacy_anchors_v1,100,15,42,AdamW,0.3765210113104652,0.08791536122122874

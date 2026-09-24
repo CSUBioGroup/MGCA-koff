@@ -1,0 +1,203 @@
+{
+  "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+  "benchmark_plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+  "benchmark_settings": {
+    "project_root": "<BIO_PROJECT_ROOT>",
+    "output_root": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2",
+    "cache_root": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/cache",
+    "esm2_path": "/root/private_data/DP/pretrained_model/esm2_t36",
+    "device": "cuda:0",
+    "datasets": [
+      "2773",
+      "KinetX"
+    ],
+    "protocols": [
+      "warm",
+      "drug_cold",
+      "protein_cold"
+    ],
+    "ablation_datasets": [
+      "2773",
+      "KinetX"
+    ],
+    "trials": 30,
+    "top_k": 5,
+    "epochs": 100,
+    "patience": 15,
+    "seed": 42,
+    "seed_step": 100,
+    "sampler_seed": 2026,
+    "n_runs": 5,
+    "protein_warmup_epochs": 5,
+    "fixed_shrinkage_epochs": 5,
+    "esm_batch_size": 1,
+    "amp": "false",
+    "drug_init_choices": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "joint_init_choices": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "objective": "warm_run1_validation_mse_then_topk_five_split_mean",
+    "architecture": {
+      "protein_coefficient": 1.0,
+      "positive_gate": "softplus",
+      "gate_prior": null,
+      "scalar_weight_decay": 0.0,
+      "hidden_dim": 512,
+      "joint_rank": 128,
+      "protein_aux_weight": 0.1,
+      "drug_utility_weight": 0.02,
+      "joint_utility_weight": 0.02,
+      "branch_margin": 0.01,
+      "joint_branch_dropout": 0.15,
+      "gradient_clip": 5.0
+    },
+    "training_environment": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "PYTHONHASHSEED": "42",
+      "CUDA_VISIBLE_DEVICES": null,
+      "PYTORCH_CUDA_ALLOC_CONF": null
+    }
+  },
+  "benchmark_code": {
+    "build_release.py": "92fdd2fc43b2ee7c3406dd746525b0578ea61e2e1212d027c975a30e9caa41b6",
+    "common.py": "eae21ad876b8facefebb8e142cf993bd8f79570a3835a7ecf8882bedc1ca2deb",
+    "runtime/local/ESM_Morgan_Hybrid_Fusion.py": "10facab41d5646ab0308a0f8877b696a08262c6e8712f8f75fc7a395ed087b05",
+    "runtime/mgca_hyperparameter_tuning/v10_unbounded/model.py": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "runtime/mgca_hyperparameter_tuning/v10_unbounded/trainer.py": "6206bcdff93bb066ebe166a3f7d0395668cdaffb0d1060b0ca069494741a64f8",
+    "runtime/mgca_hyperparameter_tuning/v10_unbounded/utils.py": "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6",
+    "sources/original_v10_model.py": "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+    "summarize.py": "7b3ca00e5578546ef3ce1c34601d9be07268f25dbc798e81c4d97e27f7b18d38",
+    "worker.py": "5f46f15db2aa7ad1f4645189a0f7e84607767fcdc8b0eaa1ee32dac277bdfb84",
+    "workflow.py": "47a7dad89bdedb4e0387e24e3119ccc81f6ac3662b645ff056506e89d51800bf"
+  },
+  "selected_configs": {
+    "2773": {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "2773",
+      "selection": {
+        "trial": 24,
+        "config_id": "d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7",
+        "params": {
+          "lr": 5.9260857797183374e-05,
+          "weight_decay": 0.0001,
+          "batch_size": 64,
+          "dropout": 0.15,
+          "window_size": 2,
+          "drug_gate_init": 0.3,
+          "joint_gate_init": 0.3
+        },
+        "val_mse_mean": 0.24173630475997926,
+        "val_mse_sd": 0.02479314719739883,
+        "run_values": [
+          0.21339526772499084,
+          0.22512789070606232,
+          0.23979134857654572,
+          0.2769398093223572,
+          0.2534272074699402
+        ],
+        "task_ids": [
+          "3918d06af3819c5d9968ec63376bc95df0d9838bf935975e7adc26bfe0843553",
+          "368b1127b8f98d33f2696165b2541f13d02a1fc3cfb041c6553826825211ccd8",
+          "e3dd264b8733110e6b13703ff723dd2ffb8d7df7e2c4e5443908fd9b2ef54f0e",
+          "10b6beadcb171b6fa5aae33c75980122cdafa18d9035067202caeb4cc6e1da18",
+          "c11042e199594a3d73a769c8f1eaf399c8f376ff64845c9f2908b1102f365c26"
+        ]
+      },
+      "test_accessed": false,
+      "criterion": "warm_run1_validation_mse_then_topk_five_split_mean",
+      "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30"
+    },
+    "KinetX": {
+      "plan_id": "b5aa965ff8f761e2693916534f9fe509f07ef0a3c2d5d4ec1460e3eb41094602",
+      "dataset": "KinetX",
+      "selection": {
+        "trial": 13,
+        "config_id": "fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134",
+        "params": {
+          "lr": 2.432667795899065e-05,
+          "weight_decay": 0.001,
+          "batch_size": 16,
+          "dropout": 0.1,
+          "window_size": 8,
+          "drug_gate_init": 0.4,
+          "joint_gate_init": 0.05
+        },
+        "val_mse_mean": 0.35757296085357665,
+        "val_mse_sd": 0.06812525655383729,
+        "run_values": [
+          0.2727300822734833,
+          0.3406502902507782,
+          0.4354281425476074,
+          0.32088541984558105,
+          0.41817086935043335
+        ],
+        "task_ids": [
+          "038cde2898fa0be5926959c6ffa0d21d34635ab227d7a309a74daab0219a3296",
+          "abcc6c54ee80dc82a4490ff8b9856660a30de6ccd5f40e7d0352b7a8eac22ada",
+          "1dc45b35966b3de14730cba868ae56dccb8ce3e31ae581a597c8f133a505c189",
+          "3255149aff835e4fafbdb61170799c7d0cf1567c5eae306afe6d659c7ff90760",
+          "46d339ddf68c6e2ee570a72d0212bc40cc3e9ffa0c59c7e2d6962108bf827026"
+        ]
+      },
+      "test_accessed": false,
+      "criterion": "warm_run1_validation_mse_then_topk_five_split_mean",
+      "config_id": "13a3320573c9b6a28aa63398b12a1139f093f440c0e20b13b5f3ef959947b368"
+    }
+  },
+  "ablation_runs": 5,
+  "repeat_hpo": false,
+  "repeat_benchmark": false,
+  "case_training_dataset": "2773",
+  "case_seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "case_epochs": 33,
+  "epoch_rule": "median of five warm validation-selected best epochs of frozen winner; no case labels",
+  "validation_selected_epochs": [
+    49,
+    32,
+    33,
+    48,
+    18
+  ],
+  "representative_factor_xa": "factor_xa_05",
+  "selection_note": "Preexisting fixed illustrative compound; never reselected from current predictions",
+  "docking": "reuse pinned model-independent geometry; recompute current-model contact/occlusion analysis",
+  "inputs": {
+    "inputs/train_run1.csv": "93ad4effe36ecd5980da260252452a614d5a36279bca6803b63cdb5efdb503e9",
+    "inputs/val_run1.csv": "a33c8ca6a31127108055e5b0aca845bf719469a55bcd547219c2458355808b41",
+    "inputs/test_run1.csv": "0a732bd3012d065a405674dac7528c82b50d0ac1edd8daeaabde7ffd28382c05",
+    "inputs/koff.csv": "615d4f648e88bbb929c67e0a0434cc972b892caaa30c874154fc4f2222789072",
+    "inputs/four_target.csv": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3",
+    "inputs/k4dd.csv": "0c38c55bab6690a2344875f0063e93ba4b42119f40a44767715d12c6bbba40e4",
+    "geometry/stage3_manifest.json": "cec32ed20c474ce8ae518350329a5c4df409125bc216758d1b8124064d090f50",
+    "geometry/redocking/redocking_gate.json": "da1711c1f8f085e1ca1e4a1c1b39d3cd5cddc90c585d785a940853b467b871f4",
+    "geometry/prepared/preparation_manifest.json": "3eb58ecec3b6f2c2e5aa760811ffd64f61b275aa2da0e395dd2455a1c449c36d",
+    "geometry/inputs/1NFU.cif": "2dac7b2877b1b34b4417198a1d08ca1ca2456d8ea7a47540c8453521d5186891",
+    "geometry/prepared/1NFU_receptor_clean.pdb": "8771617e5dbc44986fbd739f0dd5bce339cb3a09a06b2ebad24e5c3dca58bcc9",
+    "geometry/prepared/1NFU_RRP_experimental.pdb": "9167726416ce4441ab03265f256e6129c9ba910eb30e9c9944351848e7244d6c",
+    "geometry/analysis/selected_pose_protein_contacts.csv": "5245d58fed0773d745a70c9e98f8360d493bebede0310a06e8e5bdd2bedee09c",
+    "geometry/analysis/selected_factor_xa_05_pose.sdf": "93272fee4b5f74f12749212a4d3b4b4ec8ac9798b6abefad8f62caf4f28ab7fd"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "files":  {
+                  "build_release.py":  "74a0325a709bf7009f85ca97a2d218dbf566c6b2a484abb880a470f0380a0ed2",
+                  "common.py":  "3fea46ecfc5de9e3fbf2595e9c8b023f0a36217ae1cd64aa968ba749ff3de4e6",
+                  "experiment_config.sh":  "287d5a1525ec56a1c0406c9d556b6de77f80659edef917dd6b937de59f02eaf7",
+                  "frozen/2773/best_params.json":  "4fa2c481848893a1a5cede1975b28596e765ed00b2c5fb9dfb547bf4d61bb04f",
+                  "frozen/KinetX/best_params.json":  "5c62af66723732d036f9be593ee5862db57939059c66874b35c5fdf921436427",
+                  "LOCAL_VALIDATION.md":  "c1092046774db9eda5c62086c358d9350ce52cec24d2bff2ff225f23ecf02193",
+                  "README.md":  "af2f5162a03c5cbd4d383a063dc0b4365a6d44586c00233e217d6b30ee99ac78",
+                  "run_all_sensitivity.sh":  "5474a03170eade12f213f873ca7b3bb94f643f42d4615981751636481870ec6e",
+                  "runtime/local/ESM_Morgan_Hybrid_Fusion.py":  "850f80a54359c1e74121853cc7800f383e385f9722cbf6f25b595a60eb97ae4d",
+                  "runtime/mgca_hyperparameter_tuning/ESM_Morgan_Hybrid_Fusion_nonredundant.py":  "ca199b8c8ffe88633bcda053c7c0d344f63c23ee58e99da821b039bb663a686c",
+                  "runtime/mgca_hyperparameter_tuning/v10_cgrs/ESM_Morgan_Hybrid_Fusion_cgrs_v10.py":  "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+                  "runtime/mgca_hyperparameter_tuning/v10_cgrs/train_v10_cgrs.py":  "cc60bb3a4178c62a7e9be908255a984803e48a53ef6dbbe06e6ac454fcbb6ecf",
+                  "runtime/mgca_hyperparameter_tuning/v10_cgrs/utils.py":  "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6",
+                  "runtime/mgca_hyperparameter_tuning/v5_uar/ESM_Morgan_Hybrid_Fusion_uar_v5.py":  "54d12d7a2f9a411e2c90e4118415b7afbc7956105fa1cecf350629d0954562e2",
+                  "runtime/mgca_hyperparameter_tuning/v6_crrf/ESM_Morgan_Hybrid_Fusion_crrf_v6.py":  "0433c9822a5f99f7e9b2de96adc2129fa3e2f5959d35603329bc3a2ee1438399",
+                  "runtime/mgca_hyperparameter_tuning/v7_padg/ESM_Morgan_Hybrid_Fusion_padg_v7.py":  "f2c5c66a3d30deec4b13ee335a9970fc368fd95803ad633174eac775a7d0b09d",
+                  "runtime/mgca_hyperparameter_tuning/v8_pajg/ESM_Morgan_Hybrid_Fusion_pajg_v8.py":  "2082f2142c960d7ed940cac37bbd7d0440efa3606e63b6975553070887962104",
+                  "runtime/mgca_hyperparameter_tuning/v9_scrg/ESM_Morgan_Hybrid_Fusion_scrg_v9.py":  "f208bcc413496952a95ee689ef64041141d9d1b3339ab5a99b26cd076967ff30",
+                  "source_provenance.json":  "49b45015bec15314edacb89ef9b21b7c3675c5ea2fd5fee985d54babee24ec24",
+                  "summarize.py":  "ea0ac9a1c7211c64cfdd310642e83257ea1375ecd6b7d717e3efd32102210b1f",
+                  "test_model_contract.py":  "3711dff58c343f40f52f966877153d8ddc8cbcf24655ca5e56a4a36ac00032ae",
+                  "test_sensitivity.py":  "c99e22c4672b2aefd921515344fb0c39d9ceab8c38bd88b20682f49642fb8c45",
+                  "test_training_resume.py":  "9247f02af1042acdb53ba02ef66a8b071483a0fdd5f9828895e789b35e8d9c2b",
+                  "worker.py":  "2b29af6e1b2505d4af7d4108fbc159cd25159c90ddfb6cc3f0f0a805addd1107",
+                  "workflow.py":  "fc2484848b9d62ef138fd3ea64290cb3630c3e86e250ca4bebf746edc0bd0c45"
+              }
+}

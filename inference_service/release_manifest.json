@@ -1,0 +1,31 @@
+{
+    "protocol":  "mgca_KinetX_clean_full_refit_seed43_service_v1",
+    "files":  {
+                  "api.py":  "61fe7e5d4842bd76781cb639d48b2ea4716fe733ffca16a1914e8234cf2f13d9",
+                  "client_screen.py":  "548be246dceb55a485fa29d9324d758101e3be9734f3ed6de1714bd7afa9aa3f",
+                  "core.py":  "1bdb09ceac33609c97e62f08d35cc7f7f734c54f79a5f6c621a1c912ce56333e",
+                  "engine.py":  "37c6e759084a19327ab87a9c4cc4d58d6c72017e87b694a288061618870ff860",
+                  "examples/screen.json":  "fca4e4026bd27577ded372710e1d7e2aa3c08e4f657d6483670f2db750bc5da9",
+                  "frozen/epoch_selection.json":  "d7c0c63e5aa63a3ffa63c4206f74a25713d3b0b25b73317c260d52304ce4a1e0",
+                  "frozen/esm_identity.json":  "dd36514d4a06c10a638cff1aa90e1148819590dd2e309d2099330620509475ac",
+                  "frozen/KinetX_best_params.json":  "39fcf80c9d13c207e2a6f584da9d61b50e14c1bdd620ca51f83273ea06d57b8f",
+                  "frozen/refit_config.json":  "68f2b1c1a07aa05d0b5d3e86ea5ecd91a69e43d4cde4bb31fdb7136da317fbab",
+                  "package_release.py":  "8783a368564b1ccdc18ca2d3190d699a2fc8cdfc4d27e3a5752286304f1c8b1d",
+                  "README.md":  "536bf3015c304b1a5886859e2402ed8b21eaafcee0678ff8698aeb3e9ada2277",
+                  "requirements_service.txt":  "78d72451d73c4b880deadf6d890243865db362037c602b5420d57886564632f4",
+                  "run_train_and_package.sh":  "9b89a4b65a0900034803063709f74f7361a511fcd9748d65aa97625ace610d41",
+                  "runtime/local/ESM_Morgan_Hybrid_Fusion.py":  "6dcafce95899313b0949176229e62e61bfcbafeca20109c665c686c9521a7f45",
+                  "runtime/mgca_hyperparameter_tuning/v10_unbounded/model.py":  "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+                  "SERVICE_README.md":  "cffea9cd2cf112452aefb9a7078b74e01acd781d9f79126c7fd13151e6df8b4a",
+                  "start_service.sh":  "af695799075cf43e808747b83d2c9a4908a3fad1c0a1b544baa578817d89d137",
+                  "test_service.py":  "ce5d6b8d5382a2fa7b1185fda23e088ed79bad42e6a091de692d670e11b93319",
+                  "train.py":  "15e6526fbda905702469d22765cdde42e6ecd18e6746606f02e00de02ef5d8d7",
+                  "VALIDATION.md":  "d5f66004705757e7a92b6701f2530f368f52a5c017ebf338889f4c97a4fdef9e",
+                  "verify_api.py":  "87114784aac0234a96e4d61cf33da7f5a833352c9e3709ad3313bbac7d0854d5",
+                  "workflow.py":  "bd91d91cd8c0aa5beb52ca27f43ad7a254ccf1697a44607f26ceebe1383854cd"
+              },
+    "editable":  [
+                     "config.sh",
+                     "service_config.sh"
+                 ]
+}

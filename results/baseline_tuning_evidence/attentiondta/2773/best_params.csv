@@ -1,0 +1,2 @@
+lr,weight_decay,batch_size,dropout,epochs,patience,seed,optimizer,mean_mse,std_mse,config_id
+4.8407165134280544e-05,0.001,8,0.2,300,30,42,AdamW,0.28305994782850324,0.027933695170823586,348493b19c88

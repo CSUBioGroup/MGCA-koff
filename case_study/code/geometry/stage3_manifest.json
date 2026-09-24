@@ -1,0 +1,57 @@
+{
+  "protocol": "factor_xa_stage3_complete_v1",
+  "completed_at_utc": "2026-08-11T07:12:30.363660+00:00",
+  "arguments": {
+    "work_dir": "<BIO_PROJECT_ROOT>/vina",
+    "stage2_root": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage2",
+    "output_dir": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking",
+    "seeds": [
+      101,
+      201,
+      301,
+      401,
+      501,
+      601,
+      701,
+      801,
+      901,
+      1001
+    ],
+    "cpu": 8,
+    "exhaustiveness": 32,
+    "n_poses": 20,
+    "energy_range": 5.0,
+    "box_padding": 5.0,
+    "box_min": 22.0,
+    "box_max": 30.0,
+    "redock_rmsd": 2.0,
+    "redock_min_seed_passes": 5,
+    "cluster_energy_window": 2.0,
+    "cluster_rmsd": 2.0,
+    "contact_cutoff": 4.0,
+    "allow_redock_failure": false,
+    "recompute": false
+  },
+  "environment": {
+    "python": "3.10.14 (main, May  6 2024, 19:42:50) [GCC 11.2.0]",
+    "python_executable": "/opt/conda/bin/python",
+    "platform": "linux",
+    "vina": "1.2.7",
+    "meeko": "0.7.1",
+    "rdkit": "2026.03.5",
+    "prolif": "2.2.0",
+    "gemmi": "0.7.5",
+    "spyrmsd": "0.9.0"
+  },
+  "preparation_manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/preparation_manifest.json",
+  "redocking_manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/redocking/redocking_gate.json",
+  "analysis_manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/analysis/analysis_manifest.json",
+  "redocking_passed": true,
+  "selected_pose": {
+    "seed": 701,
+    "pose_rank": 1,
+    "affinity": -8.936,
+    "sdf": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/formal_docking/seed_701.sdf",
+    "molecule_index": 0
+  }
+}

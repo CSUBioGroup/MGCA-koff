@@ -1,0 +1,54 @@
+{
+  "run_identity": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1_occlusion",
+    "package_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "case_csv_sha256": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3",
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "adapter_sha256": "3265b09625a7af2ea202d960b09f1b041c2b740a873b6543ac609bb88ae269a7",
+    "legacy_occlusion_sha256": "7f3958c818ea3d552792eb245ed65c88fd32176355d935dd1d97fdbc7e6a56d6",
+    "target_uniprot": "P27487|Q53TN1",
+    "compound_id_prefix": "dpp4",
+    "representative_compound_id": "dpp4_12",
+    "reference_predictions_sha256": "447d2a5e4675293a085f8e0cd77aabcead4cf4de0676b8e29e113406ad55254f",
+    "seeds": [
+      42,
+      142,
+      242,
+      342,
+      442
+    ],
+    "epochs": 33,
+    "checkpoint_sha256": [
+      "fd63aa48c21ada4faba6977bc08f6b765c5964fd2a133a01c1d27b42327ac8de",
+      "b07b1f2a2663b1f43e2f640981daca2e974fa076974601341733f8efb8eba26e",
+      "ae9fe000d481b81bbb5ef98718aaa550784ff67131a466d21993e95b41f14e9f",
+      "0794921c796ddbc878db48496780363fbc3a6e21eb11639b6ba5e5e4ceaa121b",
+      "631ef93608905533d365fb97ed0ecc379a60c0993e0d15ad8dd8c4d29a42bd65"
+    ],
+    "protein_window_size": 16,
+    "protein_stride": 4,
+    "sensitivity_window_sizes": [
+      8,
+      32
+    ],
+    "protein_baseline": "sequence_mean",
+    "top_features": 10
+  },
+  "files": {
+    "ligand_bit_importance_summary.csv": "e289aecf7ce04cb059715c4fa8392cfc1104b0adad4649e791ff6ff7be9a19cc",
+    "original_predictions_five_seeds.csv": "b5d2630e39873120667d00cc22501ad4e4257e6da18a2fef56425edd410f4a77",
+    "protein_window_seed_stability.csv": "6b0554da449fcc1b4d95a558c86c7972daf6a94be262fef8ae68ce2075a9fcf1",
+    "factor_xa_stage2_manifest.json": "086e8f636d471e7c49ec468f86991c6fd05202fb2fe9d75075b204d254b33e4a",
+    "ligand_bit_importance_per_seed.csv": "c37435bc9e809798fffe52b3af7f45179d806786978eff68b00e505a929f5951",
+    "factor_xa_compound_catalog.csv": "be416652d3949a63b07ef50be2766ff0705101f00972e9a22d72bcee976f00b0",
+    "protein_window_importance_summary.csv": "c49198798e655d3fb698f1fb79fa873681ec8de81186c9e2a87005efaec6e297",
+    "protein_window_importance_per_seed.csv": "a0e00d02729b11d6a0bd3942f856400945190c222927a5ab3b0f6fbda5f5d03a",
+    "ligand_bit_seed_stability.csv": "25f31cc5a2e7cb7e76bde61597d913dea50d59cfb6e73abbef8ab1f3a7d18d17",
+    "dual_occlusion_interactions_per_seed.csv": "7b5a2cb9f5801deb8b220cc1a4c71b9cdba615b8495539c5191e4c9cfcd091af",
+    "dual_occlusion_interactions_summary.csv": "88d1d32a34d04de02d036e4f7214d706b32d09f86d2bd4f735f972dd9cfb7c51",
+    "dual_occlusion_selection.json": "d5abb3ebb7fa8a3e4d274de4c39c6afc163d55155010b0ca74c0cae9ff2ed0cd"
+  },
+  "completed_at_utc": "2026-09-12T08:52:22.925163+00:00",
+  "occlusion_manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/occlusion/dpp4/factor_xa_stage2_manifest.json",
+  "occlusion_manifest_sha256": "086e8f636d471e7c49ec468f86991c6fd05202fb2fe9d75075b204d254b33e4a"
+}

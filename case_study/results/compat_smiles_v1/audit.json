@@ -1,0 +1,34 @@
+{
+  "identity": {
+    "patch_id": "k4dd_bracket_hydrogen_charge_order_v1",
+    "patch_release_sha256": "b771199f084f1d7e1fd359a6d518c02b86a2f7254afcb7a8f96a8a81e3a10a95",
+    "base_release_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "source_sha256": "48f679e83027fdd3dd490d9fad9d896a125d4c42ce5b8f0829a394c1772b1c75"
+  },
+  "source_csv": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/k4dd.csv",
+  "row_count": 487,
+  "modified_rows": 18,
+  "modified_rows_by_target": {
+    "Factor Xa": 1,
+    "HSP90alpha": 8,
+    "A2A receptor": 9
+  },
+  "token_mapping": {
+    "[N+H2]": "[NH2+]",
+    "[N+H]": "[NH+]"
+  },
+  "remaining_invalid_rows": 0,
+  "rdkit_version": "2024.03.5",
+  "all_four_morgan_channels_validated": true,
+  "original_csv_modified": true,
+  "training_data_or_model_modified": false,
+  "rows_dropped": 16,
+  "order_labels_sequences_other_columns_preserved": true,
+  "scope": "Explicit H-count/positive-charge token order only. No neutralization, tautomerization or label-driven repair.",
+  "files": {
+    "k4dd.normalized.csv": "aa9f54f448e060818af57bb6d52d6e0de5684dd465e4006dd0cc5e6ce3274865",
+    "smiles_changes.csv": "127edbb3477f1700d19933d3a86b56154f6ccce03c57261d698f57b935504d60"
+  },
+  "source_row_count_before_case_filter": 503,
+  "case_panel_filter": "predeclared inclusion criteria"
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "trial": 7,
+    "config_id": "92630a375776f1aa2f5322bce1182ce9e1033c31d8f1748f8933a2d3f57304f1",
+    "params": {
+      "lr": 3.656082725525343e-05,
+      "weight_decay": 0.0001,
+      "batch_size": 16,
+      "dropout": 0.1,
+      "window_size": 2,
+      "drug_gate_init": 0.5,
+      "joint_gate_init": 0.4
+    },
+    "val_mse_mean": 0.2429164469242096,
+    "val_mse_sd": 0.031837216835430934,
+    "run_values": [
+      0.21039535105228424,
+      0.22072656452655792,
+      0.23799392580986023,
+      0.2914696931838989,
+      0.25399670004844666
+    ],
+    "task_ids": [
+      "77f4eb6291c6a086db4101a15bb0bdd59ababc8fb82a8abb38e7a16daca3c458",
+      "08fe724929917fff57ab98b8daf74b94cba17b4306d1cbdc730aadee704bf2dd",
+      "589fabe4ba871c778f3d334686e393af9a6713fcbcdb5557f179fe7976acbafb",
+      "549f66e148f0689ab91331bf1d0f8d08fe0f9f2d62e1a48209bf819013987b6a",
+      "dbc9d3fe0926f66c68716e8ff9fe411dd97c067ef048313776d1bf349bb65fb3"
+    ]
+  },
+  {
+    "trial": 24,
+    "config_id": "d0af67adb7d62894133816d1d8cc8917a8b4aa6511f4adb41ef110cb4f6e1af7",
+    "params": {
+      "lr": 5.9260857797183374e-05,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "dropout": 0.15,
+      "window_size": 2,
+      "drug_gate_init": 0.3,
+      "joint_gate_init": 0.3
+    },
+    "val_mse_mean": 0.24173630475997926,
+    "val_mse_sd": 0.02479314719739883,
+    "run_values": [
+      0.21339526772499084,
+      0.22512789070606232,
+      0.23979134857654572,
+      0.2769398093223572,
+      0.2534272074699402
+    ],
+    "task_ids": [
+      "3918d06af3819c5d9968ec63376bc95df0d9838bf935975e7adc26bfe0843553",
+      "368b1127b8f98d33f2696165b2541f13d02a1fc3cfb041c6553826825211ccd8",
+      "e3dd264b8733110e6b13703ff723dd2ffb8d7df7e2c4e5443908fd9b2ef54f0e",
+      "10b6beadcb171b6fa5aae33c75980122cdafa18d9035067202caeb4cc6e1da18",
+      "c11042e199594a3d73a769c8f1eaf399c8f376ff64845c9f2908b1102f365c26"
+    ]
+  },
+  {
+    "trial": 29,
+    "config_id": "b9ed28764efa37c71cafa279260e3e31f96c5c415a30bb83a1567bd5e30d30c1",
+    "params": {
+      "lr": 2.3312932002085662e-05,
+      "weight_decay": 1e-05,
+      "batch_size": 16,
+      "dropout": 0.17,
+      "window_size": 6,
+      "drug_gate_init": 0.5,
+      "joint_gate_init": 0.01
+    },
+    "val_mse_mean": 0.24681080281734466,
+    "val_mse_sd": 0.029481767299474885,
+    "run_values": [
+      0.21902699768543243,
+      0.23385727405548096,
+      0.2325991988182068,
+      0.29459908604621887,
+      0.2539714574813843
+    ],
+    "task_ids": [
+      "2f86e673faf06e7610530f22afd696db934fba86af6dc7c45880a16fc77a1572",
+      "7bf69283ac4a31706f33edc6420c7603dbbaa4e58e6b2ea69f658de240e405b8",
+      "e794f3c78ad3ef43c2bc08eb76eea39a88ee62c1ec02e253c370b40719420cc4",
+      "e167e72128eb13603d40cf07440691fa154c756a1571501985e4eb256289ceb4",
+      "81d43a75bfdd02777cc4943bab7f624aa113dc695a1a43a8f9df5f9fe04be9ec"
+    ]
+  },
+  {
+    "trial": 8,
+    "config_id": "67c14fb38728249b6c1087340ec4e26bb2b44099143a18d6abcc65ed81fd98b2",
+    "params": {
+      "lr": 1.1506162158498395e-05,
+      "weight_decay": 0.0,
+      "batch_size": 64,
+      "dropout": 0.3,
+      "window_size": 6,
+      "drug_gate_init": 0.5,
+      "joint_gate_init": 0.1
+    },
+    "val_mse_mean": 0.24816798865795137,
+    "val_mse_sd": 0.026499007622520294,
+    "run_values": [
+      0.21984869241714478,
+      0.2500079274177551,
+      0.23391759395599365,
+      0.29056569933891296,
+      0.24650003015995026
+    ],
+    "task_ids": [
+      "58c37c63f007d3e113afb44a74bb4b7d505015a00595b9327168a3d238844e69",
+      "c2a880fada5bd4b8614e2ecba35c15e7534b59a1de93016e6059f8513223331c",
+      "abd39ca624962f4dd671ec6782340e16afb4f285a8db170deaeae41bf8dbf013",
+      "3326b13d3b60a283f837a4cbae61464392ddcbfbff4f4460fe85de3fc09f219f",
+      "2865db8877dec32bf37fe79be7810a355c7ba85a54f406ffc4cbef1de04657f0"
+    ]
+  },
+  {
+    "trial": 18,
+    "config_id": "42337f4d0725e1306a8184d3e9d2bcd376b98a29ade596cdd0cb30486918365f",
+    "params": {
+      "lr": 4.8242080125493964e-05,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "dropout": 0.15,
+      "window_size": 2,
+      "drug_gate_init": 0.1,
+      "joint_gate_init": 0.3
+    },
+    "val_mse_mean": 0.25280670523643495,
+    "val_mse_sd": 0.031734554822149375,
+    "run_values": [
+      0.2202386111021042,
+      0.23354463279247284,
+      0.24651414155960083,
+      0.3026995062828064,
+      0.26103663444519043
+    ],
+    "task_ids": [
+      "79d86ba53764a89ca7ab02c3527933cb62981e05ba7c42265bb9b58181a850e4",
+      "02df49bef69db015f001952503bd4afedc40f3de382746deca7189a0ff8a53ab",
+      "6683b0d93f78a053f2f0a842cd52fa7875580b651bf5ca4fd2950059669fe166",
+      "adcb846a0c591ff4fac4c2b0d1a2995a6414149d2c41b95d5006faa3ada80f4f",
+      "465e4ee40bb106defaf3f143721166d7578db9e4e85cd60467066bc9d21b5a8a"
+    ]
+  }
+]

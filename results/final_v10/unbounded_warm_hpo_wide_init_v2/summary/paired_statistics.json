@@ -1,0 +1,362 @@
+[
+  {
+    "dataset": "2773",
+    "protocol": "warm",
+    "variant": "without_protein",
+    "n": 5,
+    "ablation_minus_full_mean": 0.02539122998714447,
+    "full_mse_reduction_pct": 8.405218007318012,
+    "ablation_increase_vs_full_pct": 9.17652493347225,
+    "exact_signflip_p": 0.0625,
+    "paired_run_bootstrap_ci": [
+      0.01502390205860138,
+      0.03852076828479767
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      0.011002708965239067,
+      0.03998620436426846
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "warm",
+    "variant": "without_drug",
+    "n": 5,
+    "ablation_minus_full_mean": 0.007352688908576965,
+    "full_mse_reduction_pct": 2.5885160404913305,
+    "ablation_increase_vs_full_pct": 2.657300695231485,
+    "exact_signflip_p": 0.125,
+    "paired_run_bootstrap_ci": [
+      0.0015418320894241334,
+      0.013624629378318787
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.0010161867642445497,
+      0.01553767449841284
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "warm",
+    "variant": "without_joint",
+    "n": 5,
+    "ablation_minus_full_mean": 0.00037914812564849855,
+    "full_mse_reduction_pct": 0.1368386350448027,
+    "ablation_increase_vs_full_pct": 0.1370261397440831,
+    "exact_signflip_p": 0.8125,
+    "paired_run_bootstrap_ci": [
+      -0.004399478435516357,
+      0.004972961544990539
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.00630080039558887,
+      0.007224985072091855
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "drug_cold",
+    "variant": "without_protein",
+    "n": 5,
+    "ablation_minus_full_mean": 0.014594322443008423,
+    "full_mse_reduction_pct": 3.621975667011381,
+    "ablation_increase_vs_full_pct": 3.758092876543474,
+    "exact_signflip_p": 0.1875,
+    "paired_run_bootstrap_ci": [
+      0.0010408222675323485,
+      0.029303312301635742
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.0001711647507930443,
+      0.029644276079410094
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "drug_cold",
+    "variant": "without_drug",
+    "n": 5,
+    "ablation_minus_full_mean": -0.006001514196395874,
+    "full_mse_reduction_pct": -1.5696703411207884,
+    "ablation_increase_vs_full_pct": -1.5454124600868204,
+    "exact_signflip_p": 0.4375,
+    "paired_run_bootstrap_ci": [
+      -0.017800527811050414,
+      0.008606600761413574
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.01549623921023036,
+      0.0037415470897653818
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "drug_cold",
+    "variant": "without_joint",
+    "n": 5,
+    "ablation_minus_full_mean": -5.531907081604004e-05,
+    "full_mse_reduction_pct": -0.01424689808370897,
+    "ablation_increase_vs_full_pct": -0.01424486863179284,
+    "exact_signflip_p": 1.0,
+    "paired_run_bootstrap_ci": [
+      -0.014028650522232056,
+      0.016429156064987183
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.0072324228768768355,
+      0.007342327772696127
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "protein_cold",
+    "variant": "without_protein",
+    "n": 5,
+    "ablation_minus_full_mean": 0.35492730140686035,
+    "full_mse_reduction_pct": 24.562930876923094,
+    "ablation_increase_vs_full_pct": 32.56082342866243,
+    "exact_signflip_p": 0.0625,
+    "paired_run_bootstrap_ci": [
+      0.25708928108215334,
+      0.45458474159240725
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      0.29076526013822585,
+      0.41906144486750574
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "protein_cold",
+    "variant": "without_drug",
+    "n": 5,
+    "ablation_minus_full_mean": 0.003043067455291748,
+    "full_mse_reduction_pct": 0.27839204690246494,
+    "ablation_increase_vs_full_pct": 0.2791692318413099,
+    "exact_signflip_p": 1.0,
+    "paired_run_bootstrap_ci": [
+      -0.12295968532562256,
+      0.13301957845687867
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.010615801310863763,
+      0.01696639099252803
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "2773",
+    "protocol": "protein_cold",
+    "variant": "without_joint",
+    "n": 5,
+    "ablation_minus_full_mean": -0.023718714714050293,
+    "full_mse_reduction_pct": -2.224341398545473,
+    "ablation_increase_vs_full_pct": -2.175941041159031,
+    "exact_signflip_p": 0.75,
+    "paired_run_bootstrap_ci": [
+      -0.09667351245880126,
+      0.03402907848358154
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.034919757739437104,
+      -0.012980095132527932
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "warm",
+    "variant": "without_protein",
+    "n": 5,
+    "ablation_minus_full_mean": 0.09252113103866577,
+    "full_mse_reduction_pct": 19.434703146276995,
+    "ablation_increase_vs_full_pct": 24.122921289005212,
+    "exact_signflip_p": 0.0625,
+    "paired_run_bootstrap_ci": [
+      0.07063491940498352,
+      0.12044452428817749
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      0.05763300398514498,
+      0.14233586114268784
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "warm",
+    "variant": "without_drug",
+    "n": 5,
+    "ablation_minus_full_mean": 0.021870696544647218,
+    "full_mse_reduction_pct": 5.394697062777971,
+    "ablation_increase_vs_full_pct": 5.702319949609771,
+    "exact_signflip_p": 0.125,
+    "paired_run_bootstrap_ci": [
+      0.0039617657661437985,
+      0.0465620756149292
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      0.008072989890474308,
+      0.04851561741228529
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "warm",
+    "variant": "without_joint",
+    "n": 5,
+    "ablation_minus_full_mean": -0.0012260675430297852,
+    "full_mse_reduction_pct": -0.3206962635486571,
+    "ablation_increase_vs_full_pct": -0.31967109030639923,
+    "exact_signflip_p": 0.6875,
+    "paired_run_bootstrap_ci": [
+      -0.0064584314823150635,
+      0.0033506512641906737
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.005040289212350729,
+      0.0028616094585842762
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "drug_cold",
+    "variant": "without_protein",
+    "n": 5,
+    "ablation_minus_full_mean": 0.1120976984500885,
+    "full_mse_reduction_pct": 17.679968431355714,
+    "ablation_increase_vs_full_pct": 21.47711570860235,
+    "exact_signflip_p": 0.0625,
+    "paired_run_bootstrap_ci": [
+      0.09348036050796509,
+      0.1351901113986969
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      0.08186991557863701,
+      0.14616950701750697
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "drug_cold",
+    "variant": "without_drug",
+    "n": 5,
+    "ablation_minus_full_mean": -0.0045487403869628905,
+    "full_mse_reduction_pct": -0.8791680639256123,
+    "ablation_increase_vs_full_pct": -0.8715060609624543,
+    "exact_signflip_p": 0.8125,
+    "paired_run_bootstrap_ci": [
+      -0.025305700302124024,
+      0.014219844341278076
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.025125412669114545,
+      0.013949207313324146
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "drug_cold",
+    "variant": "without_joint",
+    "n": 5,
+    "ablation_minus_full_mean": 0.009842103719711304,
+    "full_mse_reduction_pct": 1.8507768768062962,
+    "ablation_increase_vs_full_pct": 1.8856765422210846,
+    "exact_signflip_p": 0.875,
+    "paired_run_bootstrap_ci": [
+      -0.009044158458709716,
+      0.038593584299087526
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.007178808210885531,
+      0.03015870031381761
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "protein_cold",
+    "variant": "without_protein",
+    "n": 5,
+    "ablation_minus_full_mean": -0.0650777816772461,
+    "full_mse_reduction_pct": -7.659662857086573,
+    "ablation_increase_vs_full_pct": -7.114700765182997,
+    "exact_signflip_p": 0.0625,
+    "paired_run_bootstrap_ci": [
+      -0.09012348651885986,
+      -0.0420038104057312
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.12706021288209288,
+      -0.003544703134256014
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "protein_cold",
+    "variant": "without_drug",
+    "n": 5,
+    "ablation_minus_full_mean": 0.026598501205444335,
+    "full_mse_reduction_pct": 2.825740672789107,
+    "ablation_increase_vs_full_pct": 2.9079106878233114,
+    "exact_signflip_p": 0.375,
+    "paired_run_bootstrap_ci": [
+      -0.021515023708343507,
+      0.07380086183547974
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      0.0003166997536348515,
+      0.05298819025556807
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  },
+  {
+    "dataset": "KinetX",
+    "protocol": "protein_cold",
+    "variant": "without_joint",
+    "n": 5,
+    "ablation_minus_full_mean": -0.012729012966156006,
+    "full_mse_reduction_pct": -1.4112526632299536,
+    "ablation_increase_vs_full_pct": -1.3916134809186222,
+    "exact_signflip_p": 0.1875,
+    "paired_run_bootstrap_ci": [
+      -0.022225010395050048,
+      -0.0023853421211242677
+    ],
+    "sample_pair_cluster_bootstrap_ci": [
+      -0.019085268293671184,
+      -0.006499024769441735
+    ],
+    "bootstrap_note": "Conditional on fitted models; raw-pair-cluster means. Not a new training-seed or protein-cluster CI.",
+    "holm_p_all_mse_ablations": 1.0
+  }
+]

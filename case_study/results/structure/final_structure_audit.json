@@ -1,0 +1,24 @@
+{
+  "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+  "current_occlusion_manifest_sha256": "b4567e062eda3addfa009da8cc7370c47ec4c12d4b8f77b54aa863ec12299e17",
+  "geometry_origin": "Pinned historical docking/redocking, independent of MGCA parameters. Docking not rerun.",
+  "old_model_occlusion_reused": false,
+  "contact_and_residue_scoring_recomputed": true,
+  "renderer": "matplotlib_Calpha_fallback",
+  "interpretation": "Perturbation sensitivity mapped onto reused geometry, not physical interaction proof",
+  "files": {
+    "1NFU_receptor_occlusion_2773.pdb": "db0915305c61433f3d46abe271f87e45f7a1e665567cc38017f451376e252dfb",
+    "1NFU_RRP_experimental_contacts_4A.csv": "0b774c34443ceeffbf9b89d5619a7663d65123e04d0a3c99be0530f42131ac24",
+    "factor_xa_fallback_composite.pdf": "45f4d17132d85c2f6a9ef906b7852e9992f9a37f3a250f8eb128747fbef8ffa0",
+    "factor_xa_fallback_composite.png": "ed87f27b32594fe485d72101592a0e45003be235ffb3a426cfdcb02f5eaf3551",
+    "factor_xa_fallback_composite.svg": "d7edda8d733678d89b649efd622d3eddde6199f24a048e4d106a79f5e643873f",
+    "factor_xa_pocket_zoom_2773.pml": "0e3b6986be5a5347d8acc0e0599638aef8048af002a7785d1f61492794f1d3f1",
+    "factor_xa_reference_structure_2773.pml": "87af8d828e68b4df5c13c11dab781ca053726b21c38d147e265b02fdd41f74eb",
+    "factor_xa_residue_occlusion_2773.csv": "3a73f83b6dd5c0d5819288c5503f7c43ebec480f309384554f53d2189b5f53d4",
+    "factor_xa_sequence_occlusion_2773.png": "40d62379f8931baf9a35c65fa8d37d98a54b44d4344a84718642e086851f8566",
+    "factor_xa_structure_2773.pml": "c38c59ecd6acdc4bca90c3fa0c862ccccd3478d8766d5f2ee12262b5a2edc5f6",
+    "factor_xa_structure_fallback.png": "c6c4a3f580ac95e692ddcc9e5cb63b3fb7d75e25ab1df55927022509baa8c111",
+    "factor_xa_structure_fallback.svg": "e767202d4be969adacc0bf07039689265a1952854a23579ed13f44bf24693d73",
+    "stage4_visualization_manifest.json": "1fdd6b5c8c5a757c061f9d272a94a84e4b67bfcdd93f0621aa23efeec9557915"
+  }
+}

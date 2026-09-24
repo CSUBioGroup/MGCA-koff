@@ -1,0 +1,142 @@
+{
+  "signature": "02c0aec797c34b76c1d14c49ccc7f26cc6db632a92932ca2e049d0e500c66825",
+  "identity": {
+    "model_variant": "mgca_v10_unbounded_softplus_jointtune_v1",
+    "dataset": "2773",
+    "protocol": "drug_cold",
+    "run": 2,
+    "seed": 42,
+    "ablation": "joint_interaction",
+    "selection_only": false,
+    "config_id": "aed5ed99e4880f31a9768687cb6f9b68a9b67cf8fe69d41573949bb2fbff0c68",
+    "device": "cuda:0",
+    "amp": false,
+    "hyperparameters": {
+      "lr": 5.9260857797183374e-05,
+      "weight_decay": 0.0001,
+      "batch_size": 64,
+      "dropout": 0.15,
+      "window_size": 2,
+      "window_layout": "legacy_anchors_v1",
+      "epochs": 100,
+      "patience": 15,
+      "joint_rank": 128,
+      "protein_aux_weight": 0.1,
+      "drug_utility_weight": 0.02,
+      "joint_utility_weight": 0.02,
+      "branch_margin": 0.01,
+      "drug_gate_init": 0.3,
+      "joint_gate_init": 0.3,
+      "joint_branch_dropout": 0.15,
+      "protein_warmup_epochs": 5,
+      "fixed_shrinkage_epochs": 5,
+      "gradient_clip_norm": 5.0,
+      "numerical_stability_revision": "uncapped_softplus_v1"
+    },
+    "source_v10_sha256": "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+    "fusion_parameterization": "protein=1; drug/joint=softplus(raw); no cap; no gate prior",
+    "scalar_weight_decay": 0.0,
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "trainer_sha256": "6206bcdff93bb066ebe166a3f7d0395668cdaffb0d1060b0ca069494741a64f8",
+    "utils_sha256": "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6",
+    "legacy_dependency_sha256": "10facab41d5646ab0308a0f8877b696a08262c6e8712f8f75fc7a395ed087b05",
+    "train_sha256": "b75ff4e17e27c16229ff9ebcaf7a3a91924c23f83b8b925b415d32ae818c213e",
+    "val_sha256": "2eae710f5c4fde003cc828ade77f139ad696cb1a9b51b85aff8fba8be101d6ab",
+    "test_sha256": "1e9aa82453f762e12e985447ad430213641f22704c8a48ecb7bedfa2a4a0be06",
+    "runtime_environment": {
+      "CUDA_VISIBLE_DEVICES": null,
+      "PYTORCH_CUDA_ALLOC_CONF": null,
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "artifact_policy": {
+      "save_best_model": true,
+      "save_resume_state": true,
+      "save_cgrs_outputs": true
+    }
+  },
+  "selection_only": false,
+  "test_accessed": true,
+  "best_epoch": 28,
+  "epochs_ran": 43,
+  "parameter_count": 13392395,
+  "trainable_parameter_count": 13392395,
+  "train_metrics": {
+    "mse": 0.05543534457683563,
+    "rmse": 0.23544712364673615,
+    "mae": 0.16803468763828278,
+    "r2": 0.9406706198820879,
+    "pearson": 0.9712912992719951,
+    "spearman": 0.9617047754171965
+  },
+  "val_metrics": {
+    "mse": 0.3216756582260132,
+    "rmse": 0.5671645998954773,
+    "mae": 0.4144468903541565,
+    "r2": 0.6258288800401564,
+    "pearson": 0.8006153387032404,
+    "spearman": 0.7261395309825335
+  },
+  "validation_branch_diagnostics": {
+    "branch_margin": 0.01,
+    "drug_improves_fraction": 0.4332129963898917,
+    "joint_improves_fraction": 0.0,
+    "drug_mean_normalized_gain": -0.03262499896470769,
+    "joint_mean_normalized_gain": 0.0,
+    "drug_global_gate": 0.3024812340736389,
+    "joint_global_gate": 0.30000001192092896
+  },
+  "input": {
+    "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/train_run2.csv",
+    "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/val_run2.csv",
+    "test_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/drug-cold/test_run2.csv",
+    "esm2_feature_cache": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/cache/9233b2f2936369db3f341a341756f01877b6a0db94018609d2d3f379bba251be/features__ws2.pt",
+    "esm2_feature_cache_sha256": "65b711fd4676e26b119337dd2cca197487ddf6fb223db31ee2791e5be9459ea0",
+    "morgan_feature_cache": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/v10_unbounded_jointtune/outputs/unbounded_warm_hpo_wide_init_v2/cache/9233b2f2936369db3f341a341756f01877b6a0db94018609d2d3f379bba251be/features__morgan_r0-3_47c007bbb0a8.pt",
+    "morgan_feature_cache_sha256": "a8b8c6db0e89fec87d6a16548a51710735eed38698442b3c4089b779ef9976f3",
+    "esm2_cache_hit_before_run": true,
+    "morgan_cache_hit_before_run": true
+  },
+  "timing": {
+    "protocol": "synchronized_wall_clock_v1",
+    "configured_concurrency": 5,
+    "concurrency_history": [
+      5
+    ],
+    "shared_device_timing": true,
+    "setup_duration_sec": 3.0338107822462916,
+    "feature_preparation_duration_sec": 2.9410233292728662,
+    "training_duration_sec": 31.028825090266764,
+    "training_duration_this_attempt_sec": 39.39631038811058,
+    "training_duration_definition": "sum of completed epoch durations across resume; includes validation, excludes inter-epoch checkpoint writes",
+    "training_samples_per_sec": 2689.853700782921,
+    "train_evaluation_duration_sec": 0.09312919341027737,
+    "validation_evaluation_duration_sec": 0.019014054909348488,
+    "mean_epoch_duration_sec": 0.7216005834945759,
+    "run_to_metrics_duration_sec": 44.938630755990744,
+    "training_peak_gpu_memory_allocated_mb": 463.04443359375,
+    "training_peak_gpu_memory_reserved_mb": 480.0,
+    "test_evaluation_duration_sec": 0.04015849530696869,
+    "test_inference_samples_per_sec": 13820.238924731104,
+    "final_evaluation_duration_sec": 0.15230174362659454,
+    "artifact_write_duration_sec": 0.054116807878017426
+  },
+  "test_metrics": {
+    "mse": 0.43634775280952454,
+    "rmse": 0.6605662107467651,
+    "mae": 0.47918134927749634,
+    "r2": 0.5787013543166802,
+    "pearson": 0.7719687792408896,
+    "spearman": 0.7181675246994133
+  },
+  "test_branch_diagnostics": {
+    "branch_margin": 0.01,
+    "drug_improves_fraction": 0.45585585585585586,
+    "joint_improves_fraction": 0.0,
+    "drug_mean_normalized_gain": 0.015557776592595038,
+    "joint_mean_normalized_gain": 0.0,
+    "drug_global_gate": 0.3024812340736389,
+    "joint_global_gate": 0.30000001192092896
+  },
+  "checkpoint_size_bytes": 53597654
+}

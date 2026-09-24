@@ -1,0 +1,174 @@
+{
+  "run_identity": {
+    "protocol": "mgca_final_unbounded_widegrid_2773_case_v1_panel",
+    "package_sha256": "c01c05b7f150c38a7fe00d4a3db48cbaa2608286b5eb133e54e30181480b7902",
+    "panel_name": "four_target",
+    "case_csv_sha256": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3",
+    "training_csv_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+    "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+    "inference_script_sha256": "e97ea68ad734c9200fe3185a6d87c1b3a8e54d8e60ebcd9b10df0a7cf49b4655",
+    "epochs": 33,
+    "seeds": [
+      42,
+      142,
+      242,
+      342,
+      442
+    ],
+    "checkpoint_sha256": [
+      "fd63aa48c21ada4faba6977bc08f6b765c5964fd2a133a01c1d27b42327ac8de",
+      "b07b1f2a2663b1f43e2f640981daca2e974fa076974601341733f8efb8eba26e",
+      "ae9fe000d481b81bbb5ef98718aaa550784ff67131a466d21993e95b41f14e9f",
+      "0794921c796ddbc878db48496780363fbc3a6e21eb11639b6ba5e5e4ceaa121b",
+      "631ef93608905533d365fb97ed0ecc379a60c0993e0d15ad8dd8c4d29a42bd65"
+    ],
+    "batch_size": 64,
+    "esm_batch_size": 1,
+    "top_k": [
+      3,
+      5,
+      10
+    ],
+    "kmer_size": 5,
+    "sequence_threshold": 0.7,
+    "sequence_margin": 0.05
+  },
+  "protocol": "mgca_final_unbounded_widegrid_2773_case_v1_panel",
+  "panel_name": "four_target",
+  "created_at_utc": "2026-09-12T07:37:35.894301+00:00",
+  "case_csv": "<BIO_PROJECT_ROOT>/case_study_mgca_final/inputs/four_target.csv",
+  "case_csv_sha256": "9aefaa89b1ca56bda3eb147a6c5077f3879fcb442edd52b4f78c8a5dcabf86d3",
+  "training_csv": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/cohort/training.csv",
+  "training_csv_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+  "training_data_sha256_from_checkpoints": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+  "model_config": {
+    "proj_dim1": 2560,
+    "proj_dim2": 2048,
+    "hidden_dim": 512,
+    "dropout": 0.15,
+    "nums_of_experts": 4,
+    "ablation": "no",
+    "joint_rank": 128,
+    "protein_aux_weight": 0.1,
+    "drug_utility_weight": 0.02,
+    "joint_utility_weight": 0.02,
+    "branch_margin": 0.01,
+    "drug_gate_init": 0.3,
+    "joint_gate_init": 0.3,
+    "joint_branch_dropout": 0.15,
+    "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+    "model_variant": "mgca_v10_unbounded_softplus_jointtune_v1",
+    "fingerprint_type": "morgan",
+    "window_size": 2,
+    "window_layout": "legacy_anchors_v1",
+    "lr": 5.9260857797183374e-05,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 33,
+    "protein_warmup_epochs": 5,
+    "fixed_shrinkage_epochs": 5
+  },
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "epochs": 33,
+  "unique_fastas": 4,
+  "esm_cache": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/cache/esm2_case_93a8f12f5586cdca__ws2__wllegacy_anchors_v1.pt",
+  "batch_invariance": [
+    {
+      "seed": 42,
+      "max_abs_difference": 4.76837158203125e-07
+    },
+    {
+      "seed": 142,
+      "max_abs_difference": 7.152557373046875e-07
+    },
+    {
+      "seed": 242,
+      "max_abs_difference": 4.76837158203125e-07
+    },
+    {
+      "seed": 342,
+      "max_abs_difference": 2.384185791015625e-07
+    },
+    {
+      "seed": 442,
+      "max_abs_difference": 4.76837158203125e-07
+    }
+  ],
+  "checkpoints": [
+    {
+      "seed": 42,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_42/mgca_final_full2773_seed_42_epoch33.pt",
+      "sha256": "fd63aa48c21ada4faba6977bc08f6b765c5964fd2a133a01c1d27b42327ac8de",
+      "manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_42/run_manifest.json",
+      "manifest_sha256": "bc409d718621ab4f3b12202ba3f549effd8c05956e80aff16c8d2ab6177268e4"
+    },
+    {
+      "seed": 142,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_142/mgca_final_full2773_seed_142_epoch33.pt",
+      "sha256": "b07b1f2a2663b1f43e2f640981daca2e974fa076974601341733f8efb8eba26e",
+      "manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_142/run_manifest.json",
+      "manifest_sha256": "c181554c9af2549736ca2b41d1c876a861f9183062408374a76e9993d5f793f1"
+    },
+    {
+      "seed": 242,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_242/mgca_final_full2773_seed_242_epoch33.pt",
+      "sha256": "ae9fe000d481b81bbb5ef98718aaa550784ff67131a466d21993e95b41f14e9f",
+      "manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_242/run_manifest.json",
+      "manifest_sha256": "cfa4fa354c28c5e742a91c25312934a05cb86841ace04b2b36eb8ad6bfad875e"
+    },
+    {
+      "seed": 342,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_342/mgca_final_full2773_seed_342_epoch33.pt",
+      "sha256": "0794921c796ddbc878db48496780363fbc3a6e21eb11639b6ba5e5e4ceaa121b",
+      "manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_342/run_manifest.json",
+      "manifest_sha256": "24725066442f185d479d6d33bb304a48099bd758322936116779bbb24609db1e"
+    },
+    {
+      "seed": 442,
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_442/mgca_final_full2773_seed_442_epoch33.pt",
+      "sha256": "631ef93608905533d365fb97ed0ecc379a60c0993e0d15ad8dd8c4d29a42bd65",
+      "manifest": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/checkpoints/seed_442/run_manifest.json",
+      "manifest_sha256": "050fc866776351bcf1fe33397505f3e1097d02005a488143737e49612a2fce35"
+    }
+  ],
+  "outputs": {
+    "sample": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/sample_five_seed_predictions.csv",
+      "sha256": "e1c080210dd0af3e6371aaf38f9f07e4c897020f0f4edc261becda04b74a585f"
+    },
+    "unique": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/unique_compound_five_seed_predictions.csv",
+      "sha256": "447d2a5e4675293a085f8e0cd77aabcead4cf4de0676b8e29e113406ad55254f"
+    },
+    "metrics": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/metrics_by_target_and_seed.csv",
+      "sha256": "6b92780bd43f38d789c098c02d15b4ffb0f59409ed64dbcab4571268386f4259"
+    },
+    "metrics_mean_sd": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/metrics_five_seed_mean_sd.csv",
+      "sha256": "2b28841763785b3d5f4f8add8f4f1af5c3294d818aebafcc71cbe3053a3970ce"
+    },
+    "rankings": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/compound_rankings.csv",
+      "sha256": "6025943d1f0b75349d5e5e8fc9439172338eae1ab6efc936ae692366d00ce674"
+    },
+    "ranking_summary": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/ranking_summary.csv",
+      "sha256": "aebf4c916e9bd3436de5f65eb7d542471e4c1cef8ea441f21b2e895a3b12781b"
+    },
+    "ranking_mean_sd": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/ranking_five_seed_mean_sd.csv",
+      "sha256": "a7773dd7ad1363d1e74920c95179fc0bdbb9c21f9939f64429a6d2e4b1a8b32e"
+    },
+    "diagnostics": {
+      "path": "<BIO_PROJECT_ROOT>/case_study_outputs/mgca_final_unbounded_2773_v1/predictions/four_target/v10_internal_diagnostics_per_seed.csv",
+      "sha256": "21574116e9c36206716dae73c38a1d67f8461982e2d59fd081ca84b122db4d92"
+    }
+  }
+}

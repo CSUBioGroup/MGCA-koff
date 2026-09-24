@@ -1,0 +1,84 @@
+{
+  "protocol": "native_ligand_redocking_gate_v1",
+  "created_at_utc": "2026-08-11T07:04:14.353696+00:00",
+  "pdb_id": "1NFU",
+  "native_ligand": "RRP",
+  "seeds": [
+    101,
+    201,
+    301,
+    401,
+    501,
+    601,
+    701,
+    801,
+    901,
+    1001
+  ],
+  "rank1_rmsd_threshold_A": 2.0,
+  "required_passing_seeds": 5,
+  "observed_passing_seeds": 10,
+  "passed": true,
+  "rank1_by_seed": [
+    {
+      "seed": 101,
+      "affinity": -10.668,
+      "symmetry_corrected_heavy_atom_rmsd": 1.5226594826158604,
+      "passes_2A": true
+    },
+    {
+      "seed": 201,
+      "affinity": -10.75,
+      "symmetry_corrected_heavy_atom_rmsd": 1.538230899442603,
+      "passes_2A": true
+    },
+    {
+      "seed": 301,
+      "affinity": -10.71,
+      "symmetry_corrected_heavy_atom_rmsd": 1.5350705955536161,
+      "passes_2A": true
+    },
+    {
+      "seed": 401,
+      "affinity": -10.703,
+      "symmetry_corrected_heavy_atom_rmsd": 1.5387125137594742,
+      "passes_2A": true
+    },
+    {
+      "seed": 501,
+      "affinity": -10.752,
+      "symmetry_corrected_heavy_atom_rmsd": 1.5472263570660887,
+      "passes_2A": true
+    },
+    {
+      "seed": 601,
+      "affinity": -10.742,
+      "symmetry_corrected_heavy_atom_rmsd": 1.5783163603452046,
+      "passes_2A": true
+    },
+    {
+      "seed": 701,
+      "affinity": -10.735,
+      "symmetry_corrected_heavy_atom_rmsd": 1.5377372770838762,
+      "passes_2A": true
+    },
+    {
+      "seed": 801,
+      "affinity": -10.696,
+      "symmetry_corrected_heavy_atom_rmsd": 1.553455964401094,
+      "passes_2A": true
+    },
+    {
+      "seed": 901,
+      "affinity": -10.682,
+      "symmetry_corrected_heavy_atom_rmsd": 1.533350818740882,
+      "passes_2A": true
+    },
+    {
+      "seed": 1001,
+      "affinity": -10.688,
+      "symmetry_corrected_heavy_atom_rmsd": 1.551220916998392,
+      "passes_2A": true
+    }
+  ]
+}

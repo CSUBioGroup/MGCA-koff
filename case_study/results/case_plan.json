@@ -1,0 +1,15 @@
+{
+  "protocol": "mgca_final_unbounded_widegrid_2773_case_v1",
+  "package": "aae2b1a1daccfae5c8af73bd13babec5160582b49ece991980e116a18096aafc",
+  "refit_config": "a12b98c53984d9c66ae6cbf5d0862b274bc569fed8ca1473d6944a7658113b1f",
+  "esm_expected": {
+    "config.json": "ca75d7053d1dcf2da6f0f5e4f2ff87d8929a7c39089e72ffbb0b5ddd4abf3a27",
+    "pytorch_model-00001-of-00002.bin": "0f971f11c449d21422aa982b791619c10351972992c735f4c3cd43fe09790412",
+    "pytorch_model-00002-of-00002.bin": "7560b46fc383c691fb74b915b7d4bcef40d3df181447f16ba4b298845e308d0c",
+    "pytorch_model.bin.index.json": "6b5790c484bc87e377dee81542cce94cf333a5d68fc02a6167b81b36aef612e0",
+    "special_tokens_map.json": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+    "tf_model.h5.index.json": "4524f2d01294287c2d6d949ae5b37e4612e4d6def146c3b9efa54f3d44f9a8aa",
+    "tokenizer_config.json": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+    "vocab.txt": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+  }
+}

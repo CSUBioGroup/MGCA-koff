@@ -1,0 +1,80 @@
+{
+    "release":  "MGCA-koff",
+    "version":  "1.0.0",
+    "generated_on":  "2026-09-24",
+    "github_repository":  "https://github.com/CSUBioGroup/MGCA-koff",
+    "license":  "Apache-2.0",
+    "checkpoints_included":  false,
+    "pretrained_esm2_included":  false,
+    "scientific_identity":  {
+                                "final_model":  "MGCA",
+                                "final_case_config_id":  "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+                                "final_case_dataset":  "Zhao dataset",
+                                "final_case_records":  2773,
+                                "final_case_seeds":  [
+                                                         42,
+                                                         142,
+                                                         242,
+                                                         342,
+                                                         442
+                                                     ],
+                                "final_case_epochs":  33,
+                                "esm2_window_layout":  "even_span_v2"
+                            },
+    "exclusions":  [
+                       "checkpoint binaries",
+                       "ESM2 weights",
+                       "transient caches and logs",
+                       "diagnostic NPZ arrays",
+                       "training-set predictions",
+                       "nested archives",
+                       "superseded case-study outputs"
+                   ],
+    "inventory":  [
+                      {
+                          "path":  "baselines",
+                          "files":  61,
+                          "bytes":  495799
+                      },
+                      {
+                          "path":  "case_study",
+                          "files":  187,
+                          "bytes":  70449386
+                      },
+                      {
+                          "path":  "data",
+                          "files":  85,
+                          "bytes":  65356225
+                      },
+                      {
+                          "path":  "data_preparation",
+                          "files":  7,
+                          "bytes":  104501
+                      },
+                      {
+                          "path":  "experiments",
+                          "files":  57,
+                          "bytes":  639751
+                      },
+                      {
+                          "path":  "figures",
+                          "files":  1,
+                          "bytes":  637651
+                      },
+                      {
+                          "path":  "inference_service",
+                          "files":  25,
+                          "bytes":  155718
+                      },
+                      {
+                          "path":  "model",
+                          "files":  5,
+                          "bytes":  132675
+                      },
+                      {
+                          "path":  "results",
+                          "files":  1650,
+                          "bytes":  43529697
+                      }
+                  ]
+}

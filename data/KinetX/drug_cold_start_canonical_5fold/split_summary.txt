@@ -1,0 +1,26 @@
+KinetX Drug Cold-Start 5-Fold Summary
+============================================================
+
+Input rows: 5446
+Unique raw SMILES: 2274
+Unique drugs: 2029
+Multi-spelling drug groups: 212
+Raw SMILES in multi-spelling groups: 457
+Samples in multi-spelling groups: 737
+Unique proteins: 275
+Drug key mode: canonical
+Split seed: 42
+Singleton drugs: 1451
+Largest drug group: 34 samples (0.62%)
+Test sample CV: 0.000411
+
+Fold summary:
+  fold1: train=3811 (1407 drugs), val=545 (216 drugs), test=1090 (406 drugs), test_pkoff=1.897765+/-1.181624
+  fold2: train=3812 (1400 drugs), val=545 (224 drugs), test=1089 (405 drugs), test_pkoff=1.888440+/-1.187845
+  fold3: train=3812 (1463 drugs), val=545 (160 drugs), test=1089 (406 drugs), test_pkoff=1.870269+/-1.205149
+  fold4: train=3812 (1428 drugs), val=545 (195 drugs), test=1089 (406 drugs), test_pkoff=1.876182+/-1.207290
+  fold5: train=3812 (1440 drugs), val=545 (183 drugs), test=1089 (406 drugs), test_pkoff=1.895675+/-1.208304
+
+Leakage checks:
+  Drug overlap within every fold: 0
+  Every drug appears in test exactly once: PASS

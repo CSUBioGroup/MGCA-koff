@@ -1,0 +1,51 @@
+{
+  "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+  "dataset": "2773",
+  "fingerprint": "morgan",
+  "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+  "params": {
+    "lr": 5.9260857797183374e-05,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "dropout": 0.15,
+    "window_size": 2,
+    "drug_gate_init": 0.3,
+    "joint_gate_init": 0.3,
+    "window_layout": "even_span_v2"
+  },
+  "architecture": {
+    "protein_coefficient": 1.0,
+    "positive_gate": "softplus",
+    "gate_prior": null,
+    "scalar_weight_decay": 0.0,
+    "hidden_dim": 512,
+    "joint_rank": 128,
+    "protein_aux_weight": 0.1,
+    "drug_utility_weight": 0.02,
+    "joint_utility_weight": 0.02,
+    "branch_margin": 0.01,
+    "joint_branch_dropout": 0.15,
+    "gradient_clip": 5.0,
+    "protein_experts": 4,
+    "protein_warmup_epochs": 5,
+    "fixed_shrinkage_epochs": 5
+  },
+  "refit_epochs": 33,
+  "validation_selected_epochs": [
+    49,
+    32,
+    33,
+    48,
+    18
+  ],
+  "epoch_rule": "median of five warm validation-selected best epochs of frozen winner; no case labels",
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "amp": false,
+  "model_variant": "mgca_v10_unbounded_softplus_jointtune_v1"
+}

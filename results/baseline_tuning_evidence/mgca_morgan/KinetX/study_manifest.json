@@ -1,0 +1,126 @@
+{
+  "protocol_version": "mgca_mha_interaction_2expert_warm_only_tpe_top5_window_v4",
+  "model": "MGCA",
+  "fingerprint": "morgan",
+  "dataset": "KinetX",
+  "target_completed_trials": 30,
+  "top_k": 5,
+  "sampler": "Optuna TPESampler",
+  "sampler_seed": 2026,
+  "search_space": {
+    "lr": {
+      "type": "log_uniform",
+      "range": [
+        1e-05,
+        0.0005
+      ]
+    },
+    "weight_decay": {
+      "type": "categorical",
+      "values": [
+        0.0,
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01
+      ]
+    },
+    "batch_size": {
+      "type": "categorical",
+      "values": [
+        16,
+        32,
+        64
+      ]
+    },
+    "dropout": {
+      "type": "categorical",
+      "values": [
+        0.05,
+        0.1,
+        0.15,
+        0.17,
+        0.2,
+        0.25,
+        0.3
+      ]
+    },
+    "window_size": {
+      "type": "categorical",
+      "values": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "description": "adjacent ESM2 layers averaged for each of four depth experts"
+    },
+    "window_layout": {
+      "type": "fixed",
+      "value": "legacy_anchors_v1",
+      "description": "placement of four ESM2 depth windows"
+    },
+    "fixed_architecture": {
+      "hidden_dim": 512,
+      "protein_experts": 4,
+      "drug_experts": 4,
+      "moe_experts": 2,
+      "attention_heads": 8
+    }
+  },
+  "training": {
+    "epochs": 100,
+    "patience": 15,
+    "seed": 42,
+    "optimizer": "AdamW",
+    "objective": "validation_mse"
+  },
+  "esm2_path": "<PRIVATE_DATA_ROOT>/pretrained_model/esm2_t36",
+  "esm2_path_exists": true,
+  "mgca_script": "<BIO_PROJECT_ROOT>/mgca_hyperparameter_tuning/ESM_Morgan_Hybrid_Fusion_nonredundant.py",
+  "mgca_script_sha256": "ca199b8c8ffe88633bcda053c7c0d344f63c23ee58e99da821b039bb663a686c",
+  "warm_data_manifest": [
+    {
+      "run": 1,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run1.csv",
+      "train_sha256": "f432dd78411cb04aae305adb99258f977461a7186bcdbef0cce7aa9b86fccf75",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run1.csv",
+      "val_sha256": "f7b36a687c95ffb99e2f8e459c7e58bd7dd2e975e2d99c24923a6a7fc8fa99bd"
+    },
+    {
+      "run": 2,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run2.csv",
+      "train_sha256": "36d263e941fd0533b8234fef94217fb45cd6aec700b44249ff926d6ee08aa046",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run2.csv",
+      "val_sha256": "4aed53583a2a4f7ae91e77aa107781246dcb09a1d1c2b0b3db4f776659ea09f1"
+    },
+    {
+      "run": 3,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run3.csv",
+      "train_sha256": "14ec72ea883532373f8a019260758faab590570fba5aef6646d451963c4c3bff",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run3.csv",
+      "val_sha256": "8745567c0fa982807ffb094c211e3652be9a75073e91f0379297b006afe469a1"
+    },
+    {
+      "run": 4,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run4.csv",
+      "train_sha256": "6c4eeb73b0b861420c48b3b936b825983e949e77d15cf5ee7d1d2ab0d160f09a",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run4.csv",
+      "val_sha256": "c3df2f21251435f9267b15e9225a21c145980330989e37874e06a3a34cfdb2fe"
+    },
+    {
+      "run": 5,
+      "train_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/train_run5.csv",
+      "train_sha256": "bc2cf9036c0f1376fe0af2d26385b241508f7c1316c2acaf5de9d575bb3e3d7c",
+      "val_csv": "<BIO_PROJECT_ROOT>/KinetX/random_split_mgca_input/val_run5.csv",
+      "val_sha256": "9ff880565700abb356a7a996ed542d295a51a877e2d8a725a37b913e4b63e5e9"
+    }
+  ],
+  "test_accessed_during_selection": false,
+  "esm2_window_layout": "legacy_anchors_v1",
+  "model_variant": "mha_interaction_rmsnorm_sigmoid_fixed3h_2expert_v4_window_sweep",
+  "model_dependency_script": "<BIO_PROJECT_ROOT>/local/ESM_Morgan_Hybrid_Fusion.py",
+  "model_dependency_script_sha256": "728fec57e1bd08595e3878b8325c8ef33f77a1e399b7f8f77ec3d47d4576b81f"
+}

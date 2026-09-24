@@ -1,0 +1,121 @@
+{
+  "protocol": "mgca_kinetx_aligned_serial_synchronized_v1",
+  "concurrency": 1,
+  "total_runs": 15,
+  "study": "mgca_kinetx_tuned",
+  "configuration": "<PROJECT_ROOT>/mgca_hyperparameter_tuning/corrected_model_window_search_results_v4/mgca_morgan/KinetX/best_params.json",
+  "timing_primary_endpoint": "metrics.timing.training_duration_sec",
+  "feature_precomputation_included": false,
+  "design": {
+    "warm": "five aligned pre-generated split runs, seed 42",
+    "drug_cold": "five canonical folds, seed 42",
+    "protein_cold": "one fixed split, seeds 42/142/242/342/442"
+  },
+  "task_order": [
+    {
+      "ordinal": 1,
+      "split": "warm",
+      "run": 1,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/warm/run1"
+    },
+    {
+      "ordinal": 2,
+      "split": "warm",
+      "run": 2,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/warm/run2"
+    },
+    {
+      "ordinal": 3,
+      "split": "warm",
+      "run": 3,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/warm/run3"
+    },
+    {
+      "ordinal": 4,
+      "split": "warm",
+      "run": 4,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/warm/run4"
+    },
+    {
+      "ordinal": 5,
+      "split": "warm",
+      "run": 5,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/warm/run5"
+    },
+    {
+      "ordinal": 6,
+      "split": "drug_cold",
+      "run": 1,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/drug_cold/run1"
+    },
+    {
+      "ordinal": 7,
+      "split": "drug_cold",
+      "run": 2,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/drug_cold/run2"
+    },
+    {
+      "ordinal": 8,
+      "split": "drug_cold",
+      "run": 3,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/drug_cold/run3"
+    },
+    {
+      "ordinal": 9,
+      "split": "drug_cold",
+      "run": 4,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/drug_cold/run4"
+    },
+    {
+      "ordinal": 10,
+      "split": "drug_cold",
+      "run": 5,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/drug_cold/run5"
+    },
+    {
+      "ordinal": 11,
+      "split": "protein_cold",
+      "run": 1,
+      "seed": 42,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/protein_cold/run1"
+    },
+    {
+      "ordinal": 12,
+      "split": "protein_cold",
+      "run": 2,
+      "seed": 142,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/protein_cold/run2"
+    },
+    {
+      "ordinal": 13,
+      "split": "protein_cold",
+      "run": 3,
+      "seed": 242,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/protein_cold/run3"
+    },
+    {
+      "ordinal": 14,
+      "split": "protein_cold",
+      "run": 4,
+      "seed": 342,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/protein_cold/run4"
+    },
+    {
+      "ordinal": 15,
+      "split": "protein_cold",
+      "run": 5,
+      "seed": 442,
+      "run_dir": "<PROJECT_ROOT>/training_time_benchmark_outputs_aligned/mgca_kinetx_tuned/protein_cold/run5"
+    }
+  ]
+}

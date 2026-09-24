@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export PROJECT_ROOT="${PROJECT_ROOT:-$(cd "${SCRIPT_DIR}/../.." && pwd)}"
+export ESM2_PATH="${ESM2_PATH:-${PROJECT_ROOT}/../pretrained_model/esm2_t36}"
+export OUTPUT_ROOT="${OUTPUT_ROOT:-${SCRIPT_DIR}/outputs/unbounded_warm_hpo_v1}"
+export CACHE_ROOT="${CACHE_ROOT:-${OUTPUT_ROOT}/cache}"
+export PYTHON_BIN="${PYTHON_BIN:-python}"
+export DEVICE="${DEVICE:-cuda:0}"
+export RUN_JOBS="${RUN_JOBS:-5}"
+export CANDIDATE_REVIEW_JOBS="${CANDIDATE_REVIEW_JOBS:-5}"
+export OPTUNA_JOBS=1
+export TUNING_TRIALS="${TUNING_TRIALS:-30}"
+export TOP_K="${TOP_K:-5}"
+export DATASETS="${DATASETS:-2773 KinetX}"
+export PROTOCOLS="${PROTOCOLS:-warm drug_cold protein_cold}"
+# Both datasets by default: Full 30 + three branch ablations 90 = 120 formal runs.
+export ABLATION_DATASETS="${ABLATION_DATASETS:-2773 KinetX}"
+export N_RUNS=5
+export SEED="${SEED:-42}"
+export SEED_STEP="${SEED_STEP:-100}"
+export SAMPLER_SEED="${SAMPLER_SEED:-2026}"
+export EPOCHS="${EPOCHS:-100}"
+export PATIENCE="${PATIENCE:-15}"
+# Preserve v10's continuous optimizer schedule to isolate the fusion change.
+export PROTEIN_WARMUP_EPOCHS="${PROTEIN_WARMUP_EPOCHS:-5}"
+export FIXED_SHRINKAGE_EPOCHS="${FIXED_SHRINKAGE_EPOCHS:-5}"
+export DRUG_INIT_CHOICES="${DRUG_INIT_CHOICES:-0.05 0.10 0.20}"
+export JOINT_INIT_CHOICES="${JOINT_INIT_CHOICES:-0.015 0.03 0.06}"
+export ESM_BATCH_SIZE="${ESM_BATCH_SIZE:-1}"
+export AMP="${AMP:-false}"
+export MIN_FREE_GIB="${MIN_FREE_GIB:-5}"
+export OMP_NUM_THREADS="${OMP_NUM_THREADS:-1}"
+export MKL_NUM_THREADS="${MKL_NUM_THREADS:-1}"
+export PYTHONHASHSEED="${PYTHONHASHSEED:-42}"
+export MPLBACKEND=Agg
+export TOKENIZERS_PARALLELISM=false
+export PHASE="${PHASE:-all}" # plan | preflight | tuning | formal | ablation | summary | all

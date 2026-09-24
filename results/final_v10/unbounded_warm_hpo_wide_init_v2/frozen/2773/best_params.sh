@@ -1,0 +1,9 @@
+# Frozen; do not edit
+export LR=5.9260857797183374e-05
+export WEIGHT_DECAY=0.0001
+export BATCH_SIZE=64
+export DROPOUT=0.15
+export WINDOW_SIZE=2
+export DRUG_GATE_INIT=0.3
+export JOINT_GATE_INIT=0.3
+export CONFIG_ID=3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30

@@ -1,0 +1,83 @@
+{
+  "protocol": "factor_xa_stage3_prepare_v1",
+  "created_at_utc": "2026-08-11T07:01:08.947452+00:00",
+  "pdb_id": "1NFU",
+  "native_ligand": "RRP",
+  "target_compound_id": "factor_xa_05",
+  "target_uniprot": "P00742",
+  "protein_chains": [
+    "A",
+    "B"
+  ],
+  "native_ligand_instance": {
+    "auth_chain": "A",
+    "auth_seq": "301",
+    "insertion_code": "",
+    "resname": "RRP"
+  },
+  "native_coordinate_mapping_method": "AssignBondOrdersFromTemplate_with_PDB_CONECT",
+  "source_stage2_smiles": "N=C(N)NCCC[C@@H](NC(=O)CN1CCN(S(=O)(=O)Cc2ccccc2)CC1=O)C(=O)c1nccs1",
+  "docking_smiles": "[NH2+:1]=[C:2]([NH2:3])[NH:4][CH2:5][CH2:6][CH2:7][C@@H:8]([NH:9][C:10](=[O:11])[CH2:12][N:13]1[CH2:14][CH2:15][N:16]([S:17](=[O:18])(=[O:19])[CH2:20][c:21]2[cH:22][cH:23][cH:24][cH:25][cH:26]2)[CH2:27][C:28]1=[O:29])[C:30](=[O:31])[c:32]1[n:33][cH:34][cH:35][s:36]1",
+  "target_formal_charge": 1,
+  "target_initial_3d_forcefield": "MMFF94",
+  "native_target_morgan_tanimoto": 0.30303030303030304,
+  "native_target_mcs_heavy_atoms": 11,
+  "box": {
+    "center": [
+      7.506033333333334,
+      5.5998,
+      22.286400000000004
+    ],
+    "size": [
+      22.0,
+      22.0,
+      22.0
+    ],
+    "native_heavy_atom_span": [
+      9.776,
+      9.641,
+      10.929000000000002
+    ]
+  },
+  "binding_site_completeness_passed": true,
+  "pdb_uniprot_mapping": [
+    {
+      "auth_chain": "A",
+      "seq_align_beg": 1,
+      "seq_align_end": 254,
+      "uniprot": "P00742",
+      "db_align_beg": 235,
+      "db_align_end": 488
+    },
+    {
+      "auth_chain": "B",
+      "seq_align_beg": 1,
+      "seq_align_end": 195,
+      "uniprot": "P00742",
+      "db_align_beg": 46,
+      "db_align_end": 240
+    }
+  ],
+  "files": {
+    "pdb": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/inputs/1NFU.pdb",
+    "cif": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/inputs/1NFU.cif",
+    "ideal_sdf": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/inputs/RRP_ideal.sdf",
+    "receptor_clean": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_receptor_clean.pdb",
+    "receptor_pdbqt": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_receptor.pdbqt",
+    "native_sdf": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_RRP_experimental.sdf",
+    "native_pdbqt": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_RRP.pdbqt",
+    "target_sdf": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/factor_xa_05_guanidinium.sdf",
+    "target_pdbqt": "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/factor_xa_05.pdbqt"
+  },
+  "sha256": {
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/inputs/1NFU.pdb": "0f528bc99b424ff24e70abc23a441d30d52b4e0fa96241256bcb24f17a8274bd",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/inputs/1NFU.cif": "2dac7b2877b1b34b4417198a1d08ca1ca2456d8ea7a47540c8453521d5186891",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/inputs/RRP_ideal.sdf": "1125e544e0bace3d192d9cf6a19d65b0f4226c9f268632b7b2dcc7249ff77129",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_receptor_clean.pdb": "8771617e5dbc44986fbd739f0dd5bce339cb3a09a06b2ebad24e5c3dca58bcc9",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_RRP_experimental.sdf": "3b21802809278183174cd134c3915ef7e3c8232e64cf7e8b66644664c5d9bc8b",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/factor_xa_05_guanidinium.sdf": "b981bb3968e49361265c37ead1e954f0d42e692fc2e4ac390df2ed5da59c8362",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_receptor.pdbqt": "4dd9492c148e7797fd63959fc496305407117e4f614029e6f39c7de756991eb2",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/1NFU_RRP.pdbqt": "d28409fb5943af84890389d64b6a26e1aba5266561a218a7ebaf922142335cc8",
+    "<BIO_PROJECT_ROOT>/case_study_outputs/factor_xa_stage3_docking/prepared/factor_xa_05.pdbqt": "cd87400558845a29f16a62a0e85a6fae99217821e1e208d66cd379ce68cdba8b"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "model": "deepdta",
+  "dataset": "2773",
+  "selection_protocol": "warm_only_two_stage",
+  "protocol_version": "warm_only_tpe_top5_v1",
+  "test_accessed_during_selection": false,
+  "stage1": {
+    "target_completed_trials": 30,
+    "actual_completed_trials": 30,
+    "failed_trials": 0,
+    "total_recorded_trials": 30,
+    "split": "warm_run1",
+    "objective": "validation_mse",
+    "sampler": "Optuna TPESampler",
+    "sampler_seed": 2026,
+    "selected_trial_val_mse": 0.23049565552772655
+  },
+  "stage2": {
+    "top_k": 5,
+    "validation_runs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "selection_metric": "mean_validation_mse"
+  },
+  "source_trial_number": 13,
+  "search_space": {
+    "lr": {
+      "type": "log_uniform",
+      "range": [
+        1e-05,
+        0.003
+      ]
+    },
+    "weight_decay": {
+      "type": "categorical",
+      "values": [
+        0.0,
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01
+      ]
+    },
+    "batch_size": {
+      "type": "categorical",
+      "values": [
+        32,
+        64,
+        128
+      ]
+    },
+    "dropout": {
+      "type": "categorical",
+      "values": [
+        0.0,
+        0.1,
+        0.2,
+        0.3
+      ]
+    }
+  },
+  "params": {
+    "lr": 0.00032923017136596603,
+    "weight_decay": 0.0,
+    "batch_size": 64,
+    "dropout": 0.0
+  },
+  "training": {
+    "epochs": 300,
+    "patience": 30,
+    "seed": 42,
+    "optimizer": "AdamW"
+  },
+  "validation": {
+    "mean_mse": 0.27766118278098545,
+    "std_mse": 0.0337210553888509
+  },
+  "warm_data_manifest": [
+    {
+      "run": 1,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run1.csv",
+      "train_sha256": "93ad4effe36ecd5980da260252452a614d5a36279bca6803b63cdb5efdb503e9",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run1.csv",
+      "val_sha256": "a33c8ca6a31127108055e5b0aca845bf719469a55bcd547219c2458355808b41"
+    },
+    {
+      "run": 2,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run2.csv",
+      "train_sha256": "da126c286e895361e3f9133e0ea6eaf0aace393c93c3e3078c37a3f0a01ed29a",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run2.csv",
+      "val_sha256": "1be7cc306c42c254ad302e07bd250a47a6b34d045c021b3cbca73be96401dbc0"
+    },
+    {
+      "run": 3,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run3.csv",
+      "train_sha256": "c377105264e31a3416202ef164fd7f05fa9ccc1a9329cd4f96e8e6cad564b7e0",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run3.csv",
+      "val_sha256": "10dadf986fc94f0f4c831a16df0981d2ce30a3d551e566299ca177d19968dc15"
+    },
+    {
+      "run": 4,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run4.csv",
+      "train_sha256": "b556f46b79a41833210210a95521d40ac955a3a729823603c7f482895a20bb71",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run4.csv",
+      "val_sha256": "799fc2c56313931aa3a36aa97c3ce303b4b1ff653af6110643aa8207287f0584"
+    },
+    {
+      "run": 5,
+      "train_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/train_run5.csv",
+      "train_sha256": "33577e1e8697be26f3633592439f3d527392578180a97a5bdd6ba66fcfe0512d",
+      "val_csv": "<BIO_PROJECT_ROOT>/2773/new_folds/warm/val_run5.csv",
+      "val_sha256": "cdbb32ba13d11fc8ca9281441db115d87989b4d74ad9e0cd950e7aa0845913bf"
+    }
+  ],
+  "generated_at_unix": 1784917124.1444688,
+  "config_id": "072dec77b929"
+}

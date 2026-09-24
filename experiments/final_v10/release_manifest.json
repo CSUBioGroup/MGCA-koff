@@ -1,0 +1,29 @@
+{
+    "files":  {
+                  "build_release.py":  "92fdd2fc43b2ee7c3406dd746525b0578ea61e2e1212d027c975a30e9caa41b6",
+                  "common.py":  "eae21ad876b8facefebb8e142cf993bd8f79570a3835a7ecf8882bedc1ca2deb",
+                  "experiment_config.sh":  "c9ba9484e4ac36738b0bcc3319175eee90704d24f0f5b3f668c3d8d148956cc5",
+                  "LOCAL_VALIDATION.md":  "153091f9767c2314b846a1cbe5885d686dbb1689e5bf2df58d56766c6ec7b922",
+                  "README.md":  "dc43ebee49d7c6cb3a1bbcd1398d5e9c307ba2cea457845f9c6d146ac4554569",
+                  "run_all_unbounded.sh":  "d4cad8899e4507775c8654033447910e5ec80694492e4db95a55b5908806e874",
+                  "runtime/local/ESM_Morgan_Hybrid_Fusion.py":  "6dcafce95899313b0949176229e62e61bfcbafeca20109c665c686c9521a7f45",
+                  "runtime/mgca_hyperparameter_tuning/v10_unbounded/model.py":  "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+                  "runtime/mgca_hyperparameter_tuning/v10_unbounded/trainer.py":  "befebcdb8e22af74c8d1c50b89a84fab7435dc6f66708efe7d0584341d1b0208",
+                  "runtime/mgca_hyperparameter_tuning/v10_unbounded/utils.py":  "b4ba094d62fb976e4fce080e543c73ce6faeacc2d151155c6337658cf868c7a6",
+                  "sources/original_v10_model.py":  "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+                  "summarize.py":  "7b3ca00e5578546ef3ce1c34601d9be07268f25dbc798e81c4d97e27f7b18d38",
+                  "test_model_contract.py":  "62d32c7ca223893fb920e9b405adb3126a1fcc68c5eb372389f0e41a9eb58387",
+                  "test_training_resume.py":  "217e22db6cce69d3839951e48ffcf24befdafa935810626f9eaca45693ebb412",
+                  "test_workflow.py":  "bb6716fd3cd430ec514f352b4f215b52c890eb45a4e84eccae1fcd8bc7fdb547",
+                  "worker.py":  "2d0da7bf25144b7c6cc950c32a89162cda683cd3c9644a7d7941d675b62a8517",
+                  "workflow.py":  "47a7dad89bdedb4e0387e24e3119ccc81f6ac3662b645ff056506e89d51800bf"
+              },
+    "original_v10_sha256":  "e6efef46abec20d1b25305c69ca099e2a5f84f6906f7bcb3f9b1e6c1786d7f7b",
+    "changes":  [
+                    "softplus positive unbounded scalars",
+                    "no cap-dependent gate prior",
+                    "scalar coordinates excluded from AdamW decay",
+                    "two initial coefficients jointly tuned",
+                    "standalone immutable/replayable workflow; legacy feature batch size configurable"
+                ]
+}

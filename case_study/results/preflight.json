@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-09-12T08:50:41.900705+00:00",
+  "config_id": "3154ac214828eafe59655160112af7c34eaf8be4cf739ed0ed21f2eb460d2b30",
+  "model_sha256": "629d0c9f43716183201315d2fc1d4be421204f30fd62ceab2405e58079d791e1",
+  "config_sha256": "a12b98c53984d9c66ae6cbf5d0862b274bc569fed8ca1473d6944a7658113b1f",
+  "data_sha256": "dce903592a19eacd17f601dc22eb364f1f7f4de4992b9690c4cb8508a3f60233",
+  "training_rows": 2773,
+  "case_exact_fasta_overlap_count": 0,
+  "four_target_rows": 62,
+  "four_target_ids": [
+    "P25103",
+    "P27487|Q53TN1",
+    "P30518",
+    "Q96PN6"
+  ],
+  "k4dd_rows": 487,
+  "k4dd_target_ids": [
+    "O14965",
+    "P00742",
+    "P07900",
+    "P08069",
+    "P29274",
+    "P30542"
+  ],
+  "parameter_count": 13392395,
+  "checkpoint_audit": [],
+  "case_panel_filter": {
+    "criterion": "predeclared inclusion criteria",
+    "excluded_rows": 16
+  }
+}

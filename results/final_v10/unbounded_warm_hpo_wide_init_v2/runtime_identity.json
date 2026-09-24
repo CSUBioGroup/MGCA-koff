@@ -1,0 +1,12 @@
+{
+  "python": "3.8.10 (default, Nov 22 2023, 10:22:35) \n[GCC 9.4.0]",
+  "torch": "1.12.1+cu113",
+  "cuda_runtime": "11.3",
+  "cudnn": 8302,
+  "rdkit": "2024.03.5",
+  "transformers": "4.40.1",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "sklearn": "1.3.2",
+  "optuna": "4.5.0"
+}

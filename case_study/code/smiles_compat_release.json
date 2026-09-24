@@ -1,0 +1,9 @@
+{
+  "patch_id": "k4dd_bracket_hydrogen_charge_order_v1",
+  "base_release_sha256": "14f4eda6bf0ef058e8cf16b2d477cf9a0872c83f6c761b7fe81b63284bb2db93",
+  "files": {
+    "resume_case_smiles_compat.py": "6edf38115dce2f01b86f1b041dc946436959d1ba5f2141cc54d1d67dbaf285f5",
+    "run_resume_smiles_compat.sh": "dbcaf91507649eca3e06438afa7a201a4dabd0e16428e1e7d5a4bc1ae39d7499",
+    "SMILES_COMPAT_README.md": "f136bfe0bf021e2b3411438d1e78f0231be57be4ed61257e75ab42ae675587bc"
+  }
+}

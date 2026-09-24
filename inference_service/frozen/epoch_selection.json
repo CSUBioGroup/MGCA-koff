@@ -1,0 +1,42 @@
+[
+  {
+    "run": 1,
+    "best_epoch": 88,
+    "selection_only": true,
+    "test_accessed": false,
+    "source_metrics_sha256": "2a18f44a06ccd1a40cb3960a14b40ca59dc3edf270c244629849c9356bed09fc",
+    "source": "mgca_hyperparameter_tuning/outputs/unbounded_warm_hpo_wide_init_v2/tuning/KinetX/runs/fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134/run1/metrics.json"
+  },
+  {
+    "run": 2,
+    "best_epoch": 56,
+    "selection_only": true,
+    "test_accessed": false,
+    "source_metrics_sha256": "52ad693bb306ad1de79aacf00fa37f27be3ce89d88995ba497add39dcf9087a0",
+    "source": "mgca_hyperparameter_tuning/outputs/unbounded_warm_hpo_wide_init_v2/tuning/KinetX/runs/fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134/run2/metrics.json"
+  },
+  {
+    "run": 3,
+    "best_epoch": 45,
+    "selection_only": true,
+    "test_accessed": false,
+    "source_metrics_sha256": "659742d7870768dc57c319b48e5d64cc1fd0915444468d0b14814edde5a16534",
+    "source": "mgca_hyperparameter_tuning/outputs/unbounded_warm_hpo_wide_init_v2/tuning/KinetX/runs/fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134/run3/metrics.json"
+  },
+  {
+    "run": 4,
+    "best_epoch": 55,
+    "selection_only": true,
+    "test_accessed": false,
+    "source_metrics_sha256": "b806611b053fca97d7c6510b695764c5c14a84dc1bedd5af6dd7f71d1029d744",
+    "source": "mgca_hyperparameter_tuning/outputs/unbounded_warm_hpo_wide_init_v2/tuning/KinetX/runs/fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134/run4/metrics.json"
+  },
+  {
+    "run": 5,
+    "best_epoch": 46,
+    "selection_only": true,
+    "test_accessed": false,
+    "source_metrics_sha256": "3e5c0451a162d5de687f03131a254f0eda24d8a7d1ba794c9971b59afb043de0",
+    "source": "mgca_hyperparameter_tuning/outputs/unbounded_warm_hpo_wide_init_v2/tuning/KinetX/runs/fff1fba29643b61388ed594917af392c3cca719af191319001d6244b5fcc2134/run5/metrics.json"
+  }
+]
