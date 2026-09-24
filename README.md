@@ -8,6 +8,14 @@ data splits, hyperparameter-search evidence, benchmark and ablation results,
 baseline implementations, and case-study materials used in the revised
 manuscript.
 
+## Model architecture
+
+[![MGCA-koff model architecture](figures/MGCA_architecture.png)](figures/MGCA_architecture.pdf)
+
+The figure summarizes the ESM2 and Morgan-fingerprint encoders, modality-specific
+gated expert fusion, expert-level bidirectional cross-attention, and the final
+dissociation-rate prediction head. Select the image to open the vector PDF.
+
 ## Repository contents
 
 - `data/`: KinetX and Zhao dataset files used by the released workflows. The
@@ -27,7 +35,8 @@ manuscript.
 - `case_study/results/`: final five-refit outputs and checkpoint provenance;
   checkpoint binaries are not distributed.
 - `inference_service/`: checkpoint-compatible FastAPI service.
-- `figures/`: final architecture figure.
+- `figures/`: final architecture figure in GitHub-preview PNG and vector PDF
+  formats.
 
 ## Installation
 
